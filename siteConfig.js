@@ -26,8 +26,8 @@ const siteConfig = {
   // as the package.json file for now
   customDocsPath: path.basename(__dirname) + '/docs',
 
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Treo - Report pageSpeed Tool', // Title for your website.
+  tagline: 'Document by Tand',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -78,7 +78,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} TAND`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

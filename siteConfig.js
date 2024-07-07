@@ -26,8 +26,8 @@ const siteConfig = {
   // as the package.json file for now
   customDocsPath: path.basename(__dirname) + '/docs',
 
-  title: 'Treo - Report pageSpeed Tool', // Title for your website.
-  tagline: 'Document by Tand',
+  title: 'BS - Documents', // Title for your website.
+  tagline: 'ALL documents for team',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:

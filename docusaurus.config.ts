@@ -92,7 +92,7 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'appsSidebar',
+          sidebarId: 'techDocsSidebar',
           position: 'left',
           label: 'TECH DOCS',
         }

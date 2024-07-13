@@ -1,6 +1,6 @@
 ---
 id: treo
-title: Improve speed with Treo.sh
+title: Treo Report documents
 ---
 
 # Tổng quan về Shopify theme

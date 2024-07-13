@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Shopify Basic',
-  tagline: 'Learn the basic of Shopify Development',
+  title: 'BS Documents',
+  tagline: 'Learn more with friendly documents',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -72,9 +72,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Shopify Basic',
+      title: 'BS Documents',
       logo: {
-        alt: 'Shopify Basic Logo',
+        alt: 'BS Team Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -89,6 +89,12 @@ const config: Config = {
           sidebarId: 'appsSidebar',
           position: 'left',
           label: 'Apps',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'appsSidebar',
+          position: 'left',
+          label: 'TECH DOCS',
         }
       ],
     },

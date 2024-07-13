@@ -1,0 +1,142 @@
+---
+id: create-an-app
+title: Khởi tạo một app
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Khởi tạo một app
+
+<div class="video-wrapper">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PB9gwBgQIk0?si=BDp6W2kz2hOC4NRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+</div>
+
+<br/>
+
+Bạn cần chuần bị một số công cụ cần thiết và thiết lập cho môi trường phát triển trước khi bắt tay vào việc xây dựng một app.
+
+Ở phần hướng dẫn này, bạn sẽ khởi tạo một app mà người dùng có thể truy cập trên Shopify admin thông qua [**Shopify CLI**](https://shopify.dev/docs/apps/tools/cli), đây sẽ là công cụ cần thiết cho quá trình phát triển ứng dụng của bạn.
+
+:::tip
+
+Đối với trường hợp cần thiết lập môi trường để làm việc với ứng dụng đã tạo trước, tham khảo [tại đây](https://shopify.dev/docs/apps/tools/cli/existing)
+
+:::
+
+## Bạn sẽ được học những gì?
+
+Ở bài viết hướng dẫn này, bạn sẽ được học những phần sau:
+
++ Khởi tạo một ứng dụng Remix sử dụng Shopify CLI.
++ Cài đặt app của bạn lên một Development store.
++ Khởi tạo một product sử dụng app mà bạn vừa tạo.
+
+![Shopify App Overview](/img/create-an-app.png)
+
+## Các yêu cầu
+
++ Bạn phải có một [**Partner account**](https://www.shopify.com/partners?shpxid=c62ecb10-39AE-4575-2A76-E2F42BF41F47) và một [**Development store**](https://shopify.dev/docs/apps/tools/development-stores#create-a-development-store-to-test-your-app).
++ Bạn đã cài đặt [**Node.js**](https://nodejs.org/en/download/) bản **18** hoặc cao hơn. Khuyến khích sử dụng package manager như [**nvm**](https://nodejs.org/en/download/package-manager)).
++ Bạn đã cài đặt Node.js package manager: **npm**, [**Yarn 1.x**](https://classic.yarnpkg.com/lang/en/docs/install) hoặc [**pnpm**](https://pnpm.io/installation).
++ Bạn đã cài đặt [**Git**](https://git-scm.com/) **2.28.0** hoặc cao hơn.
++ Bạn đang sử dụng bản mới nhất của trình duyệt Chrome hoặc Firefox hoặc các trình duyệt tương tự khác.
+
+## Bước 1: Tạo app
+
+Bạn có thể tạo một Shopify app mới sử dụng lệnh `npm`, `yarn` hoặc `pnpm`.
+
+1. Di chuyển tới vị trí thư mục mà bạn sẽ tạo app.\
+App của bạn sẽ được khởi tạo và nằm trong một thư mục con mới tạo tại vị trí đó.
+2. Chạy lệnh sau để khởi tạo một app:
+<Tabs>
+  <TabItem value="npm" label="npm" default>
+    ```bash
+    npm init @shopify/app@latest
+    ```
+  </TabItem>
+  <TabItem value="yarn" label="yarn">
+    ```bash
+    yarn create @shopify/app
+    ```
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+    ```bash
+    pnpm create @shopify/app
+    ```
+  </TabItem>
+</Tabs>
+3. Khi hộp thoại hiện lên, hãy nhập tên cho app của bạn, và chọn **Start with Remix** để sử dụng [Remix template](https://github.com/Shopify/shopify-app-template-remix).
+
+:::tip
+
+Nếu như bạn muốn khởi tạo extension-only app (app chỉ bao gồm các extension), hãy chọn **Start by adding your first extension**. [Tìm hiểu thêm về extension-only apps](https://shopify.dev/docs/apps/app-extensions/extension-only-apps).
+
+Bạn nên sử dụng Remix template cho phần lớn các trường hợp. Tuy nhiên, bạn vẫn có thể sử dụng một số template khác, hoặc tự tạo trong một số trường hợp. Tìm hiểu thêm về [cách sử dụng các app template khác](https://shopify.dev/docs/apps/tools#app-templates).
+
+:::
+
+Một ứng dụng mới được khởi tạo và Shopify CLI cũng sẽ được cài đặt cùng với các dependencies mà bạn cần để xây dựng Shopify apps:
+
+![Shopify App Overview](/img/create-an-app-cli.png)
+
+## Bước 2: Chạy local development server
+
+Sau khi khởi tạo app, bạn có thể làm việc với local development server và Shopify CLI.
+Shopify CLI sử dụng Cloudflare để khởi tạo một tunnel cho phép app của bạn được truy cập bằng HTTPS URL.
+
+1. Di chuyển tới vị trí thư mục app mới tạo của bạn.
+
+```bash
+cd my-new-app
+```
+
+2. Chạy câu lệnh sau để bắt đầu local server cho app của bạn:
+
+<Tabs>
+  <TabItem value="apple" label="npm" default>
+    ```bash
+    npm run dev
+    ```
+  </TabItem>
+  <TabItem value="orange" label="yarn">
+    ```bash
+    yarn dev
+    ```
+  </TabItem>
+  <TabItem value="banana" label="pnpm">
+    ```bash
+    pnpm dev
+    ```
+  </TabItem>
+</Tabs>
+
+Shopify CLI sẽ hướng dẫn bạn những công đoạn sau:
+
++ Đăng nhập [Partner account](https://help.shopify.com/partners/about?shpxid=c62ecb10-39AE-4575-2A76-E2F42BF41F47) của bạn.
++ Khởi tạo app trên Partner Dashboard, kết nối local code tới app.
++ Khởi tạo [Prisma SQLite database](https://github.com/Shopify/shopify-app-template-remix#application-storage) cho bạn.
++ Khởi tạo một tunnel giữa local và development store.
+
+Để tìm hiểu thêm chi tiết các thông tin trong quá trình thực thi lệnh `dev`, tham khảo [Shopify CLI command reference](https://shopify.dev/docs/apps/tools/cli/commands#dev).
+
+:::warning
+
+Để sử dụng một development store hoặc Plus sandbox store với Shopify CLI, bạn cần phải là một store owner, hoặc có một [staff account](https://help.shopify.com/manual/your-account/staff-accounts?shpxid=c62ecb10-39AE-4575-2A76-E2F42BF41F47) của store. Staff account được khởi tạo tự động khi bạn truy cập một development store lần đầu với Partner staff account của bạn thông qua Partner Dashboard.
+
+:::
+
+## Bước 3: Cài đặt app cho development store
+
+Bạn có thể cài đặt app cho development store của bạn, và tự động thêm các product cần thiết phục vụ cho quá trình test ứng dụng.
+
+1. Trên cửa sổ dòng lệnh đang chạy server, bạn bấm phím `p` để mở cửa sổ app preview trên trình duyệt.\
+Bạn sẽ được yêu cầu cài đặt app của bạn trên development store.
+2. Click **Install app** để cài đặt app trên development store.\
+Bây giờ bạn đã có một development store hoạt động cùng với ứng dụng mới được cài đặt:
+
+![Shopify App Overview](/img/create-an-app-home.png)
+
+3. Trên trang chủ của ứng dụng mới tạo, click **Generate a product** để khởi tạo một product cho development store của bạn.
+
+## Tham khảo
++ [Shopify Apps - Create an app](https://shopify.dev/docs/apps/getting-started/create)

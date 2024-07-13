@@ -1,0 +1,28 @@
+{
+  "id": "techdocs/Optimize/treo",
+  "title": "Treo.sh",
+  "description": "Tổng quan về  Treo.sh",
+  "source": "@site/docs/techdocs/Optimize/01-Treo.md",
+  "sourceDirName": "techdocs/Optimize",
+  "slug": "/techdocs/Optimize/treo",
+  "permalink": "/docs/techdocs/Optimize/treo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Optimize/01-Treo.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "treo",
+    "title": "Treo.sh"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Clean Code",
+    "permalink": "/docs/techdocs/Magento/clean_code"
+  },
+  "next": {
+    "title": "Core Web Vitals",
+    "permalink": "/docs/techdocs/Optimize/cwv"
+  }
+}

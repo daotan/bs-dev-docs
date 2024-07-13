@@ -1,0 +1,27 @@
+{
+  "id": "themes/Liquid/Tags/Template",
+  "title": "Template",
+  "description": "Các tag Template được dùng để khai báo các đoạn comment hoặc các đoạn mã không thuộc quy tắc của Liqid, và cách để thiết lập mối liên kết giữa các template khác.",
+  "source": "@site/docs/themes/Liquid/Tags/03-Template.md",
+  "sourceDirName": "themes/Liquid/Tags",
+  "slug": "/themes/Liquid/Tags/Template",
+  "permalink": "/docs/themes/Liquid/Tags/Template",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/03-Template.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Template"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Iteration",
+    "permalink": "/docs/themes/Liquid/Tags/Iteration"
+  },
+  "next": {
+    "title": "Variable",
+    "permalink": "/docs/themes/Liquid/Tags/Variable"
+  }
+}

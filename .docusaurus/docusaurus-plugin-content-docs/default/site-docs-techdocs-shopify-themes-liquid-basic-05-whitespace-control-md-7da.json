@@ -1,0 +1,27 @@
+{
+  "id": "techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+  "title": "Whitespace control",
+  "description": "Trong Liquid, bạn có thể thêm kí tự - vào các tag mở đóng như {{- và -}} hoặc {%- và -%} để loại bỏ khoảng trống của giá trị hoặc biểu thức mà Liquid tạo ra.",
+  "source": "@site/docs/techdocs/Shopify/themes/Liquid/Basic/05-Whitespace-Control.md",
+  "sourceDirName": "techdocs/Shopify/themes/Liquid/Basic",
+  "slug": "/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+  "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Basic/05-Whitespace-Control.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Whitespace control"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Types",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Types"
+  },
+  "next": {
+    "title": "Control flow",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow"
+  }
+}

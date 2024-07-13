@@ -38,14 +38,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/FukuwaMitzu/shopify-theme-docs/tree/master',
+            'https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/FukuwaMitzu/shopify-theme-docs/tree/master',
+            'https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -94,7 +94,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'techDocsSidebar',
           position: 'left',
-          label: 'TECH DOCS',
+          label: 'Tech Docs',
         }
       ],
     },

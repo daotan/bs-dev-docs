@@ -1,0 +1,28 @@
+{
+  "id": "techdocs/Optimize/cwv",
+  "title": "Core Web Vitals",
+  "description": "",
+  "source": "@site/docs/techdocs/Optimize/02-Core-web-vitals.md",
+  "sourceDirName": "techdocs/Optimize",
+  "slug": "/techdocs/Optimize/cwv",
+  "permalink": "/docs/techdocs/Optimize/cwv",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Optimize/02-Core-web-vitals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "cwv",
+    "title": "Core Web Vitals"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Treo.sh",
+    "permalink": "/docs/techdocs/Optimize/treo"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/techdocs/Shopify/apps/intro"
+  }
+}

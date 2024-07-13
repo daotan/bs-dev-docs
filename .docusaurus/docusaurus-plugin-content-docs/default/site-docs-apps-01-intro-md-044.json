@@ -1,0 +1,24 @@
+{
+  "id": "apps/intro",
+  "title": "Overview",
+  "description": "Trước khi bắt đầu quá trình phát triển app của bạn, bạn nên trước hết hiểu được Shopify apps làm những gì và chúng có thể hoạt động với Shopify bằng cách nào.",
+  "source": "@site/docs/apps/01-Intro.md",
+  "sourceDirName": "apps",
+  "slug": "/apps/intro",
+  "permalink": "/docs/apps/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/01-Intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Overview"
+  },
+  "sidebar": "appsSidebar",
+  "next": {
+    "title": "Khởi tạo một app",
+    "permalink": "/docs/apps/create-an-app"
+  }
+}

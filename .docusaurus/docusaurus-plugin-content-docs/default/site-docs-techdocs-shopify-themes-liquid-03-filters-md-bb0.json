@@ -1,0 +1,27 @@
+{
+  "id": "techdocs/Shopify/themes/Liquid/Filters",
+  "title": "Filters",
+  "description": "Tham khảo document chính thức dưới đây:",
+  "source": "@site/docs/techdocs/Shopify/themes/Liquid/03-Filters.md",
+  "sourceDirName": "techdocs/Shopify/themes/Liquid",
+  "slug": "/techdocs/Shopify/themes/Liquid/Filters",
+  "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/03-Filters.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Filters"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Variable",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable"
+  },
+  "next": {
+    "title": "Liquid Cheat Sheet",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
+  }
+}

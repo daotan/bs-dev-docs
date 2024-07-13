@@ -1,0 +1,27 @@
+{
+  "id": "techdocs/Shopify/themes/CLI-for-themes",
+  "title": "CLI",
+  "description": "Cài đặt Shopify CLI",
+  "source": "@site/docs/techdocs/Shopify/themes/06-CLI-for-themes.md",
+  "sourceDirName": "techdocs/Shopify/themes",
+  "slug": "/techdocs/Shopify/themes/CLI-for-themes",
+  "permalink": "/docs/techdocs/Shopify/themes/CLI-for-themes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/06-CLI-for-themes.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "CLI"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Sections & Blocks",
+    "permalink": "/docs/techdocs/Shopify/themes/Sections-and-Blocks"
+  },
+  "next": {
+    "title": "Liquid",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/"
+  }
+}

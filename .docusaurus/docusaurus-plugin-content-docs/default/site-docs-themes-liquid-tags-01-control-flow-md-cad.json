@@ -1,0 +1,27 @@
+{
+  "id": "themes/Liquid/Tags/Control-flow",
+  "title": "Control flow",
+  "description": "Control flow tags quyết định việc có nên thực thi các khối lệnh Liquid hay không.",
+  "source": "@site/docs/themes/Liquid/Tags/01-Control-flow.md",
+  "sourceDirName": "themes/Liquid/Tags",
+  "slug": "/themes/Liquid/Tags/Control-flow",
+  "permalink": "/docs/themes/Liquid/Tags/Control-flow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/01-Control-flow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Control flow"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Whitespace control",
+    "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control"
+  },
+  "next": {
+    "title": "Iteration",
+    "permalink": "/docs/themes/Liquid/Tags/Iteration"
+  }
+}

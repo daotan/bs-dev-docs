@@ -1,0 +1,27 @@
+{
+  "id": "techdocs/Shopify/themes/Liquid/Tags/Iteration",
+  "title": "Iteration",
+  "description": "Quá trình thực hiện một hành động lặp đi lặp lại với từng thành phần trong một tập hợp được gọi là một Iteration.",
+  "source": "@site/docs/techdocs/Shopify/themes/Liquid/Tags/02-Iteration.md",
+  "sourceDirName": "techdocs/Shopify/themes/Liquid/Tags",
+  "slug": "/techdocs/Shopify/themes/Liquid/Tags/Iteration",
+  "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Tags/02-Iteration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Iteration"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Control flow",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow"
+  },
+  "next": {
+    "title": "Template",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template"
+  }
+}

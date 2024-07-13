@@ -1,0 +1,28 @@
+{
+  "id": "techdocs/Shopify/apps/Shopify App Remix/api-extension",
+  "title": "Extensions",
+  "description": "Một app extension cho phép bạn thêm chức năng của ứng dụng vào giao diện người dùng Shopify.",
+  "source": "@site/docs/techdocs/Shopify/apps/Shopify App Remix/04-App-extension.md",
+  "sourceDirName": "techdocs/Shopify/apps/Shopify App Remix",
+  "slug": "/techdocs/Shopify/apps/Shopify App Remix/api-extension",
+  "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-extension",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/Shopify App Remix/04-App-extension.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "api-extension",
+    "title": "Extensions"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Access Scopes",
+    "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope"
+  },
+  "next": {
+    "title": "CLI",
+    "permalink": "/docs/techdocs/Shopify/apps/cli"
+  }
+}

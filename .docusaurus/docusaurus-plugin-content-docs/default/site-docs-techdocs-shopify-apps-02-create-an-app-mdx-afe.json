@@ -1,0 +1,28 @@
+{
+  "id": "techdocs/Shopify/apps/create-an-app",
+  "title": "Khởi tạo một app",
+  "description": "Bạn cần chuần bị một số công cụ cần thiết và thiết lập cho môi trường phát triển trước khi bắt tay vào việc xây dựng một app.",
+  "source": "@site/docs/techdocs/Shopify/apps/02-Create-an-app.mdx",
+  "sourceDirName": "techdocs/Shopify/apps",
+  "slug": "/techdocs/Shopify/apps/create-an-app",
+  "permalink": "/docs/techdocs/Shopify/apps/create-an-app",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/02-Create-an-app.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "create-an-app",
+    "title": "Khởi tạo một app"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/techdocs/Shopify/apps/intro"
+  },
+  "next": {
+    "title": "Polaris",
+    "permalink": "/docs/techdocs/Shopify/apps/polaris"
+  }
+}

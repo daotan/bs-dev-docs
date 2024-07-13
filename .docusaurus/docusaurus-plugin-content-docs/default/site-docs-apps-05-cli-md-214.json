@@ -1,0 +1,24 @@
+{
+  "id": "apps/cli",
+  "title": "CLI",
+  "description": "Tham khảo các lệnh tại đây.",
+  "source": "@site/docs/apps/05-CLI.md",
+  "sourceDirName": "apps",
+  "slug": "/apps/cli",
+  "permalink": "/docs/apps/cli",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/05-CLI.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "cli",
+    "title": "CLI"
+  },
+  "sidebar": "appsSidebar",
+  "previous": {
+    "title": "Extensions",
+    "permalink": "/docs/apps/Shopify App Remix/api-extension"
+  }
+}

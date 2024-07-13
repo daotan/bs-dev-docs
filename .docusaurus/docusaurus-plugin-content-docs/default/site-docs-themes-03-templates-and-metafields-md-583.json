@@ -1,0 +1,27 @@
+{
+  "id": "themes/Templates-and-Metafields",
+  "title": "Templates & Metafields",
+  "description": "Templates",
+  "source": "@site/docs/themes/03-Templates-and-Metafields.md",
+  "sourceDirName": "themes",
+  "slug": "/themes/Templates-and-Metafields",
+  "permalink": "/docs/themes/Templates-and-Metafields",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/03-Templates-and-Metafields.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Templates & Metafields"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/docs/themes/Architecture/"
+  },
+  "next": {
+    "title": "Metaobjects",
+    "permalink": "/docs/themes/Metaobjects"
+  }
+}

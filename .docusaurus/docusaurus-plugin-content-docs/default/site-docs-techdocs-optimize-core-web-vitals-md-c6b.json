@@ -1,0 +1,23 @@
+{
+  "id": "techdocs/Optimize/cwv",
+  "title": "Core Web Vitals",
+  "description": "",
+  "source": "@site/docs/techdocs/Optimize/Core-web-vitals.md",
+  "sourceDirName": "techdocs/Optimize",
+  "slug": "/techdocs/Optimize/cwv",
+  "permalink": "/docs/techdocs/Optimize/cwv",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/FukuwaMitzu/shopify-theme-docs/tree/master/docs/techdocs/Optimize/Core-web-vitals.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "cwv",
+    "title": "Core Web Vitals"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Treo",
+    "permalink": "/docs/techdocs/Optimize/treo"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "techdocs/Magento/clean_code",
+  "title": "Clean Code",
+  "description": "",
+  "source": "@site/docs/techdocs/Magento/Clean-code.md",
+  "sourceDirName": "techdocs/Magento",
+  "slug": "/techdocs/Magento/clean_code",
+  "permalink": "/docs/techdocs/Magento/clean_code",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Magento/Clean-code.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "clean_code",
+    "title": "Clean Code"
+  },
+  "sidebar": "techDocsSidebar",
+  "next": {
+    "title": "Treo.sh",
+    "permalink": "/docs/techdocs/Optimize/treo"
+  }
+}

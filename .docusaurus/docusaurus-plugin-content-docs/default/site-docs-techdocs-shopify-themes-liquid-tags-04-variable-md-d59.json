@@ -1,0 +1,27 @@
+{
+  "id": "techdocs/Shopify/themes/Liquid/Tags/Variable",
+  "title": "Variable",
+  "description": "Các variable tags cho phép tạo ra khác biến mới trong Liquid.",
+  "source": "@site/docs/techdocs/Shopify/themes/Liquid/Tags/04-Variable.md",
+  "sourceDirName": "techdocs/Shopify/themes/Liquid/Tags",
+  "slug": "/techdocs/Shopify/themes/Liquid/Tags/Variable",
+  "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Tags/04-Variable.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Variable"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Template",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template"
+  },
+  "next": {
+    "title": "Filters",
+    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters"
+  }
+}

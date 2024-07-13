@@ -1,0 +1,27 @@
+{
+  "id": "themes/Liquid/Tags/Iteration",
+  "title": "Iteration",
+  "description": "Quá trình thực hiện một hành động lặp đi lặp lại với từng thành phần trong một tập hợp được gọi là một Iteration.",
+  "source": "@site/docs/themes/Liquid/Tags/02-Iteration.md",
+  "sourceDirName": "themes/Liquid/Tags",
+  "slug": "/themes/Liquid/Tags/Iteration",
+  "permalink": "/docs/themes/Liquid/Tags/Iteration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/02-Iteration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Iteration"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Control flow",
+    "permalink": "/docs/themes/Liquid/Tags/Control-flow"
+  },
+  "next": {
+    "title": "Template",
+    "permalink": "/docs/themes/Liquid/Tags/Template"
+  }
+}

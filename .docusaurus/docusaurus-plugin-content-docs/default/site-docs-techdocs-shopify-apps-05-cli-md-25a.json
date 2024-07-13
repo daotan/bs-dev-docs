@@ -1,0 +1,28 @@
+{
+  "id": "techdocs/Shopify/apps/cli",
+  "title": "CLI",
+  "description": "Tham khảo các lệnh tại đây.",
+  "source": "@site/docs/techdocs/Shopify/apps/05-CLI.md",
+  "sourceDirName": "techdocs/Shopify/apps",
+  "slug": "/techdocs/Shopify/apps/cli",
+  "permalink": "/docs/techdocs/Shopify/apps/cli",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/05-CLI.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "cli",
+    "title": "CLI"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Extensions",
+    "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-extension"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/techdocs/Shopify/themes/intro"
+  }
+}

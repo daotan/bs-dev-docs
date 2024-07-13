@@ -1,6 +1,6 @@
 ---
-id: treo
-title: Treo Report documents
+id: intro
+title: Overview
 ---
 
 # Tổng quan về Shopify theme

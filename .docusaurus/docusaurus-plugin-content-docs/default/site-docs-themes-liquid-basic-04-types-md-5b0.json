@@ -1,0 +1,27 @@
+{
+  "id": "themes/Liquid/Basic/Types",
+  "title": "Types",
+  "description": "Liquid objects có 6 kiểu dữ liệu:",
+  "source": "@site/docs/themes/Liquid/Basic/04-Types.md",
+  "sourceDirName": "themes/Liquid/Basic",
+  "slug": "/themes/Liquid/Basic/Types",
+  "permalink": "/docs/themes/Liquid/Basic/Types",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/04-Types.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Types"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Truthy and falsy",
+    "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy"
+  },
+  "next": {
+    "title": "Whitespace control",
+    "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control"
+  }
+}

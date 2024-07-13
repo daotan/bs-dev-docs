@@ -1,0 +1,68 @@
+---
+id: api-access-scope
+title: Access Scopes
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Access scopes
+
+Khi làm việc với Shopify Admin Graphql query hoặc mutation, sẽ có một số query yêu cầu quyền truy cập (access scope) của app để có thể sử dụng. Để thiết lập access scope cho app của bạn, bạn cần update `access_scope` nằm trong file config của app.
+
+File config được Shopify CLI generat là một file `.toml` nằm trong thư mục gốc của project có cấu trúc dạng: \
+`shopify.app.<config-name>.toml`.
+
+Ví dụ một file config với access scope là `read_products` và `write_products`:
+
+```toml title="shopify.app.<config-name>.toml"
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "xxxxxxxxxxxxxxxxxxxf2894c15"
+name = "product-management"
+handle = "product-management-10"
+application_url = "https://example.com/"
+embedded = true
+
+[build]
+dev_store_url = "my-website.myshopify.com"
+include_config_on_deploy = true
+
+// highlight-start
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_products"
+// highlight-end
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+```
+
+:::warning
+Mỗi khi thay đổi access scope trong config của app, bạn cần phải deploy và cài lại app để áp dụng access scope mới.
+:::
+<Tabs>
+  <TabItem value="npm" label="npm" default>
+    ```bash
+    npm run deploy
+    ```
+  </TabItem>
+  <TabItem value="yarn" label="yarn">
+    ```bash
+    yarn deploy
+    ```
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+    ```bash
+    pnpm run deploy
+    ```
+  </TabItem>
+</Tabs>
+
+
+Danh sách các scope key tham khảo ở mục [Authenticated access scopes](https://shopify.dev/docs/api/usage/access-scopes#authenticated-access-scopes) của Shopify.

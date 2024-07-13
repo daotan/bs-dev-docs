@@ -1,0 +1,28 @@
+{
+  "id": "apps/create-an-app",
+  "title": "Khởi tạo một app",
+  "description": "Bạn cần chuần bị một số công cụ cần thiết và thiết lập cho môi trường phát triển trước khi bắt tay vào việc xây dựng một app.",
+  "source": "@site/docs/apps/02-Create-an-app.mdx",
+  "sourceDirName": "apps",
+  "slug": "/apps/create-an-app",
+  "permalink": "/docs/apps/create-an-app",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/02-Create-an-app.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "create-an-app",
+    "title": "Khởi tạo một app"
+  },
+  "sidebar": "appsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/apps/intro"
+  },
+  "next": {
+    "title": "Polaris",
+    "permalink": "/docs/apps/polaris"
+  }
+}

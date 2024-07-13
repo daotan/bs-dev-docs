@@ -1,0 +1,27 @@
+{
+  "id": "themes/Liquid/Filters",
+  "title": "Filters",
+  "description": "Tham khảo document chính thức dưới đây:",
+  "source": "@site/docs/themes/Liquid/03-Filters.md",
+  "sourceDirName": "themes/Liquid",
+  "slug": "/themes/Liquid/Filters",
+  "permalink": "/docs/themes/Liquid/Filters",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/03-Filters.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Filters"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Variable",
+    "permalink": "/docs/themes/Liquid/Tags/Variable"
+  },
+  "next": {
+    "title": "Liquid Cheat Sheet",
+    "permalink": "/docs/themes/Liquid/Liquid-Cheat-Sheet"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "techdocs/Shopify/apps/Shopify App Remix/architecture",
+  "title": "Architecture",
+  "description": "app/",
+  "source": "@site/docs/techdocs/Shopify/apps/Shopify App Remix/02-Architecture.md",
+  "sourceDirName": "techdocs/Shopify/apps/Shopify App Remix",
+  "slug": "/techdocs/Shopify/apps/Shopify App Remix/architecture",
+  "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/Shopify App Remix/02-Architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "architecture",
+    "title": "Architecture"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/overview"
+  },
+  "next": {
+    "title": "Access Scopes",
+    "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope"
+  }
+}

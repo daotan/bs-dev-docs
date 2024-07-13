@@ -1,0 +1,27 @@
+{
+  "id": "themes/Liquid/Basic/Operators",
+  "title": "Operators",
+  "description": "Là một templating language, Liquid giới hạn khá nhiều các toán tử, hầu như chỉ là các toán tử logic hoặc các phép so sánh, câu điều kiện đơn giản.",
+  "source": "@site/docs/themes/Liquid/Basic/02-Operators.md",
+  "sourceDirName": "themes/Liquid/Basic",
+  "slug": "/themes/Liquid/Basic/Operators",
+  "permalink": "/docs/themes/Liquid/Basic/Operators",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/02-Operators.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Operators"
+  },
+  "sidebar": "themesSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/themes/Liquid/Basic/Intro"
+  },
+  "next": {
+    "title": "Truthy and falsy",
+    "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy"
+  }
+}

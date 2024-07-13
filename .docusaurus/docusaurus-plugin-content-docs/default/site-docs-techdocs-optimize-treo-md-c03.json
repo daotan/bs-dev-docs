@@ -1,0 +1,23 @@
+{
+  "id": "techdocs/Optimize/treo",
+  "title": "Treo",
+  "description": "Các theme của Shopify cơ bản được xây dựng dựa trên templating language là Liquid, đi kèm với nó là HTML, CSS, JavaScript và JSON. Shopify cung cấp một số các công cụ và best practices để tối ưu quá trình phát triển.",
+  "source": "@site/docs/techdocs/Optimize/treo.md",
+  "sourceDirName": "techdocs/Optimize",
+  "slug": "/techdocs/Optimize/treo",
+  "permalink": "/docs/techdocs/Optimize/treo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/FukuwaMitzu/shopify-theme-docs/tree/master/docs/techdocs/Optimize/treo.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "treo",
+    "title": "Treo"
+  },
+  "sidebar": "techDocsSidebar",
+  "previous": {
+    "title": "Core Web Vitals",
+    "permalink": "/docs/techdocs/Optimize/cwv"
+  }
+}

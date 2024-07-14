@@ -14,14 +14,5 @@
   "sidebarPosition": 5,
   "frontMatter": {
     "title": "Whitespace control"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Types",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Types"
-  },
-  "next": {
-    "title": "Control flow",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow"
   }
 }

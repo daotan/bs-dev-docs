@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Liquid"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "CLI",
-    "permalink": "/docs/themes/CLI-for-themes"
-  },
-  "next": {
-    "title": "Introduction",
-    "permalink": "/docs/themes/Liquid/Basic/Intro"
   }
 }

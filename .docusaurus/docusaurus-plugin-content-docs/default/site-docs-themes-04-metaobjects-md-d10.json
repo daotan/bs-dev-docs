@@ -14,14 +14,5 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Metaobjects"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Templates & Metafields",
-    "permalink": "/docs/themes/Templates-and-Metafields"
-  },
-  "next": {
-    "title": "Sections & Blocks",
-    "permalink": "/docs/themes/Sections-and-Blocks"
   }
 }

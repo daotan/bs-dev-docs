@@ -14,14 +14,5 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Control flow"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Whitespace control",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
-  },
-  "next": {
-    "title": "Iteration",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration"
   }
 }

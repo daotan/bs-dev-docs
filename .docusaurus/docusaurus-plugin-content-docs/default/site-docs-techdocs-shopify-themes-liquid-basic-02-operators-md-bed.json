@@ -14,14 +14,5 @@
   "sidebarPosition": 2,
   "frontMatter": {
     "title": "Operators"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Introduction",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Intro"
-  },
-  "next": {
-    "title": "Truthy and falsy",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
   }
 }

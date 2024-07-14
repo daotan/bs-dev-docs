@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "intro",
     "title": "Overview"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Core Web Vitals",
-    "permalink": "/docs/techdocs/Optimize/cwv"
-  },
-  "next": {
-    "title": "Khởi tạo một app",
-    "permalink": "/docs/techdocs/Shopify/apps/create-an-app"
   }
 }

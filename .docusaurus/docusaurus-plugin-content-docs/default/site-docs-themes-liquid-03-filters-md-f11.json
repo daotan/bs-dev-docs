@@ -14,14 +14,5 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Filters"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Variable",
-    "permalink": "/docs/themes/Liquid/Tags/Variable"
-  },
-  "next": {
-    "title": "Liquid Cheat Sheet",
-    "permalink": "/docs/themes/Liquid/Liquid-Cheat-Sheet"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "id": "Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
+  "title": "Control flow",
+  "description": "Control flow tags quyết định việc có nên thực thi các khối lệnh Liquid hay không.",
+  "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Tags/01-Control-flow.md",
+  "sourceDirName": "Devdocs/Shopify/themes/Liquid/Tags",
+  "slug": "/Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
+  "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Tags/01-Control-flow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Control flow"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Whitespace control",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
+  },
+  "next": {
+    "title": "Iteration",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration"
+  }
+}

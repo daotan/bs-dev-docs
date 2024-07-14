@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+  "title": "Access Scopes",
+  "description": "Khi làm việc với Shopify Admin Graphql query hoặc mutation, sẽ có một số query yêu cầu quyền truy cập (access scope) của app để có thể sử dụng. Để thiết lập access scope cho app của bạn, bạn cần update access_scope nằm trong file config của app.",
+  "source": "@site/docs/Devdocs/Shopify/apps/Shopify App Remix/03-Api-access-scopes.mdx",
+  "sourceDirName": "Devdocs/Shopify/apps/Shopify App Remix",
+  "slug": "/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+  "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/Shopify App Remix/03-Api-access-scopes.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "api-access-scope",
+    "title": "Access Scopes"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture"
+  },
+  "next": {
+    "title": "Extensions",
+    "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension"
+  }
+}

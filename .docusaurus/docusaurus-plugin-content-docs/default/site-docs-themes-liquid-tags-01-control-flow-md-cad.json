@@ -14,14 +14,5 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Control flow"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Whitespace control",
-    "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control"
-  },
-  "next": {
-    "title": "Iteration",
-    "permalink": "/docs/themes/Liquid/Tags/Iteration"
   }
 }

@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "intro",
     "title": "Overview"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "CLI",
-    "permalink": "/docs/techdocs/Shopify/apps/cli"
-  },
-  "next": {
-    "title": "Architecture",
-    "permalink": "/docs/techdocs/Shopify/themes/Architecture/"
   }
 }

@@ -14,14 +14,5 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Types"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Truthy and falsy",
-    "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy"
-  },
-  "next": {
-    "title": "Whitespace control",
-    "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control"
   }
 }

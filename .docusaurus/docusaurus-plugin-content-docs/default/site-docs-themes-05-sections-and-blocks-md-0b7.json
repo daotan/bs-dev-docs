@@ -14,14 +14,5 @@
   "sidebarPosition": 5,
   "frontMatter": {
     "title": "Sections & Blocks"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Metaobjects",
-    "permalink": "/docs/themes/Metaobjects"
-  },
-  "next": {
-    "title": "CLI",
-    "permalink": "/docs/themes/CLI-for-themes"
   }
 }

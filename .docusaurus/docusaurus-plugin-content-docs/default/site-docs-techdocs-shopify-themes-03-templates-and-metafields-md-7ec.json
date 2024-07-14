@@ -14,14 +14,5 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Templates & Metafields"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Architecture",
-    "permalink": "/docs/techdocs/Shopify/themes/Architecture/"
-  },
-  "next": {
-    "title": "Metaobjects",
-    "permalink": "/docs/techdocs/Shopify/themes/Metaobjects"
   }
 }

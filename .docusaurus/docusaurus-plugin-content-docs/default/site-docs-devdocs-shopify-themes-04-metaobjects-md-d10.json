@@ -1,0 +1,27 @@
+{
+  "id": "Devdocs/Shopify/themes/Metaobjects",
+  "title": "Metaobjects",
+  "description": "Metaobjects giúp bạn bổ sung thêm dữ liệu có cấu trúc vào trong store. Ví dụ, bạn có thể lưu một phần thông tin của sản phẩm như các tính năng, size charts, thông tin kĩ thuật,...",
+  "source": "@site/docs/Devdocs/Shopify/themes/04-Metaobjects.md",
+  "sourceDirName": "Devdocs/Shopify/themes",
+  "slug": "/Devdocs/Shopify/themes/Metaobjects",
+  "permalink": "/docs/Devdocs/Shopify/themes/Metaobjects",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/04-Metaobjects.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Metaobjects"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Templates & Metafields",
+    "permalink": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields"
+  },
+  "next": {
+    "title": "Sections & Blocks",
+    "permalink": "/docs/Devdocs/Shopify/themes/Sections-and-Blocks"
+  }
+}

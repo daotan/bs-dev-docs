@@ -16,14 +16,5 @@
     "sidebar_position": 1,
     "title": "Architecture",
     "description": "Tổng quan về kiến trúc Shopify theme"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Overview",
-    "permalink": "/docs/techdocs/Shopify/themes/intro"
-  },
-  "next": {
-    "title": "Templates & Metafields",
-    "permalink": "/docs/techdocs/Shopify/themes/Templates-and-Metafields"
   }
 }

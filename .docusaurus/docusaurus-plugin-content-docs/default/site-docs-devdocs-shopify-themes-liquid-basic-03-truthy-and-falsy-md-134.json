@@ -1,0 +1,27 @@
+{
+  "id": "Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+  "title": "Truthy and falsy",
+  "description": "Khi một giá trị không thuộc kiểu dữ liệu boolean được sử dụng trong một ngữ cảnh có điều kiện (như các tag điều kiện {% if ... %}), Liquid sẽ quyết định quy đổi giá trị đó về true hoặc false. Giá trị được quy đổi về true được gọi là truthy. Giá trị được quy đổi về false được gọi là falsy.",
+  "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
+  "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+  "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+  "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Truthy and falsy"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Operators",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators"
+  },
+  "next": {
+    "title": "Types",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types"
+  }
+}

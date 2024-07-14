@@ -15,10 +15,5 @@
   "frontMatter": {
     "id": "intro",
     "title": "Overview"
-  },
-  "sidebar": "appsSidebar",
-  "next": {
-    "title": "Khởi tạo một app",
-    "permalink": "/docs/apps/create-an-app"
   }
 }

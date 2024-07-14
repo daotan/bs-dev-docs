@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "cwv",
     "title": "Core Web Vitals"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Treo.sh",
-    "permalink": "/docs/techdocs/Optimize/treo"
-  },
-  "next": {
-    "title": "Overview",
-    "permalink": "/docs/techdocs/Shopify/apps/intro"
   }
 }

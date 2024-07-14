@@ -1,0 +1,29 @@
+{
+  "id": "Devdocs/Shopify/themes/Architecture/index",
+  "title": "Architecture",
+  "description": "Tổng quan về kiến trúc Shopify theme",
+  "source": "@site/docs/Devdocs/Shopify/themes/Architecture/index.md",
+  "sourceDirName": "Devdocs/Shopify/themes/Architecture",
+  "slug": "/Devdocs/Shopify/themes/Architecture/",
+  "permalink": "/docs/Devdocs/Shopify/themes/Architecture/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Architecture/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Architecture",
+    "description": "Tổng quan về kiến trúc Shopify theme"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/Devdocs/Shopify/themes/intro"
+  },
+  "next": {
+    "title": "Templates & Metafields",
+    "permalink": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields"
+  }
+}

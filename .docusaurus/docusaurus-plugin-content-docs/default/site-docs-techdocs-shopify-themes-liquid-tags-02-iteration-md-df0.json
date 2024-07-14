@@ -14,14 +14,5 @@
   "sidebarPosition": 2,
   "frontMatter": {
     "title": "Iteration"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Control flow",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow"
-  },
-  "next": {
-    "title": "Template",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template"
   }
 }

@@ -15,10 +15,5 @@
   "frontMatter": {
     "id": "intro",
     "title": "Overview"
-  },
-  "sidebar": "themesSidebar",
-  "next": {
-    "title": "Architecture",
-    "permalink": "/docs/themes/Architecture/"
   }
 }

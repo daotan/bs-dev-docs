@@ -14,10 +14,5 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Liquid Cheat Sheet"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Filters",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters"
   }
 }

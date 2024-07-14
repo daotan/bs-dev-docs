@@ -14,14 +14,5 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Template"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Iteration",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration"
-  },
-  "next": {
-    "title": "Variable",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable"
   }
 }

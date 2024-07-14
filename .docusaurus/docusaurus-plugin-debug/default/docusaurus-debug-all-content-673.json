@@ -20,255 +20,39 @@
           "contentPathLocalized": "/home/bss/Documents/BS-docs/i18n/vi/docusaurus-plugin-content-docs/current",
           "docs": [
             {
-              "id": "apps/cli",
-              "title": "CLI",
-              "description": "Tham khảo các lệnh tại đây.",
-              "source": "@site/docs/apps/05-CLI.md",
-              "sourceDirName": "apps",
-              "slug": "/apps/cli",
-              "permalink": "/docs/apps/cli",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/05-CLI.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "id": "cli",
-                "title": "CLI"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Extensions",
-                "permalink": "/docs/apps/Shopify App Remix/api-extension"
-              }
-            },
-            {
-              "id": "apps/create-an-app",
-              "title": "Khởi tạo một app",
-              "description": "Bạn cần chuần bị một số công cụ cần thiết và thiết lập cho môi trường phát triển trước khi bắt tay vào việc xây dựng một app.",
-              "source": "@site/docs/apps/02-Create-an-app.mdx",
-              "sourceDirName": "apps",
-              "slug": "/apps/create-an-app",
-              "permalink": "/docs/apps/create-an-app",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/02-Create-an-app.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "id": "create-an-app",
-                "title": "Khởi tạo một app"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Overview",
-                "permalink": "/docs/apps/intro"
-              },
-              "next": {
-                "title": "Polaris",
-                "permalink": "/docs/apps/polaris"
-              }
-            },
-            {
-              "id": "apps/intro",
-              "title": "Overview",
-              "description": "Trước khi bắt đầu quá trình phát triển app của bạn, bạn nên trước hết hiểu được Shopify apps làm những gì và chúng có thể hoạt động với Shopify bằng cách nào.",
-              "source": "@site/docs/apps/01-Intro.md",
-              "sourceDirName": "apps",
-              "slug": "/apps/intro",
-              "permalink": "/docs/apps/intro",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/01-Intro.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "id": "intro",
-                "title": "Overview"
-              },
-              "sidebar": "appsSidebar",
-              "next": {
-                "title": "Khởi tạo một app",
-                "permalink": "/docs/apps/create-an-app"
-              }
-            },
-            {
-              "id": "apps/polaris",
-              "title": "Polaris",
-              "description": "Hệ thống thiết kế Polaris bao gồm các nguyên tắc, design patterns của các UI components, tokens, icons để xây dựng apps trong Shopify admin.",
-              "source": "@site/docs/apps/03-Polaris.md",
-              "sourceDirName": "apps",
-              "slug": "/apps/polaris",
-              "permalink": "/docs/apps/polaris",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/03-Polaris.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "id": "polaris",
-                "title": "Polaris"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Khởi tạo một app",
-                "permalink": "/docs/apps/create-an-app"
-              },
-              "next": {
-                "title": "Overview",
-                "permalink": "/docs/apps/Shopify App Remix/overview"
-              }
-            },
-            {
-              "id": "apps/Shopify App Remix/api-access-scope",
-              "title": "Access Scopes",
-              "description": "Khi làm việc với Shopify Admin Graphql query hoặc mutation, sẽ có một số query yêu cầu quyền truy cập (access scope) của app để có thể sử dụng. Để thiết lập access scope cho app của bạn, bạn cần update access_scope nằm trong file config của app.",
-              "source": "@site/docs/apps/Shopify App Remix/03-Api-access-scopes.mdx",
-              "sourceDirName": "apps/Shopify App Remix",
-              "slug": "/apps/Shopify App Remix/api-access-scope",
-              "permalink": "/docs/apps/Shopify App Remix/api-access-scope",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/Shopify App Remix/03-Api-access-scopes.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "id": "api-access-scope",
-                "title": "Access Scopes"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Architecture",
-                "permalink": "/docs/apps/Shopify App Remix/architecture"
-              },
-              "next": {
-                "title": "Extensions",
-                "permalink": "/docs/apps/Shopify App Remix/api-extension"
-              }
-            },
-            {
-              "id": "apps/Shopify App Remix/api-extension",
-              "title": "Extensions",
-              "description": "Một app extension cho phép bạn thêm chức năng của ứng dụng vào giao diện người dùng Shopify.",
-              "source": "@site/docs/apps/Shopify App Remix/04-App-extension.md",
-              "sourceDirName": "apps/Shopify App Remix",
-              "slug": "/apps/Shopify App Remix/api-extension",
-              "permalink": "/docs/apps/Shopify App Remix/api-extension",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/Shopify App Remix/04-App-extension.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "id": "api-extension",
-                "title": "Extensions"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Access Scopes",
-                "permalink": "/docs/apps/Shopify App Remix/api-access-scope"
-              },
-              "next": {
-                "title": "CLI",
-                "permalink": "/docs/apps/cli"
-              }
-            },
-            {
-              "id": "apps/Shopify App Remix/architecture",
-              "title": "Architecture",
-              "description": "app/",
-              "source": "@site/docs/apps/Shopify App Remix/02-Architecture.md",
-              "sourceDirName": "apps/Shopify App Remix",
-              "slug": "/apps/Shopify App Remix/architecture",
-              "permalink": "/docs/apps/Shopify App Remix/architecture",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/Shopify App Remix/02-Architecture.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "id": "architecture",
-                "title": "Architecture"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Overview",
-                "permalink": "/docs/apps/Shopify App Remix/overview"
-              },
-              "next": {
-                "title": "Access Scopes",
-                "permalink": "/docs/apps/Shopify App Remix/api-access-scope"
-              }
-            },
-            {
-              "id": "apps/Shopify App Remix/overview",
-              "title": "Overview",
-              "description": "Shopify App với template là Remix Framework sẽ là template mà bạn phần lớn sử dụng xuyên suốt các dự án.",
-              "source": "@site/docs/apps/Shopify App Remix/01-Intro.md",
-              "sourceDirName": "apps/Shopify App Remix",
-              "slug": "/apps/Shopify App Remix/overview",
-              "permalink": "/docs/apps/Shopify App Remix/overview",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/apps/Shopify App Remix/01-Intro.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "id": "overview",
-                "title": "Overview"
-              },
-              "sidebar": "appsSidebar",
-              "previous": {
-                "title": "Polaris",
-                "permalink": "/docs/apps/polaris"
-              },
-              "next": {
-                "title": "Architecture",
-                "permalink": "/docs/apps/Shopify App Remix/architecture"
-              }
-            },
-            {
-              "id": "techdocs/Magento/clean_code",
+              "id": "Devdocs/Magento/clean_code",
               "title": "Clean Code",
               "description": "",
-              "source": "@site/docs/techdocs/Magento/Clean-code.md",
-              "sourceDirName": "techdocs/Magento",
-              "slug": "/techdocs/Magento/clean_code",
-              "permalink": "/docs/techdocs/Magento/clean_code",
+              "source": "@site/docs/Devdocs/Magento/Clean-code.md",
+              "sourceDirName": "Devdocs/Magento",
+              "slug": "/Devdocs/Magento/clean_code",
+              "permalink": "/docs/Devdocs/Magento/clean_code",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Magento/Clean-code.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Magento/Clean-code.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
                 "id": "clean_code",
                 "title": "Clean Code"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "next": {
                 "title": "Treo.sh",
-                "permalink": "/docs/techdocs/Optimize/treo"
+                "permalink": "/docs/Devdocs/Optimize/treo"
               }
             },
             {
-              "id": "techdocs/Optimize/cwv",
+              "id": "Devdocs/Optimize/cwv",
               "title": "Core Web Vitals",
               "description": "",
-              "source": "@site/docs/techdocs/Optimize/02-Core-web-vitals.md",
-              "sourceDirName": "techdocs/Optimize",
-              "slug": "/techdocs/Optimize/cwv",
-              "permalink": "/docs/techdocs/Optimize/cwv",
+              "source": "@site/docs/Devdocs/Optimize/02-Core-web-vitals.md",
+              "sourceDirName": "Devdocs/Optimize",
+              "slug": "/Devdocs/Optimize/cwv",
+              "permalink": "/docs/Devdocs/Optimize/cwv",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Optimize/02-Core-web-vitals.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/02-Core-web-vitals.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -276,27 +60,27 @@
                 "id": "cwv",
                 "title": "Core Web Vitals"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Treo.sh",
-                "permalink": "/docs/techdocs/Optimize/treo"
+                "permalink": "/docs/Devdocs/Optimize/treo"
               },
               "next": {
                 "title": "Overview",
-                "permalink": "/docs/techdocs/Shopify/apps/intro"
+                "permalink": "/docs/Devdocs/Shopify/apps/intro"
               }
             },
             {
-              "id": "techdocs/Optimize/treo",
+              "id": "Devdocs/Optimize/treo",
               "title": "Treo.sh",
               "description": "Tổng quan về  Treo.sh",
-              "source": "@site/docs/techdocs/Optimize/01-Treo.md",
-              "sourceDirName": "techdocs/Optimize",
-              "slug": "/techdocs/Optimize/treo",
-              "permalink": "/docs/techdocs/Optimize/treo",
+              "source": "@site/docs/Devdocs/Optimize/01-Treo.md",
+              "sourceDirName": "Devdocs/Optimize",
+              "slug": "/Devdocs/Optimize/treo",
+              "permalink": "/docs/Devdocs/Optimize/treo",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Optimize/01-Treo.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/01-Treo.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -304,27 +88,27 @@
                 "id": "treo",
                 "title": "Treo.sh"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Clean Code",
-                "permalink": "/docs/techdocs/Magento/clean_code"
+                "permalink": "/docs/Devdocs/Magento/clean_code"
               },
               "next": {
                 "title": "Core Web Vitals",
-                "permalink": "/docs/techdocs/Optimize/cwv"
+                "permalink": "/docs/Devdocs/Optimize/cwv"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/cli",
+              "id": "Devdocs/Shopify/apps/cli",
               "title": "CLI",
               "description": "Tham khảo các lệnh tại đây.",
-              "source": "@site/docs/techdocs/Shopify/apps/05-CLI.md",
-              "sourceDirName": "techdocs/Shopify/apps",
-              "slug": "/techdocs/Shopify/apps/cli",
-              "permalink": "/docs/techdocs/Shopify/apps/cli",
+              "source": "@site/docs/Devdocs/Shopify/apps/05-CLI.md",
+              "sourceDirName": "Devdocs/Shopify/apps",
+              "slug": "/Devdocs/Shopify/apps/cli",
+              "permalink": "/docs/Devdocs/Shopify/apps/cli",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/05-CLI.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/05-CLI.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 5,
@@ -332,27 +116,27 @@
                 "id": "cli",
                 "title": "CLI"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Extensions",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-extension"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension"
               },
               "next": {
                 "title": "Overview",
-                "permalink": "/docs/techdocs/Shopify/themes/intro"
+                "permalink": "/docs/Devdocs/Shopify/themes/intro"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/create-an-app",
+              "id": "Devdocs/Shopify/apps/create-an-app",
               "title": "Khởi tạo một app",
               "description": "Bạn cần chuần bị một số công cụ cần thiết và thiết lập cho môi trường phát triển trước khi bắt tay vào việc xây dựng một app.",
-              "source": "@site/docs/techdocs/Shopify/apps/02-Create-an-app.mdx",
-              "sourceDirName": "techdocs/Shopify/apps",
-              "slug": "/techdocs/Shopify/apps/create-an-app",
-              "permalink": "/docs/techdocs/Shopify/apps/create-an-app",
+              "source": "@site/docs/Devdocs/Shopify/apps/02-Create-an-app.mdx",
+              "sourceDirName": "Devdocs/Shopify/apps",
+              "slug": "/Devdocs/Shopify/apps/create-an-app",
+              "permalink": "/docs/Devdocs/Shopify/apps/create-an-app",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/02-Create-an-app.mdx",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/02-Create-an-app.mdx",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -360,27 +144,27 @@
                 "id": "create-an-app",
                 "title": "Khởi tạo một app"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Overview",
-                "permalink": "/docs/techdocs/Shopify/apps/intro"
+                "permalink": "/docs/Devdocs/Shopify/apps/intro"
               },
               "next": {
                 "title": "Polaris",
-                "permalink": "/docs/techdocs/Shopify/apps/polaris"
+                "permalink": "/docs/Devdocs/Shopify/apps/polaris"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/intro",
+              "id": "Devdocs/Shopify/apps/intro",
               "title": "Overview",
               "description": "Trước khi bắt đầu quá trình phát triển app của bạn, bạn nên trước hết hiểu được Shopify apps làm những gì và chúng có thể hoạt động với Shopify bằng cách nào.",
-              "source": "@site/docs/techdocs/Shopify/apps/01-Intro.md",
-              "sourceDirName": "techdocs/Shopify/apps",
-              "slug": "/techdocs/Shopify/apps/intro",
-              "permalink": "/docs/techdocs/Shopify/apps/intro",
+              "source": "@site/docs/Devdocs/Shopify/apps/01-Intro.md",
+              "sourceDirName": "Devdocs/Shopify/apps",
+              "slug": "/Devdocs/Shopify/apps/intro",
+              "permalink": "/docs/Devdocs/Shopify/apps/intro",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/01-Intro.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/01-Intro.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -388,27 +172,27 @@
                 "id": "intro",
                 "title": "Overview"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Core Web Vitals",
-                "permalink": "/docs/techdocs/Optimize/cwv"
+                "permalink": "/docs/Devdocs/Optimize/cwv"
               },
               "next": {
                 "title": "Khởi tạo một app",
-                "permalink": "/docs/techdocs/Shopify/apps/create-an-app"
+                "permalink": "/docs/Devdocs/Shopify/apps/create-an-app"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/polaris",
+              "id": "Devdocs/Shopify/apps/polaris",
               "title": "Polaris",
               "description": "Hệ thống thiết kế Polaris bao gồm các nguyên tắc, design patterns của các UI components, tokens, icons để xây dựng apps trong Shopify admin.",
-              "source": "@site/docs/techdocs/Shopify/apps/03-Polaris.md",
-              "sourceDirName": "techdocs/Shopify/apps",
-              "slug": "/techdocs/Shopify/apps/polaris",
-              "permalink": "/docs/techdocs/Shopify/apps/polaris",
+              "source": "@site/docs/Devdocs/Shopify/apps/03-Polaris.md",
+              "sourceDirName": "Devdocs/Shopify/apps",
+              "slug": "/Devdocs/Shopify/apps/polaris",
+              "permalink": "/docs/Devdocs/Shopify/apps/polaris",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/03-Polaris.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/03-Polaris.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
@@ -416,27 +200,27 @@
                 "id": "polaris",
                 "title": "Polaris"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Khởi tạo một app",
-                "permalink": "/docs/techdocs/Shopify/apps/create-an-app"
+                "permalink": "/docs/Devdocs/Shopify/apps/create-an-app"
               },
               "next": {
                 "title": "Overview",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/overview"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
               "title": "Access Scopes",
               "description": "Khi làm việc với Shopify Admin Graphql query hoặc mutation, sẽ có một số query yêu cầu quyền truy cập (access scope) của app để có thể sử dụng. Để thiết lập access scope cho app của bạn, bạn cần update access_scope nằm trong file config của app.",
-              "source": "@site/docs/techdocs/Shopify/apps/Shopify App Remix/03-Api-access-scopes.mdx",
-              "sourceDirName": "techdocs/Shopify/apps/Shopify App Remix",
-              "slug": "/techdocs/Shopify/apps/Shopify App Remix/api-access-scope",
-              "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+              "source": "@site/docs/Devdocs/Shopify/apps/Shopify App Remix/03-Api-access-scopes.mdx",
+              "sourceDirName": "Devdocs/Shopify/apps/Shopify App Remix",
+              "slug": "/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+              "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/Shopify App Remix/03-Api-access-scopes.mdx",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/Shopify App Remix/03-Api-access-scopes.mdx",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
@@ -444,27 +228,27 @@
                 "id": "api-access-scope",
                 "title": "Access Scopes"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Architecture",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/architecture"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture"
               },
               "next": {
                 "title": "Extensions",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-extension"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/api-extension",
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/api-extension",
               "title": "Extensions",
               "description": "Một app extension cho phép bạn thêm chức năng của ứng dụng vào giao diện người dùng Shopify.",
-              "source": "@site/docs/techdocs/Shopify/apps/Shopify App Remix/04-App-extension.md",
-              "sourceDirName": "techdocs/Shopify/apps/Shopify App Remix",
-              "slug": "/techdocs/Shopify/apps/Shopify App Remix/api-extension",
-              "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-extension",
+              "source": "@site/docs/Devdocs/Shopify/apps/Shopify App Remix/04-App-extension.md",
+              "sourceDirName": "Devdocs/Shopify/apps/Shopify App Remix",
+              "slug": "/Devdocs/Shopify/apps/Shopify App Remix/api-extension",
+              "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/Shopify App Remix/04-App-extension.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/Shopify App Remix/04-App-extension.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
@@ -472,27 +256,27 @@
                 "id": "api-extension",
                 "title": "Extensions"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Access Scopes",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope"
               },
               "next": {
                 "title": "CLI",
-                "permalink": "/docs/techdocs/Shopify/apps/cli"
+                "permalink": "/docs/Devdocs/Shopify/apps/cli"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/architecture",
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/architecture",
               "title": "Architecture",
               "description": "app/",
-              "source": "@site/docs/techdocs/Shopify/apps/Shopify App Remix/02-Architecture.md",
-              "sourceDirName": "techdocs/Shopify/apps/Shopify App Remix",
-              "slug": "/techdocs/Shopify/apps/Shopify App Remix/architecture",
-              "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/architecture",
+              "source": "@site/docs/Devdocs/Shopify/apps/Shopify App Remix/02-Architecture.md",
+              "sourceDirName": "Devdocs/Shopify/apps/Shopify App Remix",
+              "slug": "/Devdocs/Shopify/apps/Shopify App Remix/architecture",
+              "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/Shopify App Remix/02-Architecture.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/Shopify App Remix/02-Architecture.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -500,27 +284,27 @@
                 "id": "architecture",
                 "title": "Architecture"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Overview",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/overview"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview"
               },
               "next": {
                 "title": "Access Scopes",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope"
               }
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/overview",
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/overview",
               "title": "Overview",
               "description": "Shopify App với template là Remix Framework sẽ là template mà bạn phần lớn sử dụng xuyên suốt các dự án.",
-              "source": "@site/docs/techdocs/Shopify/apps/Shopify App Remix/01-Intro.md",
-              "sourceDirName": "techdocs/Shopify/apps/Shopify App Remix",
-              "slug": "/techdocs/Shopify/apps/Shopify App Remix/overview",
-              "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/overview",
+              "source": "@site/docs/Devdocs/Shopify/apps/Shopify App Remix/01-Intro.md",
+              "sourceDirName": "Devdocs/Shopify/apps/Shopify App Remix",
+              "slug": "/Devdocs/Shopify/apps/Shopify App Remix/overview",
+              "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/apps/Shopify App Remix/01-Intro.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/Shopify App Remix/01-Intro.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -528,27 +312,27 @@
                 "id": "overview",
                 "title": "Overview"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Polaris",
-                "permalink": "/docs/techdocs/Shopify/apps/polaris"
+                "permalink": "/docs/Devdocs/Shopify/apps/polaris"
               },
               "next": {
                 "title": "Architecture",
-                "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/architecture"
+                "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Architecture/index",
+              "id": "Devdocs/Shopify/themes/Architecture/index",
               "title": "Architecture",
               "description": "Tổng quan về kiến trúc Shopify theme",
-              "source": "@site/docs/techdocs/Shopify/themes/Architecture/index.md",
-              "sourceDirName": "techdocs/Shopify/themes/Architecture",
-              "slug": "/techdocs/Shopify/themes/Architecture/",
-              "permalink": "/docs/techdocs/Shopify/themes/Architecture/",
+              "source": "@site/docs/Devdocs/Shopify/themes/Architecture/index.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Architecture",
+              "slug": "/Devdocs/Shopify/themes/Architecture/",
+              "permalink": "/docs/Devdocs/Shopify/themes/Architecture/",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Architecture/index.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Architecture/index.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -557,54 +341,54 @@
                 "title": "Architecture",
                 "description": "Tổng quan về kiến trúc Shopify theme"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Overview",
-                "permalink": "/docs/techdocs/Shopify/themes/intro"
+                "permalink": "/docs/Devdocs/Shopify/themes/intro"
               },
               "next": {
                 "title": "Templates & Metafields",
-                "permalink": "/docs/techdocs/Shopify/themes/Templates-and-Metafields"
+                "permalink": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/CLI-for-themes",
+              "id": "Devdocs/Shopify/themes/CLI-for-themes",
               "title": "CLI",
               "description": "Cài đặt Shopify CLI",
-              "source": "@site/docs/techdocs/Shopify/themes/06-CLI-for-themes.md",
-              "sourceDirName": "techdocs/Shopify/themes",
-              "slug": "/techdocs/Shopify/themes/CLI-for-themes",
-              "permalink": "/docs/techdocs/Shopify/themes/CLI-for-themes",
+              "source": "@site/docs/Devdocs/Shopify/themes/06-CLI-for-themes.md",
+              "sourceDirName": "Devdocs/Shopify/themes",
+              "slug": "/Devdocs/Shopify/themes/CLI-for-themes",
+              "permalink": "/docs/Devdocs/Shopify/themes/CLI-for-themes",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/06-CLI-for-themes.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/06-CLI-for-themes.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 6,
               "frontMatter": {
                 "title": "CLI"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Sections & Blocks",
-                "permalink": "/docs/techdocs/Shopify/themes/Sections-and-Blocks"
+                "permalink": "/docs/Devdocs/Shopify/themes/Sections-and-Blocks"
               },
               "next": {
                 "title": "Liquid",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/intro",
+              "id": "Devdocs/Shopify/themes/intro",
               "title": "Overview",
               "description": "Các theme của Shopify cơ bản được xây dựng dựa trên templating language là Liquid, đi kèm với nó là HTML, CSS, JavaScript và JSON. Shopify cung cấp một số các công cụ và best practices để tối ưu quá trình phát triển.",
-              "source": "@site/docs/techdocs/Shopify/themes/01-Intro.md",
-              "sourceDirName": "techdocs/Shopify/themes",
-              "slug": "/techdocs/Shopify/themes/intro",
-              "permalink": "/docs/techdocs/Shopify/themes/intro",
+              "source": "@site/docs/Devdocs/Shopify/themes/01-Intro.md",
+              "sourceDirName": "Devdocs/Shopify/themes",
+              "slug": "/Devdocs/Shopify/themes/intro",
+              "permalink": "/docs/Devdocs/Shopify/themes/intro",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/01-Intro.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/01-Intro.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -612,27 +396,27 @@
                 "id": "intro",
                 "title": "Overview"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "CLI",
-                "permalink": "/docs/techdocs/Shopify/apps/cli"
+                "permalink": "/docs/Devdocs/Shopify/apps/cli"
               },
               "next": {
                 "title": "Architecture",
-                "permalink": "/docs/techdocs/Shopify/themes/Architecture/"
+                "permalink": "/docs/Devdocs/Shopify/themes/Architecture/"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Intro",
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Intro",
               "title": "Liquid - Introduction",
               "description": "Liquid sử dụng sự kết hợp giữa objects, tags và filters trong các template files để hiển thị dữ liệu.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Basic/01-Intro.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Basic",
-              "slug": "/techdocs/Shopify/themes/Liquid/Basic/Intro",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Intro",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/01-Intro.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Intro",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Basic/01-Intro.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/01-Intro.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -640,1016 +424,443 @@
                 "title": "Liquid - Introduction",
                 "sidebar_label": "Introduction"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Liquid",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/"
               },
               "next": {
                 "title": "Operators",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Operators"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Operators",
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Operators",
               "title": "Operators",
               "description": "Là một templating language, Liquid giới hạn khá nhiều các toán tử, hầu như chỉ là các toán tử logic hoặc các phép so sánh, câu điều kiện đơn giản.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Basic/02-Operators.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Basic",
-              "slug": "/techdocs/Shopify/themes/Liquid/Basic/Operators",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Operators",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/02-Operators.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Operators",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Basic/02-Operators.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/02-Operators.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
                 "title": "Operators"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Introduction",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Intro"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro"
               },
               "next": {
                 "title": "Truthy and falsy",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
               "title": "Truthy and falsy",
               "description": "Khi một giá trị không thuộc kiểu dữ liệu boolean được sử dụng trong một ngữ cảnh có điều kiện (như các tag điều kiện {% if ... %}), Liquid sẽ quyết định quy đổi giá trị đó về true hoặc false. Giá trị được quy đổi về true được gọi là truthy. Giá trị được quy đổi về false được gọi là falsy.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Basic",
-              "slug": "/techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
               "frontMatter": {
                 "title": "Truthy and falsy"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Operators",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Operators"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators"
               },
               "next": {
                 "title": "Types",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Types"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Types",
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Types",
               "title": "Types",
               "description": "Liquid objects có 6 kiểu dữ liệu:",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Basic/04-Types.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Basic",
-              "slug": "/techdocs/Shopify/themes/Liquid/Basic/Types",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Types",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/04-Types.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Types",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Basic/04-Types.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/04-Types.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
                 "title": "Types"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Truthy and falsy",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
               },
               "next": {
                 "title": "Whitespace control",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
               "title": "Whitespace control",
               "description": "Trong Liquid, bạn có thể thêm kí tự - vào các tag mở đóng như {{- và -}} hoặc {%- và -%} để loại bỏ khoảng trống của giá trị hoặc biểu thức mà Liquid tạo ra.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Basic/05-Whitespace-Control.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Basic",
-              "slug": "/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/05-Whitespace-Control.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Basic/05-Whitespace-Control.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/05-Whitespace-Control.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 5,
               "frontMatter": {
                 "title": "Whitespace control"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Types",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Types"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types"
               },
               "next": {
                 "title": "Control flow",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Filters",
+              "id": "Devdocs/Shopify/themes/Liquid/Filters",
               "title": "Filters",
               "description": "Tham khảo document chính thức dưới đây:",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/03-Filters.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid",
-              "slug": "/techdocs/Shopify/themes/Liquid/Filters",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/03-Filters.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Filters",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Filters",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/03-Filters.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/03-Filters.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
               "frontMatter": {
                 "title": "Filters"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Variable",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Variable"
               },
               "next": {
                 "title": "Liquid Cheat Sheet",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/index",
+              "id": "Devdocs/Shopify/themes/Liquid/index",
               "title": "Liquid",
               "description": "Liquid là một templating language được thiết kế bởi Shopify. Ngôn ngữ này được sử dụng nhiều bởi các công ty và trong các dự án phần mềm hiện nay.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/index.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid",
-              "slug": "/techdocs/Shopify/themes/Liquid/",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/index.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid",
+              "slug": "/Devdocs/Shopify/themes/Liquid/",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/index.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/index.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
                 "title": "Liquid"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "CLI",
-                "permalink": "/docs/techdocs/Shopify/themes/CLI-for-themes"
+                "permalink": "/docs/Devdocs/Shopify/themes/CLI-for-themes"
               },
               "next": {
                 "title": "Introduction",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Intro"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
+              "id": "Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
               "title": "Liquid Cheat Sheet",
               "description": "+ Truy cập trang chính thức.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/04-Liquid-Cheat-Sheet.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid",
-              "slug": "/techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/04-Liquid-Cheat-Sheet.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/04-Liquid-Cheat-Sheet.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/04-Liquid-Cheat-Sheet.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
                 "title": "Liquid Cheat Sheet"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Filters",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Filters"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Control-flow",
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
               "title": "Control flow",
               "description": "Control flow tags quyết định việc có nên thực thi các khối lệnh Liquid hay không.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Tags/01-Control-flow.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Tags",
-              "slug": "/techdocs/Shopify/themes/Liquid/Tags/Control-flow",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Tags/01-Control-flow.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Tags",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Tags/01-Control-flow.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Tags/01-Control-flow.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
                 "title": "Control flow"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Whitespace control",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
               },
               "next": {
                 "title": "Iteration",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Iteration",
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Iteration",
               "title": "Iteration",
               "description": "Quá trình thực hiện một hành động lặp đi lặp lại với từng thành phần trong một tập hợp được gọi là một Iteration.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Tags/02-Iteration.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Tags",
-              "slug": "/techdocs/Shopify/themes/Liquid/Tags/Iteration",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Tags/02-Iteration.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Tags",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Tags/Iteration",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Tags/02-Iteration.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Tags/02-Iteration.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
                 "title": "Iteration"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Control flow",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow"
               },
               "next": {
                 "title": "Template",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Template"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Template",
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Template",
               "title": "Template",
               "description": "Các tag Template được dùng để khai báo các đoạn comment hoặc các đoạn mã không thuộc quy tắc của Liqid, và cách để thiết lập mối liên kết giữa các template khác.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Tags/03-Template.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Tags",
-              "slug": "/techdocs/Shopify/themes/Liquid/Tags/Template",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Tags/03-Template.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Tags",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Tags/Template",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Template",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Tags/03-Template.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Tags/03-Template.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
               "frontMatter": {
                 "title": "Template"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Iteration",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration"
               },
               "next": {
                 "title": "Variable",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Variable"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Variable",
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Variable",
               "title": "Variable",
               "description": "Các variable tags cho phép tạo ra khác biến mới trong Liquid.",
-              "source": "@site/docs/techdocs/Shopify/themes/Liquid/Tags/04-Variable.md",
-              "sourceDirName": "techdocs/Shopify/themes/Liquid/Tags",
-              "slug": "/techdocs/Shopify/themes/Liquid/Tags/Variable",
-              "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable",
+              "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Tags/04-Variable.md",
+              "sourceDirName": "Devdocs/Shopify/themes/Liquid/Tags",
+              "slug": "/Devdocs/Shopify/themes/Liquid/Tags/Variable",
+              "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Variable",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/Liquid/Tags/04-Variable.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Tags/04-Variable.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
                 "title": "Variable"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Template",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Template"
               },
               "next": {
                 "title": "Filters",
-                "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters"
+                "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Filters"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Metaobjects",
+              "id": "Devdocs/Shopify/themes/Metaobjects",
               "title": "Metaobjects",
               "description": "Metaobjects giúp bạn bổ sung thêm dữ liệu có cấu trúc vào trong store. Ví dụ, bạn có thể lưu một phần thông tin của sản phẩm như các tính năng, size charts, thông tin kĩ thuật,...",
-              "source": "@site/docs/techdocs/Shopify/themes/04-Metaobjects.md",
-              "sourceDirName": "techdocs/Shopify/themes",
-              "slug": "/techdocs/Shopify/themes/Metaobjects",
-              "permalink": "/docs/techdocs/Shopify/themes/Metaobjects",
+              "source": "@site/docs/Devdocs/Shopify/themes/04-Metaobjects.md",
+              "sourceDirName": "Devdocs/Shopify/themes",
+              "slug": "/Devdocs/Shopify/themes/Metaobjects",
+              "permalink": "/docs/Devdocs/Shopify/themes/Metaobjects",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/04-Metaobjects.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/04-Metaobjects.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
                 "title": "Metaobjects"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Templates & Metafields",
-                "permalink": "/docs/techdocs/Shopify/themes/Templates-and-Metafields"
+                "permalink": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields"
               },
               "next": {
                 "title": "Sections & Blocks",
-                "permalink": "/docs/techdocs/Shopify/themes/Sections-and-Blocks"
+                "permalink": "/docs/Devdocs/Shopify/themes/Sections-and-Blocks"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Sections-and-Blocks",
+              "id": "Devdocs/Shopify/themes/Sections-and-Blocks",
               "title": "Sections & Blocks",
               "description": "Theme sử dụng các sections để tạo layout mà bạn mong muốn. Đa số các section được tạo nên từ các block kèm các chức năng nhất định, như headers, text, single images hoặc links. Sử dụng các sections và blocks trong template sẽ cung cấp khả năng sắp xếp nội dung trang web của bạn được linh hoạt hơn, giúp bạn quản lý giao diện và chủ đề cảm hứng của cửa hàng mà không cần phải code. Mỗi template có thể chứa tới 25 sections.",
-              "source": "@site/docs/techdocs/Shopify/themes/05-Sections-and-Blocks.md",
-              "sourceDirName": "techdocs/Shopify/themes",
-              "slug": "/techdocs/Shopify/themes/Sections-and-Blocks",
-              "permalink": "/docs/techdocs/Shopify/themes/Sections-and-Blocks",
+              "source": "@site/docs/Devdocs/Shopify/themes/05-Sections-and-Blocks.md",
+              "sourceDirName": "Devdocs/Shopify/themes",
+              "slug": "/Devdocs/Shopify/themes/Sections-and-Blocks",
+              "permalink": "/docs/Devdocs/Shopify/themes/Sections-and-Blocks",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/05-Sections-and-Blocks.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/05-Sections-and-Blocks.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 5,
               "frontMatter": {
                 "title": "Sections & Blocks"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Metaobjects",
-                "permalink": "/docs/techdocs/Shopify/themes/Metaobjects"
+                "permalink": "/docs/Devdocs/Shopify/themes/Metaobjects"
               },
               "next": {
                 "title": "CLI",
-                "permalink": "/docs/techdocs/Shopify/themes/CLI-for-themes"
+                "permalink": "/docs/Devdocs/Shopify/themes/CLI-for-themes"
               }
             },
             {
-              "id": "techdocs/Shopify/themes/Templates-and-Metafields",
+              "id": "Devdocs/Shopify/themes/Templates-and-Metafields",
               "title": "Templates & Metafields",
               "description": "Templates",
-              "source": "@site/docs/techdocs/Shopify/themes/03-Templates-and-Metafields.md",
-              "sourceDirName": "techdocs/Shopify/themes",
-              "slug": "/techdocs/Shopify/themes/Templates-and-Metafields",
-              "permalink": "/docs/techdocs/Shopify/themes/Templates-and-Metafields",
+              "source": "@site/docs/Devdocs/Shopify/themes/03-Templates-and-Metafields.md",
+              "sourceDirName": "Devdocs/Shopify/themes",
+              "slug": "/Devdocs/Shopify/themes/Templates-and-Metafields",
+              "permalink": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/techdocs/Shopify/themes/03-Templates-and-Metafields.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/03-Templates-and-Metafields.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 3,
               "frontMatter": {
                 "title": "Templates & Metafields"
               },
-              "sidebar": "techDocsSidebar",
+              "sidebar": "devDocsSidebar",
               "previous": {
                 "title": "Architecture",
-                "permalink": "/docs/techdocs/Shopify/themes/Architecture/"
+                "permalink": "/docs/Devdocs/Shopify/themes/Architecture/"
               },
               "next": {
                 "title": "Metaobjects",
-                "permalink": "/docs/techdocs/Shopify/themes/Metaobjects"
+                "permalink": "/docs/Devdocs/Shopify/themes/Metaobjects"
               }
             },
             {
-              "id": "themes/Architecture/index",
-              "title": "Architecture",
-              "description": "Tổng quan về kiến trúc Shopify theme",
-              "source": "@site/docs/themes/Architecture/index.md",
-              "sourceDirName": "themes/Architecture",
-              "slug": "/themes/Architecture/",
-              "permalink": "/docs/themes/Architecture/",
+              "id": "QCdocs/demo1",
+              "title": "Demo 1",
+              "description": "",
+              "source": "@site/docs/QCdocs/demo1.md",
+              "sourceDirName": "QCdocs",
+              "slug": "/QCdocs/demo1",
+              "permalink": "/docs/QCdocs/demo1",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Architecture/index.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/QCdocs/demo1.md",
               "tags": [],
               "version": "current",
-              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1,
-                "title": "Architecture",
-                "description": "Tổng quan về kiến trúc Shopify theme"
+                "id": "demo1",
+                "title": "Demo 1"
               },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Overview",
-                "permalink": "/docs/themes/intro"
-              },
-              "next": {
-                "title": "Templates & Metafields",
-                "permalink": "/docs/themes/Templates-and-Metafields"
-              }
+              "sidebar": "qcSidebar"
             },
             {
-              "id": "themes/CLI-for-themes",
-              "title": "CLI",
-              "description": "Cài đặt Shopify CLI",
-              "source": "@site/docs/themes/06-CLI-for-themes.md",
-              "sourceDirName": "themes",
-              "slug": "/themes/CLI-for-themes",
-              "permalink": "/docs/themes/CLI-for-themes",
+              "id": "WorkProcess/demo2",
+              "title": "Demo 2",
+              "description": "",
+              "source": "@site/docs/WorkProcess/demo2.md",
+              "sourceDirName": "WorkProcess",
+              "slug": "/WorkProcess/demo2",
+              "permalink": "/docs/WorkProcess/demo2",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/06-CLI-for-themes.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "title": "CLI"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Sections & Blocks",
-                "permalink": "/docs/themes/Sections-and-Blocks"
-              },
-              "next": {
-                "title": "Liquid",
-                "permalink": "/docs/themes/Liquid/"
-              }
-            },
-            {
-              "id": "themes/intro",
-              "title": "Overview",
-              "description": "Các theme của Shopify cơ bản được xây dựng dựa trên templating language là Liquid, đi kèm với nó là HTML, CSS, JavaScript và JSON. Shopify cung cấp một số các công cụ và best practices để tối ưu quá trình phát triển.",
-              "source": "@site/docs/themes/01-Intro.md",
-              "sourceDirName": "themes",
-              "slug": "/themes/intro",
-              "permalink": "/docs/themes/intro",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/01-Intro.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "id": "intro",
-                "title": "Overview"
-              },
-              "sidebar": "themesSidebar",
-              "next": {
-                "title": "Architecture",
-                "permalink": "/docs/themes/Architecture/"
-              }
-            },
-            {
-              "id": "themes/Liquid/Basic/Intro",
-              "title": "Liquid - Introduction",
-              "description": "Liquid sử dụng sự kết hợp giữa objects, tags và filters trong các template files để hiển thị dữ liệu.",
-              "source": "@site/docs/themes/Liquid/Basic/01-Intro.md",
-              "sourceDirName": "themes/Liquid/Basic",
-              "slug": "/themes/Liquid/Basic/Intro",
-              "permalink": "/docs/themes/Liquid/Basic/Intro",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/01-Intro.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "title": "Liquid - Introduction",
-                "sidebar_label": "Introduction"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Liquid",
-                "permalink": "/docs/themes/Liquid/"
-              },
-              "next": {
-                "title": "Operators",
-                "permalink": "/docs/themes/Liquid/Basic/Operators"
-              }
-            },
-            {
-              "id": "themes/Liquid/Basic/Operators",
-              "title": "Operators",
-              "description": "Là một templating language, Liquid giới hạn khá nhiều các toán tử, hầu như chỉ là các toán tử logic hoặc các phép so sánh, câu điều kiện đơn giản.",
-              "source": "@site/docs/themes/Liquid/Basic/02-Operators.md",
-              "sourceDirName": "themes/Liquid/Basic",
-              "slug": "/themes/Liquid/Basic/Operators",
-              "permalink": "/docs/themes/Liquid/Basic/Operators",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/02-Operators.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "title": "Operators"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Introduction",
-                "permalink": "/docs/themes/Liquid/Basic/Intro"
-              },
-              "next": {
-                "title": "Truthy and falsy",
-                "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy"
-              }
-            },
-            {
-              "id": "themes/Liquid/Basic/Truthy-and-Falsy",
-              "title": "Truthy and falsy",
-              "description": "Khi một giá trị không thuộc kiểu dữ liệu boolean được sử dụng trong một ngữ cảnh có điều kiện (như các tag điều kiện {% if ... %}), Liquid sẽ quyết định quy đổi giá trị đó về true hoặc false. Giá trị được quy đổi về true được gọi là truthy. Giá trị được quy đổi về false được gọi là falsy.",
-              "source": "@site/docs/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
-              "sourceDirName": "themes/Liquid/Basic",
-              "slug": "/themes/Liquid/Basic/Truthy-and-Falsy",
-              "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/03-Truthy-and-Falsy.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "title": "Truthy and falsy"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Operators",
-                "permalink": "/docs/themes/Liquid/Basic/Operators"
-              },
-              "next": {
-                "title": "Types",
-                "permalink": "/docs/themes/Liquid/Basic/Types"
-              }
-            },
-            {
-              "id": "themes/Liquid/Basic/Types",
-              "title": "Types",
-              "description": "Liquid objects có 6 kiểu dữ liệu:",
-              "source": "@site/docs/themes/Liquid/Basic/04-Types.md",
-              "sourceDirName": "themes/Liquid/Basic",
-              "slug": "/themes/Liquid/Basic/Types",
-              "permalink": "/docs/themes/Liquid/Basic/Types",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/04-Types.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "title": "Types"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Truthy and falsy",
-                "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy"
-              },
-              "next": {
-                "title": "Whitespace control",
-                "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control"
-              }
-            },
-            {
-              "id": "themes/Liquid/Basic/Whitespace-Control",
-              "title": "Whitespace control",
-              "description": "Trong Liquid, bạn có thể thêm kí tự - vào các tag mở đóng như {{- và -}} hoặc {%- và -%} để loại bỏ khoảng trống của giá trị hoặc biểu thức mà Liquid tạo ra.",
-              "source": "@site/docs/themes/Liquid/Basic/05-Whitespace-Control.md",
-              "sourceDirName": "themes/Liquid/Basic",
-              "slug": "/themes/Liquid/Basic/Whitespace-Control",
-              "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Basic/05-Whitespace-Control.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "title": "Whitespace control"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Types",
-                "permalink": "/docs/themes/Liquid/Basic/Types"
-              },
-              "next": {
-                "title": "Control flow",
-                "permalink": "/docs/themes/Liquid/Tags/Control-flow"
-              }
-            },
-            {
-              "id": "themes/Liquid/Filters",
-              "title": "Filters",
-              "description": "Tham khảo document chính thức dưới đây:",
-              "source": "@site/docs/themes/Liquid/03-Filters.md",
-              "sourceDirName": "themes/Liquid",
-              "slug": "/themes/Liquid/Filters",
-              "permalink": "/docs/themes/Liquid/Filters",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/03-Filters.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "title": "Filters"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Variable",
-                "permalink": "/docs/themes/Liquid/Tags/Variable"
-              },
-              "next": {
-                "title": "Liquid Cheat Sheet",
-                "permalink": "/docs/themes/Liquid/Liquid-Cheat-Sheet"
-              }
-            },
-            {
-              "id": "themes/Liquid/index",
-              "title": "Liquid",
-              "description": "Liquid là một templating language được thiết kế bởi Shopify. Ngôn ngữ này được sử dụng nhiều bởi các công ty và trong các dự án phần mềm hiện nay.",
-              "source": "@site/docs/themes/Liquid/index.md",
-              "sourceDirName": "themes/Liquid",
-              "slug": "/themes/Liquid/",
-              "permalink": "/docs/themes/Liquid/",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/index.md",
+              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/WorkProcess/demo2.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
-                "title": "Liquid"
+                "id": "demo2",
+                "title": "Demo 2"
               },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "CLI",
-                "permalink": "/docs/themes/CLI-for-themes"
-              },
-              "next": {
-                "title": "Introduction",
-                "permalink": "/docs/themes/Liquid/Basic/Intro"
-              }
-            },
-            {
-              "id": "themes/Liquid/Liquid-Cheat-Sheet",
-              "title": "Liquid Cheat Sheet",
-              "description": "+ Truy cập trang chính thức.",
-              "source": "@site/docs/themes/Liquid/04-Liquid-Cheat-Sheet.md",
-              "sourceDirName": "themes/Liquid",
-              "slug": "/themes/Liquid/Liquid-Cheat-Sheet",
-              "permalink": "/docs/themes/Liquid/Liquid-Cheat-Sheet",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/04-Liquid-Cheat-Sheet.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "title": "Liquid Cheat Sheet"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Filters",
-                "permalink": "/docs/themes/Liquid/Filters"
-              }
-            },
-            {
-              "id": "themes/Liquid/Tags/Control-flow",
-              "title": "Control flow",
-              "description": "Control flow tags quyết định việc có nên thực thi các khối lệnh Liquid hay không.",
-              "source": "@site/docs/themes/Liquid/Tags/01-Control-flow.md",
-              "sourceDirName": "themes/Liquid/Tags",
-              "slug": "/themes/Liquid/Tags/Control-flow",
-              "permalink": "/docs/themes/Liquid/Tags/Control-flow",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/01-Control-flow.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "title": "Control flow"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Whitespace control",
-                "permalink": "/docs/themes/Liquid/Basic/Whitespace-Control"
-              },
-              "next": {
-                "title": "Iteration",
-                "permalink": "/docs/themes/Liquid/Tags/Iteration"
-              }
-            },
-            {
-              "id": "themes/Liquid/Tags/Iteration",
-              "title": "Iteration",
-              "description": "Quá trình thực hiện một hành động lặp đi lặp lại với từng thành phần trong một tập hợp được gọi là một Iteration.",
-              "source": "@site/docs/themes/Liquid/Tags/02-Iteration.md",
-              "sourceDirName": "themes/Liquid/Tags",
-              "slug": "/themes/Liquid/Tags/Iteration",
-              "permalink": "/docs/themes/Liquid/Tags/Iteration",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/02-Iteration.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "title": "Iteration"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Control flow",
-                "permalink": "/docs/themes/Liquid/Tags/Control-flow"
-              },
-              "next": {
-                "title": "Template",
-                "permalink": "/docs/themes/Liquid/Tags/Template"
-              }
-            },
-            {
-              "id": "themes/Liquid/Tags/Template",
-              "title": "Template",
-              "description": "Các tag Template được dùng để khai báo các đoạn comment hoặc các đoạn mã không thuộc quy tắc của Liqid, và cách để thiết lập mối liên kết giữa các template khác.",
-              "source": "@site/docs/themes/Liquid/Tags/03-Template.md",
-              "sourceDirName": "themes/Liquid/Tags",
-              "slug": "/themes/Liquid/Tags/Template",
-              "permalink": "/docs/themes/Liquid/Tags/Template",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/03-Template.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "title": "Template"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Iteration",
-                "permalink": "/docs/themes/Liquid/Tags/Iteration"
-              },
-              "next": {
-                "title": "Variable",
-                "permalink": "/docs/themes/Liquid/Tags/Variable"
-              }
-            },
-            {
-              "id": "themes/Liquid/Tags/Variable",
-              "title": "Variable",
-              "description": "Các variable tags cho phép tạo ra khác biến mới trong Liquid.",
-              "source": "@site/docs/themes/Liquid/Tags/04-Variable.md",
-              "sourceDirName": "themes/Liquid/Tags",
-              "slug": "/themes/Liquid/Tags/Variable",
-              "permalink": "/docs/themes/Liquid/Tags/Variable",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/Liquid/Tags/04-Variable.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "title": "Variable"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Template",
-                "permalink": "/docs/themes/Liquid/Tags/Template"
-              },
-              "next": {
-                "title": "Filters",
-                "permalink": "/docs/themes/Liquid/Filters"
-              }
-            },
-            {
-              "id": "themes/Metaobjects",
-              "title": "Metaobjects",
-              "description": "Metaobjects giúp bạn bổ sung thêm dữ liệu có cấu trúc vào trong store. Ví dụ, bạn có thể lưu một phần thông tin của sản phẩm như các tính năng, size charts, thông tin kĩ thuật,...",
-              "source": "@site/docs/themes/04-Metaobjects.md",
-              "sourceDirName": "themes",
-              "slug": "/themes/Metaobjects",
-              "permalink": "/docs/themes/Metaobjects",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/04-Metaobjects.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "title": "Metaobjects"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Templates & Metafields",
-                "permalink": "/docs/themes/Templates-and-Metafields"
-              },
-              "next": {
-                "title": "Sections & Blocks",
-                "permalink": "/docs/themes/Sections-and-Blocks"
-              }
-            },
-            {
-              "id": "themes/Sections-and-Blocks",
-              "title": "Sections & Blocks",
-              "description": "Theme sử dụng các sections để tạo layout mà bạn mong muốn. Đa số các section được tạo nên từ các block kèm các chức năng nhất định, như headers, text, single images hoặc links. Sử dụng các sections và blocks trong template sẽ cung cấp khả năng sắp xếp nội dung trang web của bạn được linh hoạt hơn, giúp bạn quản lý giao diện và chủ đề cảm hứng của cửa hàng mà không cần phải code. Mỗi template có thể chứa tới 25 sections.",
-              "source": "@site/docs/themes/05-Sections-and-Blocks.md",
-              "sourceDirName": "themes",
-              "slug": "/themes/Sections-and-Blocks",
-              "permalink": "/docs/themes/Sections-and-Blocks",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/05-Sections-and-Blocks.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "title": "Sections & Blocks"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Metaobjects",
-                "permalink": "/docs/themes/Metaobjects"
-              },
-              "next": {
-                "title": "CLI",
-                "permalink": "/docs/themes/CLI-for-themes"
-              }
-            },
-            {
-              "id": "themes/Templates-and-Metafields",
-              "title": "Templates & Metafields",
-              "description": "Templates",
-              "source": "@site/docs/themes/03-Templates-and-Metafields.md",
-              "sourceDirName": "themes",
-              "slug": "/themes/Templates-and-Metafields",
-              "permalink": "/docs/themes/Templates-and-Metafields",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/themes/03-Templates-and-Metafields.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "title": "Templates & Metafields"
-              },
-              "sidebar": "themesSidebar",
-              "previous": {
-                "title": "Architecture",
-                "permalink": "/docs/themes/Architecture/"
-              },
-              "next": {
-                "title": "Metaobjects",
-                "permalink": "/docs/themes/Metaobjects"
-              }
+              "sidebar": "workProcessSidebar"
             }
           ],
           "drafts": [],
           "sidebars": {
-            "themesSidebar": [
+            "qcSidebar": [
               {
                 "type": "doc",
-                "id": "themes/intro"
-              },
-              {
-                "type": "doc",
-                "label": "Architecture",
-                "id": "themes/Architecture/index"
-              },
-              {
-                "type": "doc",
-                "id": "themes/Templates-and-Metafields"
-              },
-              {
-                "type": "doc",
-                "id": "themes/Metaobjects"
-              },
-              {
-                "type": "doc",
-                "id": "themes/Sections-and-Blocks"
-              },
-              {
-                "type": "doc",
-                "id": "themes/CLI-for-themes"
-              },
-              {
-                "type": "category",
-                "label": "Liquid",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "category",
-                    "label": "Basic",
-                    "collapsible": true,
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Basic/Intro",
-                        "label": "Introduction"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Basic/Operators"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Basic/Truthy-and-Falsy"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Basic/Types"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Basic/Whitespace-Control"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "category",
-                    "label": "Tags",
-                    "collapsible": true,
-                    "collapsed": true,
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Tags/Control-flow"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Tags/Iteration"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Tags/Template"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "themes/Liquid/Tags/Variable"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "doc",
-                    "id": "themes/Liquid/Filters"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "themes/Liquid/Liquid-Cheat-Sheet"
-                  }
-                ],
-                "link": {
-                  "type": "doc",
-                  "id": "themes/Liquid/index"
-                }
+                "id": "QCdocs/demo1"
               }
             ],
-            "appsSidebar": [
+            "workProcessSidebar": [
               {
                 "type": "doc",
-                "id": "apps/intro"
-              },
-              {
-                "type": "doc",
-                "id": "apps/create-an-app"
-              },
-              {
-                "type": "doc",
-                "id": "apps/polaris"
-              },
-              {
-                "type": "category",
-                "label": "Shopify App - Remix",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "apps/Shopify App Remix/overview"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "apps/Shopify App Remix/architecture"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "apps/Shopify App Remix/api-access-scope"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "apps/Shopify App Remix/api-extension"
-                  }
-                ]
-              },
-              {
-                "type": "doc",
-                "id": "apps/cli"
+                "id": "WorkProcess/demo2"
               }
             ],
-            "techDocsSidebar": [
+            "devDocsSidebar": [
               {
                 "type": "category",
                 "label": "Magento",
@@ -1658,7 +869,7 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "techdocs/Magento/clean_code"
+                    "id": "Devdocs/Magento/clean_code"
                   }
                 ]
               },
@@ -1670,11 +881,11 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "techdocs/Optimize/treo"
+                    "id": "Devdocs/Optimize/treo"
                   },
                   {
                     "type": "doc",
-                    "id": "techdocs/Optimize/cwv"
+                    "id": "Devdocs/Optimize/cwv"
                   }
                 ]
               },
@@ -1692,15 +903,15 @@
                     "items": [
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/apps/intro"
+                        "id": "Devdocs/Shopify/apps/intro"
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/apps/create-an-app"
+                        "id": "Devdocs/Shopify/apps/create-an-app"
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/apps/polaris"
+                        "id": "Devdocs/Shopify/apps/polaris"
                       },
                       {
                         "type": "category",
@@ -1710,25 +921,25 @@
                         "items": [
                           {
                             "type": "doc",
-                            "id": "techdocs/Shopify/apps/Shopify App Remix/overview"
+                            "id": "Devdocs/Shopify/apps/Shopify App Remix/overview"
                           },
                           {
                             "type": "doc",
-                            "id": "techdocs/Shopify/apps/Shopify App Remix/architecture"
+                            "id": "Devdocs/Shopify/apps/Shopify App Remix/architecture"
                           },
                           {
                             "type": "doc",
-                            "id": "techdocs/Shopify/apps/Shopify App Remix/api-access-scope"
+                            "id": "Devdocs/Shopify/apps/Shopify App Remix/api-access-scope"
                           },
                           {
                             "type": "doc",
-                            "id": "techdocs/Shopify/apps/Shopify App Remix/api-extension"
+                            "id": "Devdocs/Shopify/apps/Shopify App Remix/api-extension"
                           }
                         ]
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/apps/cli"
+                        "id": "Devdocs/Shopify/apps/cli"
                       }
                     ]
                   },
@@ -1740,28 +951,28 @@
                     "items": [
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/themes/intro"
+                        "id": "Devdocs/Shopify/themes/intro"
                       },
                       {
                         "type": "doc",
                         "label": "Architecture",
-                        "id": "techdocs/Shopify/themes/Architecture/index"
+                        "id": "Devdocs/Shopify/themes/Architecture/index"
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/themes/Templates-and-Metafields"
+                        "id": "Devdocs/Shopify/themes/Templates-and-Metafields"
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/themes/Metaobjects"
+                        "id": "Devdocs/Shopify/themes/Metaobjects"
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/themes/Sections-and-Blocks"
+                        "id": "Devdocs/Shopify/themes/Sections-and-Blocks"
                       },
                       {
                         "type": "doc",
-                        "id": "techdocs/Shopify/themes/CLI-for-themes"
+                        "id": "Devdocs/Shopify/themes/CLI-for-themes"
                       },
                       {
                         "type": "category",
@@ -1777,24 +988,24 @@
                             "items": [
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Basic/Intro",
+                                "id": "Devdocs/Shopify/themes/Liquid/Basic/Intro",
                                 "label": "Introduction"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Basic/Operators"
+                                "id": "Devdocs/Shopify/themes/Liquid/Basic/Operators"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
+                                "id": "Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Basic/Types"
+                                "id": "Devdocs/Shopify/themes/Liquid/Basic/Types"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
+                                "id": "Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control"
                               }
                             ]
                           },
@@ -1806,34 +1017,34 @@
                             "items": [
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Tags/Control-flow"
+                                "id": "Devdocs/Shopify/themes/Liquid/Tags/Control-flow"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Tags/Iteration"
+                                "id": "Devdocs/Shopify/themes/Liquid/Tags/Iteration"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Tags/Template"
+                                "id": "Devdocs/Shopify/themes/Liquid/Tags/Template"
                               },
                               {
                                 "type": "doc",
-                                "id": "techdocs/Shopify/themes/Liquid/Tags/Variable"
+                                "id": "Devdocs/Shopify/themes/Liquid/Tags/Variable"
                               }
                             ]
                           },
                           {
                             "type": "doc",
-                            "id": "techdocs/Shopify/themes/Liquid/Filters"
+                            "id": "Devdocs/Shopify/themes/Liquid/Filters"
                           },
                           {
                             "type": "doc",
-                            "id": "techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
+                            "id": "Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
                           }
                         ],
                         "link": {
                           "type": "doc",
-                          "id": "techdocs/Shopify/themes/Liquid/index"
+                          "id": "Devdocs/Shopify/themes/Liquid/index"
                         }
                       }
                     ]

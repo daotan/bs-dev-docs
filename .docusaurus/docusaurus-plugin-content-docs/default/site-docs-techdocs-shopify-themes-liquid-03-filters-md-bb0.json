@@ -14,14 +14,5 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Filters"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Variable",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable"
-  },
-  "next": {
-    "title": "Liquid Cheat Sheet",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
   }
 }

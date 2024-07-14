@@ -14,14 +14,5 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Templates & Metafields"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Architecture",
-    "permalink": "/docs/themes/Architecture/"
-  },
-  "next": {
-    "title": "Metaobjects",
-    "permalink": "/docs/themes/Metaobjects"
   }
 }

@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "treo",
     "title": "Treo.sh"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Clean Code",
-    "permalink": "/docs/techdocs/Magento/clean_code"
-  },
-  "next": {
-    "title": "Core Web Vitals",
-    "permalink": "/docs/techdocs/Optimize/cwv"
   }
 }

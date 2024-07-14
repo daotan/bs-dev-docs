@@ -15,14 +15,5 @@
   "frontMatter": {
     "title": "Liquid - Introduction",
     "sidebar_label": "Introduction"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Liquid",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/"
-  },
-  "next": {
-    "title": "Operators",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Operators"
   }
 }

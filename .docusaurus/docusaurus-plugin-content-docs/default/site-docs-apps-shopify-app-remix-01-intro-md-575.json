@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "overview",
     "title": "Overview"
-  },
-  "sidebar": "appsSidebar",
-  "previous": {
-    "title": "Polaris",
-    "permalink": "/docs/apps/polaris"
-  },
-  "next": {
-    "title": "Architecture",
-    "permalink": "/docs/apps/Shopify App Remix/architecture"
   }
 }

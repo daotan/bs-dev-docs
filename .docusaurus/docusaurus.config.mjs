@@ -64,21 +64,21 @@ export default {
       "items": [
         {
           "type": "docSidebar",
-          "sidebarId": "themesSidebar",
+          "sidebarId": "qcSidebar",
           "position": "left",
-          "label": "Theme"
+          "label": "QC"
         },
         {
           "type": "docSidebar",
-          "sidebarId": "appsSidebar",
+          "sidebarId": "workProcessSidebar",
           "position": "left",
-          "label": "Apps"
+          "label": "Work Process"
         },
         {
           "type": "docSidebar",
-          "sidebarId": "techDocsSidebar",
+          "sidebarId": "devDocsSidebar",
           "position": "left",
-          "label": "Tech Docs"
+          "label": "Dev"
         }
       ],
       "hideOnScroll": false

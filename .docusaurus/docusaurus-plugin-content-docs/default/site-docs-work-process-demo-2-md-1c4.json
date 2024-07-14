@@ -1,0 +1,19 @@
+{
+  "id": "WorkProcess/demo2",
+  "title": "Demo 2",
+  "description": "",
+  "source": "@site/docs/WorkProcess/demo2.md",
+  "sourceDirName": "WorkProcess",
+  "slug": "/WorkProcess/demo2",
+  "permalink": "/docs/WorkProcess/demo2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/WorkProcess/demo2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "demo2",
+    "title": "Demo 2"
+  },
+  "sidebar": "workProcessSidebar"
+}

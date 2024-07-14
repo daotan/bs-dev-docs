@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "api-extension",
     "title": "Extensions"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Access Scopes",
-    "permalink": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope"
-  },
-  "next": {
-    "title": "CLI",
-    "permalink": "/docs/techdocs/Shopify/apps/cli"
   }
 }

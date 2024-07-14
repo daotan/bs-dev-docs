@@ -1,0 +1,26 @@
+{
+  "id": "Devdocs/Shopify/themes/Liquid/index",
+  "title": "Liquid",
+  "description": "Liquid là một templating language được thiết kế bởi Shopify. Ngôn ngữ này được sử dụng nhiều bởi các công ty và trong các dự án phần mềm hiện nay.",
+  "source": "@site/docs/Devdocs/Shopify/themes/Liquid/index.md",
+  "sourceDirName": "Devdocs/Shopify/themes/Liquid",
+  "slug": "/Devdocs/Shopify/themes/Liquid/",
+  "permalink": "/docs/Devdocs/Shopify/themes/Liquid/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Liquid"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "CLI",
+    "permalink": "/docs/Devdocs/Shopify/themes/CLI-for-themes"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro"
+  }
+}

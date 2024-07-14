@@ -15,14 +15,5 @@
   "frontMatter": {
     "title": "Liquid - Introduction",
     "sidebar_label": "Introduction"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Liquid",
-    "permalink": "/docs/themes/Liquid/"
-  },
-  "next": {
-    "title": "Operators",
-    "permalink": "/docs/themes/Liquid/Basic/Operators"
   }
 }

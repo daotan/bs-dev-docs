@@ -19,8 +19,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/themes/intro">
-            Start with Shopify Themes!
+            to="/docs/Devdocs/Optimize/treo">
+            Start with Dev docs!
           </Link>
         </div>
       </div>

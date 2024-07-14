@@ -14,14 +14,5 @@
   "sidebarPosition": 6,
   "frontMatter": {
     "title": "CLI"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Sections & Blocks",
-    "permalink": "/docs/themes/Sections-and-Blocks"
-  },
-  "next": {
-    "title": "Liquid",
-    "permalink": "/docs/themes/Liquid/"
   }
 }

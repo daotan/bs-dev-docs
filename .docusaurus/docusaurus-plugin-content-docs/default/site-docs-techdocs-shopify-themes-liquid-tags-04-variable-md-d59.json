@@ -14,14 +14,5 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Variable"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Template",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template"
-  },
-  "next": {
-    "title": "Filters",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Filters"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "id": "QCdocs/demo1",
+  "title": "Demo 1",
+  "description": "",
+  "source": "@site/docs/QCdocs/demo1.md",
+  "sourceDirName": "QCdocs",
+  "slug": "/QCdocs/demo1",
+  "permalink": "/docs/QCdocs/demo1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/QCdocs/demo1.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "demo1",
+    "title": "Demo 1"
+  },
+  "sidebar": "qcSidebar"
+}

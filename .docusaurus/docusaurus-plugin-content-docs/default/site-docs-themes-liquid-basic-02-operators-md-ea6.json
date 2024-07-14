@@ -14,14 +14,5 @@
   "sidebarPosition": 2,
   "frontMatter": {
     "title": "Operators"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Introduction",
-    "permalink": "/docs/themes/Liquid/Basic/Intro"
-  },
-  "next": {
-    "title": "Truthy and falsy",
-    "permalink": "/docs/themes/Liquid/Basic/Truthy-and-Falsy"
   }
 }

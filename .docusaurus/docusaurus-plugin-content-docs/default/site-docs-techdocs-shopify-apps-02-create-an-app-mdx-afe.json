@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "create-an-app",
     "title": "Khởi tạo một app"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Overview",
-    "permalink": "/docs/techdocs/Shopify/apps/intro"
-  },
-  "next": {
-    "title": "Polaris",
-    "permalink": "/docs/techdocs/Shopify/apps/polaris"
   }
 }

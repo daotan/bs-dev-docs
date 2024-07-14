@@ -15,14 +15,5 @@
   "frontMatter": {
     "id": "architecture",
     "title": "Architecture"
-  },
-  "sidebar": "appsSidebar",
-  "previous": {
-    "title": "Overview",
-    "permalink": "/docs/apps/Shopify App Remix/overview"
-  },
-  "next": {
-    "title": "Access Scopes",
-    "permalink": "/docs/apps/Shopify App Remix/api-access-scope"
   }
 }

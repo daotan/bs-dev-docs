@@ -14,14 +14,5 @@
   "sidebarPosition": 6,
   "frontMatter": {
     "title": "CLI"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Sections & Blocks",
-    "permalink": "/docs/techdocs/Shopify/themes/Sections-and-Blocks"
-  },
-  "next": {
-    "title": "Liquid",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/"
   }
 }

@@ -14,14 +14,5 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Template"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Iteration",
-    "permalink": "/docs/themes/Liquid/Tags/Iteration"
-  },
-  "next": {
-    "title": "Variable",
-    "permalink": "/docs/themes/Liquid/Tags/Variable"
   }
 }

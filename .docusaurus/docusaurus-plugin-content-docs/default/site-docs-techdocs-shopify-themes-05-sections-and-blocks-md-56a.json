@@ -14,14 +14,5 @@
   "sidebarPosition": 5,
   "frontMatter": {
     "title": "Sections & Blocks"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "Metaobjects",
-    "permalink": "/docs/techdocs/Shopify/themes/Metaobjects"
-  },
-  "next": {
-    "title": "CLI",
-    "permalink": "/docs/techdocs/Shopify/themes/CLI-for-themes"
   }
 }

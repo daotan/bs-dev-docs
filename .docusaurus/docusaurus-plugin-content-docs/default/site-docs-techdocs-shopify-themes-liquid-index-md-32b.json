@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Liquid"
-  },
-  "sidebar": "techDocsSidebar",
-  "previous": {
-    "title": "CLI",
-    "permalink": "/docs/techdocs/Shopify/themes/CLI-for-themes"
-  },
-  "next": {
-    "title": "Introduction",
-    "permalink": "/docs/techdocs/Shopify/themes/Liquid/Basic/Intro"
   }
 }

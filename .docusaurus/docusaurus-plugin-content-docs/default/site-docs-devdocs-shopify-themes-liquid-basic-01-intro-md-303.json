@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Shopify/themes/Liquid/Basic/Intro",
+  "title": "Liquid - Introduction",
+  "description": "Liquid sử dụng sự kết hợp giữa objects, tags và filters trong các template files để hiển thị dữ liệu.",
+  "source": "@site/docs/Devdocs/Shopify/themes/Liquid/Basic/01-Intro.md",
+  "sourceDirName": "Devdocs/Shopify/themes/Liquid/Basic",
+  "slug": "/Devdocs/Shopify/themes/Liquid/Basic/Intro",
+  "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/Liquid/Basic/01-Intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Liquid - Introduction",
+    "sidebar_label": "Introduction"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Liquid",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/"
+  },
+  "next": {
+    "title": "Operators",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators"
+  }
+}

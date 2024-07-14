@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Shopify/themes/intro",
+  "title": "Overview",
+  "description": "Các theme của Shopify cơ bản được xây dựng dựa trên templating language là Liquid, đi kèm với nó là HTML, CSS, JavaScript và JSON. Shopify cung cấp một số các công cụ và best practices để tối ưu quá trình phát triển.",
+  "source": "@site/docs/Devdocs/Shopify/themes/01-Intro.md",
+  "sourceDirName": "Devdocs/Shopify/themes",
+  "slug": "/Devdocs/Shopify/themes/intro",
+  "permalink": "/docs/Devdocs/Shopify/themes/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/themes/01-Intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Overview"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "CLI",
+    "permalink": "/docs/Devdocs/Shopify/apps/cli"
+  },
+  "next": {
+    "title": "Architecture",
+    "permalink": "/docs/Devdocs/Shopify/themes/Architecture/"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Shopify/apps/Shopify App Remix/overview",
+  "title": "Overview",
+  "description": "Shopify App với template là Remix Framework sẽ là template mà bạn phần lớn sử dụng xuyên suốt các dự án.",
+  "source": "@site/docs/Devdocs/Shopify/apps/Shopify App Remix/01-Intro.md",
+  "sourceDirName": "Devdocs/Shopify/apps/Shopify App Remix",
+  "slug": "/Devdocs/Shopify/apps/Shopify App Remix/overview",
+  "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/Shopify App Remix/01-Intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "overview",
+    "title": "Overview"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Polaris",
+    "permalink": "/docs/Devdocs/Shopify/apps/polaris"
+  },
+  "next": {
+    "title": "Architecture",
+    "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture"
+  }
+}

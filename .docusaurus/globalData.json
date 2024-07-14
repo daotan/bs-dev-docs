@@ -8,302 +8,182 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "themes/intro",
+          "mainDocId": "QCdocs/demo1",
           "docs": [
             {
-              "id": "apps/cli",
-              "path": "/docs/apps/cli",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Magento/clean_code",
+              "path": "/docs/Devdocs/Magento/clean_code",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/create-an-app",
-              "path": "/docs/apps/create-an-app",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Optimize/cwv",
+              "path": "/docs/Devdocs/Optimize/cwv",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/intro",
-              "path": "/docs/apps/intro",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Optimize/treo",
+              "path": "/docs/Devdocs/Optimize/treo",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/polaris",
-              "path": "/docs/apps/polaris",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Shopify/apps/cli",
+              "path": "/docs/Devdocs/Shopify/apps/cli",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/Shopify App Remix/api-access-scope",
-              "path": "/docs/apps/Shopify App Remix/api-access-scope",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Shopify/apps/create-an-app",
+              "path": "/docs/Devdocs/Shopify/apps/create-an-app",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/Shopify App Remix/api-extension",
-              "path": "/docs/apps/Shopify App Remix/api-extension",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Shopify/apps/intro",
+              "path": "/docs/Devdocs/Shopify/apps/intro",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/Shopify App Remix/architecture",
-              "path": "/docs/apps/Shopify App Remix/architecture",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Shopify/apps/polaris",
+              "path": "/docs/Devdocs/Shopify/apps/polaris",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "apps/Shopify App Remix/overview",
-              "path": "/docs/apps/Shopify App Remix/overview",
-              "sidebar": "appsSidebar"
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+              "path": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Magento/clean_code",
-              "path": "/docs/techdocs/Magento/clean_code",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/api-extension",
+              "path": "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Optimize/cwv",
-              "path": "/docs/techdocs/Optimize/cwv",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/architecture",
+              "path": "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Optimize/treo",
-              "path": "/docs/techdocs/Optimize/treo",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/apps/Shopify App Remix/overview",
+              "path": "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/cli",
-              "path": "/docs/techdocs/Shopify/apps/cli",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Architecture/index",
+              "path": "/docs/Devdocs/Shopify/themes/Architecture/",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/create-an-app",
-              "path": "/docs/techdocs/Shopify/apps/create-an-app",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/CLI-for-themes",
+              "path": "/docs/Devdocs/Shopify/themes/CLI-for-themes",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/intro",
-              "path": "/docs/techdocs/Shopify/apps/intro",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/intro",
+              "path": "/docs/Devdocs/Shopify/themes/intro",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/polaris",
-              "path": "/docs/techdocs/Shopify/apps/polaris",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Intro",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/api-access-scope",
-              "path": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-access-scope",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Operators",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/api-extension",
-              "path": "/docs/techdocs/Shopify/apps/Shopify App Remix/api-extension",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/architecture",
-              "path": "/docs/techdocs/Shopify/apps/Shopify App Remix/architecture",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Types",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/apps/Shopify App Remix/overview",
-              "path": "/docs/techdocs/Shopify/apps/Shopify App Remix/overview",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Architecture/index",
-              "path": "/docs/techdocs/Shopify/themes/Architecture/",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Filters",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Filters",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/CLI-for-themes",
-              "path": "/docs/techdocs/Shopify/themes/CLI-for-themes",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/index",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/intro",
-              "path": "/docs/techdocs/Shopify/themes/intro",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Intro",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Basic/Intro",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Operators",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Basic/Operators",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Iteration",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Template",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Template",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Types",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Basic/Types",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Liquid/Tags/Variable",
+              "path": "/docs/Devdocs/Shopify/themes/Liquid/Tags/Variable",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Basic/Whitespace-Control",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Metaobjects",
+              "path": "/docs/Devdocs/Shopify/themes/Metaobjects",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Filters",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Filters",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Sections-and-Blocks",
+              "path": "/docs/Devdocs/Shopify/themes/Sections-and-Blocks",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/index",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/",
-              "sidebar": "techDocsSidebar"
+              "id": "Devdocs/Shopify/themes/Templates-and-Metafields",
+              "path": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields",
+              "sidebar": "devDocsSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet",
-              "sidebar": "techDocsSidebar"
+              "id": "QCdocs/demo1",
+              "path": "/docs/QCdocs/demo1",
+              "sidebar": "qcSidebar"
             },
             {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Control-flow",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Tags/Control-flow",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Iteration",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Tags/Iteration",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Template",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Tags/Template",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "techdocs/Shopify/themes/Liquid/Tags/Variable",
-              "path": "/docs/techdocs/Shopify/themes/Liquid/Tags/Variable",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "techdocs/Shopify/themes/Metaobjects",
-              "path": "/docs/techdocs/Shopify/themes/Metaobjects",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "techdocs/Shopify/themes/Sections-and-Blocks",
-              "path": "/docs/techdocs/Shopify/themes/Sections-and-Blocks",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "techdocs/Shopify/themes/Templates-and-Metafields",
-              "path": "/docs/techdocs/Shopify/themes/Templates-and-Metafields",
-              "sidebar": "techDocsSidebar"
-            },
-            {
-              "id": "themes/Architecture/index",
-              "path": "/docs/themes/Architecture/",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/CLI-for-themes",
-              "path": "/docs/themes/CLI-for-themes",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/intro",
-              "path": "/docs/themes/intro",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Basic/Intro",
-              "path": "/docs/themes/Liquid/Basic/Intro",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Basic/Operators",
-              "path": "/docs/themes/Liquid/Basic/Operators",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Basic/Truthy-and-Falsy",
-              "path": "/docs/themes/Liquid/Basic/Truthy-and-Falsy",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Basic/Types",
-              "path": "/docs/themes/Liquid/Basic/Types",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Basic/Whitespace-Control",
-              "path": "/docs/themes/Liquid/Basic/Whitespace-Control",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Filters",
-              "path": "/docs/themes/Liquid/Filters",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/index",
-              "path": "/docs/themes/Liquid/",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Liquid-Cheat-Sheet",
-              "path": "/docs/themes/Liquid/Liquid-Cheat-Sheet",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Tags/Control-flow",
-              "path": "/docs/themes/Liquid/Tags/Control-flow",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Tags/Iteration",
-              "path": "/docs/themes/Liquid/Tags/Iteration",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Tags/Template",
-              "path": "/docs/themes/Liquid/Tags/Template",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Liquid/Tags/Variable",
-              "path": "/docs/themes/Liquid/Tags/Variable",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Metaobjects",
-              "path": "/docs/themes/Metaobjects",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Sections-and-Blocks",
-              "path": "/docs/themes/Sections-and-Blocks",
-              "sidebar": "themesSidebar"
-            },
-            {
-              "id": "themes/Templates-and-Metafields",
-              "path": "/docs/themes/Templates-and-Metafields",
-              "sidebar": "themesSidebar"
+              "id": "WorkProcess/demo2",
+              "path": "/docs/WorkProcess/demo2",
+              "sidebar": "workProcessSidebar"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "themesSidebar": {
+            "qcSidebar": {
               "link": {
-                "path": "/docs/themes/intro",
-                "label": "themes/intro"
+                "path": "/docs/QCdocs/demo1",
+                "label": "QCdocs/demo1"
               }
             },
-            "appsSidebar": {
+            "workProcessSidebar": {
               "link": {
-                "path": "/docs/apps/intro",
-                "label": "apps/intro"
+                "path": "/docs/WorkProcess/demo2",
+                "label": "WorkProcess/demo2"
               }
             },
-            "techDocsSidebar": {
+            "devDocsSidebar": {
               "link": {
-                "path": "/docs/techdocs/Magento/clean_code",
-                "label": "techdocs/Magento/clean_code"
+                "path": "/docs/Devdocs/Magento/clean_code",
+                "label": "Devdocs/Magento/clean_code"
               }
             }
           }

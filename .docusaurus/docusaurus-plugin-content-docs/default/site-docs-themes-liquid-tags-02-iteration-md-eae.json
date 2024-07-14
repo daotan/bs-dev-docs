@@ -14,14 +14,5 @@
   "sidebarPosition": 2,
   "frontMatter": {
     "title": "Iteration"
-  },
-  "sidebar": "themesSidebar",
-  "previous": {
-    "title": "Control flow",
-    "permalink": "/docs/themes/Liquid/Tags/Control-flow"
-  },
-  "next": {
-    "title": "Template",
-    "permalink": "/docs/themes/Liquid/Tags/Template"
   }
 }

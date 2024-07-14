@@ -15,10 +15,5 @@
   "frontMatter": {
     "id": "cli",
     "title": "CLI"
-  },
-  "sidebar": "appsSidebar",
-  "previous": {
-    "title": "Extensions",
-    "permalink": "/docs/apps/Shopify App Remix/api-extension"
   }
 }

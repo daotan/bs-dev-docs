@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Shopify/apps/polaris",
+  "title": "Polaris",
+  "description": "Hệ thống thiết kế Polaris bao gồm các nguyên tắc, design patterns của các UI components, tokens, icons để xây dựng apps trong Shopify admin.",
+  "source": "@site/docs/Devdocs/Shopify/apps/03-Polaris.md",
+  "sourceDirName": "Devdocs/Shopify/apps",
+  "slug": "/Devdocs/Shopify/apps/polaris",
+  "permalink": "/docs/Devdocs/Shopify/apps/polaris",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Shopify/apps/03-Polaris.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "polaris",
+    "title": "Polaris"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Khởi tạo một app",
+    "permalink": "/docs/Devdocs/Shopify/apps/create-an-app"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview"
+  }
+}

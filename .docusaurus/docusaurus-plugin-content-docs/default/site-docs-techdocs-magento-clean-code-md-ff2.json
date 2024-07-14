@@ -14,10 +14,5 @@
   "frontMatter": {
     "id": "clean_code",
     "title": "Clean Code"
-  },
-  "sidebar": "techDocsSidebar",
-  "next": {
-    "title": "Treo.sh",
-    "permalink": "/docs/techdocs/Optimize/treo"
   }
 }

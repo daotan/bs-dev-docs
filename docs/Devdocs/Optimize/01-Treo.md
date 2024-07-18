@@ -20,16 +20,13 @@ Có [một số điều cần nhớ](https://fershad.com/writing/using-treos-fre
     4. Điểm số trung bình của 1 website được report là tập hợp từ toàn bộ cả page mà treo.sh thông kê, có nghĩa là nó k chỉ dựa vào điểm của mỗi homepage hoạc 1 page cố định nào đó.
     5. Bộ dữ liệu CrUX được cập nhật hàng tháng.
 
+----------------------------------------
 
 ## Treo.sh giúp gì cho việc improve performance
 Treo.sh sẽ report chi tiết các thông số liên quan đến từng page và mỗi loại thiết bị (mobile, desktop, tablet) và các yếu tố cấu thành khác như country.
 
 Ở Treo.sh có thể setup alert gửi thông báo về cho admin dựa trên các rules nhất định.
 ![Alert Notify](/treo/img/alert.png)
-
-Để  sử dụng treo.sh với đẩy đủ report chi tiết thì cần [trả phí](https://treo.sh/pricing)
-
-![Treo Pricing](/treo/img/pricing.png)
 
 ### Monitoring Tool
 Sử dụng Treo.sh sẽ cho ta 1 cái nhìn từ tổng quan chi tiết với bảng dashboard khá trực quan như sau:
@@ -69,6 +66,39 @@ Các bảng report data cốt yếu ảnh hưởng tới mục tiêu và giải 
     Việc improve performance sẽ dựa trên target về customer’s location của kh. KHông hẳn điểm trung bình thấp là đã thấp, mà cần đánh giá dựa vào target customer của kh ở mỗi country hoạc page.
 
     Từ các bảng biểu đồ, biểu thị các thông số bên trên cho ta tới 1 kết quả là: Các số liệu thống kê về speed nó sẽ k đồng nhất với nhau qua khác mốc thời gian khác nhau, và ở mỗi thiết bị khác nhau cũng như vậy
+
+## Pricing
+### Plans
+Để  sử dụng treo.sh với đẩy đủ report chi tiết thì cần [trả phí](https://treo.sh/pricing)
+
+![Treo Pricing](/treo/img/pricing.png)
+:::info[So sánh các plan]
+    Vậy giữa các gói **Mất Phí** và **Free** sẽ khác nhau như thế nào? Hãy xem bảng so sánh dưới đây.
+:::
+![Plans](/treo/img/plans-q.png)
+
+:::note[Giải thích 1 số  thuật ngữ trong plan]
+    **Lighthouse Pages** Chỉ số này cung cấp thông tin chi tiết về các số liệu hiệu suất, khả năng truy cập, SEO và best practices cho từng page được chỉ định.
+
+    **CrUX URLs** Chỉ số cung cấp các số liệu trải nghiệm người dùng thực, chẳng hạn như Core Web Vitals, được thu thập từ người dùng Chrome thực tế thông qua sitemap hoạc chỉ định tool auto detect.
+
+    **TÓM LẠI** "Lighthouse Pages" tập trung vào kiểm tra chi tiết từng trang riêng lẻ, còn "CrUX URLs" cung cấp dữ liệu trải nghiệm người dùng thực cho nhiều URL khác nhau.
+:::
+:::tip[Suggest Plan]
+    Từ dữ liệu về các thông số bên trên cho mỗi plan, mình có thể bắt đầu với plan thấp nhất là **Vital**, Mình sẽ dung thử trước qua 1 vài website để đánh giá hiệu quả thực sau đó có nếu cần mở rộng số lượng page và website thì có thể nâng lên plan cao hơn (Pro).
+:::
+
+### treo.sh với các tool thường dùng.
+#### So sánh giữa treo.sh (mất phí) với các tool thường dùng như google pagespeed insight, gtmetrix.
+![Compare Tool](/treo/img/compare.png)
+
+::::tip[Mẹo]
+Từ các thông tin và số  liệu bên trên thì để đạt kết quả tối ưu nhất ta nên dùng kết hợp giữa treo.sh và các công cụ kiểm tra performance truyền thống như **Pagespeed insight** hay **Gtmetrix**.
+:::info[Cụ thể]
+    + Sử dụng Treo.sh để detect performance của toàn bộ website, sau đó chọn ra những page có performance kém để  làm speed.
+    + Sử dụng các tool truyền thống để check từng page đó, để xem các issue gây performance kém là gì. Từ đó đưa ra giải pháp cải thiện cho từng issue cụ thể 
+    
+::::
 
 ----------------------------------------
 ## Optimize dựa trên report của Treo.sh

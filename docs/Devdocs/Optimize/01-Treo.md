@@ -96,8 +96,8 @@ Các bảng report data cốt yếu ảnh hưởng tới mục tiêu và giải 
 Từ các thông tin và số  liệu bên trên thì để đạt kết quả tối ưu nhất ta nên dùng kết hợp giữa treo.sh và các công cụ kiểm tra performance truyền thống như **Pagespeed insight** hay **Gtmetrix**.
 :::info[Cụ thể]
     + Sử dụng Treo.sh để detect performance của toàn bộ website, sau đó chọn ra những page có performance kém để  làm speed.
-    + Sử dụng các tool truyền thống để check từng page đó, để xem các issue gây performance kém là gì. Từ đó đưa ra giải pháp cải thiện cho từng issue cụ thể 
-    
+    + Sử dụng các tool truyền thống để check từng page đó, để xem các issue gây ra performance kém là gì. Từ đó đưa ra giải pháp cải thiện cho từng issue cụ thể 
+
 ::::
 
 ----------------------------------------
@@ -126,6 +126,34 @@ Từ các thông tin và số  liệu bên trên thì để đạt kết quả t
     2. Cần check điểm số dựa trên từng location
     3. Cần check điểm số vào cải thiện trên mỗi loại thiết bị (desktop, mobile, tablet)
     4. MOBILE FIRST là ưu tiên cao nhất khi làm optimize
+----------
+:::tip[Nếu không cần dùng những tính năng nâng cao của Treo.sh thì sao?]
+- Nếu không cần thiết sử dụng tới tính năng nâng cao của treo.sh thì vẫn còn 1 cách khác để mình có thể xem tổng quan về performance của các page trong 1 website thông qua google-search-console
+:::
+![gsc](/treo/img/gsc.png)
+==> Để sử dụng dc tính năng này thì ta cần có quyền quản lý thông tin website đó. Google search console (GSC) sẽ yêu cầu xác mình quyền sở hữu thông qua DNS hoạc Cloudflare.
+
+Ta có thể xem chi tiết report performance thông qua GSC như dưới đây:
+
+**Report tổng quan về hiện trạng chung trên toàn bộ webiste**
+![gsc](/treo/img/dashboard-gsc.png)
+
+**Report tổng quan về hiện trạng chung về các metrics core-web-vitals**
+![gsc](/treo/img/dashboard-gsc-detail.png)
+![gsc](/treo/img/dashboard-gsc-detail-2.png)
+
+**Report tổng quan về  điểm LCP trên toàn bộ webiste**
+![gsc](/treo/img/dashboard-gsc-detail-LCP.png)
+
+**Report tổng quan về  điểm CLS trên toàn bộ webiste**
+![gsc](/treo/img/dashboard-gsc-detail-CLS.png)
+
+**Report tổng quan về  điểm INP trên toàn bộ webiste**
+![gsc](/treo/img/dashboard-gsc-detail-INP.png)
+
+
+
+-----------
 
 #### Các phương án làm optimize đã từng được sharing ở link dướ đây
 https://docs.google.com/document/d/1uWuDpSPLVn6fWubjvxQxPrWJ3FyXzL5i9SeKO5zOTgA/edit

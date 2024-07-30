@@ -97,14 +97,13 @@ Từ các thông tin và số  liệu bên trên thì để đạt kết quả t
 :::info[Cụ thể]
     + Sử dụng Treo.sh để detect performance của toàn bộ website, sau đó chọn ra những page có performance kém để  làm speed.
     + Sử dụng các tool truyền thống để check từng page đó, để xem các issue gây ra performance kém là gì. Từ đó đưa ra giải pháp cải thiện cho từng issue cụ thể 
-
 ::::
 
 ----------------------------------------
 ## Optimize dựa trên report của Treo.sh
 ### Nhận biết hiện trạng của website
 - Về điểm số Treo.sh sẽ report chi tiết cho từng page. do vậy từ bảng số liệu của page đó chúng ta có quyết định cải thiện thêm hay không.
-- Điểm số được cho là bình thường chấp nhận dc là số liệu được tính trung bình đạt 50- 75% của tháng được report
+- Điểm số được cho là bình thường chấp nhận dc là số liệu được tính trung bình đạt 50 - 75% của tháng được report. (dựa vào tệp khách hàng thực của kh - customer location)
 
 #### VD1. xem bảng report sau của V508
 ![Ex1](/treo/img/ex1.png)
@@ -150,8 +149,6 @@ Ta có thể xem chi tiết report performance thông qua GSC như dưới đây
 
 **Report tổng quan về  điểm INP trên toàn bộ webiste**
 ![gsc](/treo/img/dashboard-gsc-detail-INP.png)
-
-
 
 -----------
 

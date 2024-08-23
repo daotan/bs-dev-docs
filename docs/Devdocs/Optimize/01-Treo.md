@@ -154,7 +154,10 @@ Ta có thể xem chi tiết report performance thông qua GSC như dưới đây
 
 #### Các phương án làm optimize đã từng được sharing ở [đây](https://docs.google.com/document/d/1uWuDpSPLVn6fWubjvxQxPrWJ3FyXzL5i9SeKO5zOTgA/edit)
 
-#### Optimize speed performance - [CheckList](https://docs.google.com/spreadsheets/d/1A73cgfiqCbFpkKnVe52FGXyxAy5SUnkLYYfLmBULGlA/edit?gid=0#gid=0) 
+## Checklist 
+**Dựa trên Magento là phần chính**
+
+Document optimize speed performance [CheckList](https://docs.google.com/spreadsheets/d/1A73cgfiqCbFpkKnVe52FGXyxAy5SUnkLYYfLmBULGlA/edit?gid=0#gid=0) 
 
 
 ## Tư liệu tham khảo

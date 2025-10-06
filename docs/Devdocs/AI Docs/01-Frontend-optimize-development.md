@@ -3,7 +3,6 @@ id: frontend_optimize_development
 title: Frontend development
 ---
 # 📘 Ứng dụng AI cho frontend dev
-
 > **Mục tiêu:** Giúp Dev team tận dụng AI để giảm thời gian development frontend trên Magento 2, Shopify, React/PWA,...
 
 ---

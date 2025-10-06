@@ -79,16 +79,22 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '1cc'),
+    component: ComponentCreator('/docs', 'b50'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b94'),
+        component: ComponentCreator('/docs', 'eea'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'b53'),
+            component: ComponentCreator('/docs', '3db'),
             routes: [
+              {
+                path: '/docs/Devdocs/AI Docs/frontend_optimize_development',
+                component: ComponentCreator('/docs/Devdocs/AI Docs/frontend_optimize_development', '96b'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
               {
                 path: '/docs/Devdocs/Magento/clean_code',
                 component: ComponentCreator('/docs/Devdocs/Magento/clean_code', 'c5a'),

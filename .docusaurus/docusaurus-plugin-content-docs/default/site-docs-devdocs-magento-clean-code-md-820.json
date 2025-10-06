@@ -16,6 +16,10 @@
     "title": "Clean Code"
   },
   "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Frontend development",
+    "permalink": "/docs/Devdocs/AI Docs/frontend_optimize_development"
+  },
   "next": {
     "title": "Treo.sh",
     "permalink": "/docs/Devdocs/Optimize/treo"

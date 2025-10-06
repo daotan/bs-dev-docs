@@ -121,18 +121,22 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-1cc": {
+  "/docs-b50": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docse-1-b-906"
     }
   },
-  "/docs-b94": {
+  "/docs-eea": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-b53": {
+  "/docs-3db": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/Devdocs/AI Docs/frontend_optimize_development-96b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-devdocs-ai-docs-frontend-optimize-developmentdd-1-832"
   },
   "/docs/Devdocs/Magento/clean_code-c5a": {
     "__comp": "__comp---theme-doc-item-178-a40",

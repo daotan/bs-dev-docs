@@ -11,6 +11,11 @@
           "mainDocId": "QCdocs/demo1",
           "docs": [
             {
+              "id": "Devdocs/AI Docs/frontend_optimize_development",
+              "path": "/docs/Devdocs/AI Docs/frontend_optimize_development",
+              "sidebar": "devDocsSidebar"
+            },
+            {
               "id": "Devdocs/Magento/clean_code",
               "path": "/docs/Devdocs/Magento/clean_code",
               "sidebar": "devDocsSidebar"
@@ -182,8 +187,8 @@
             },
             "devDocsSidebar": {
               "link": {
-                "path": "/docs/Devdocs/Magento/clean_code",
-                "label": "Devdocs/Magento/clean_code"
+                "path": "/docs/Devdocs/AI Docs/frontend_optimize_development",
+                "label": "Devdocs/AI Docs/frontend_optimize_development"
               }
             }
           }

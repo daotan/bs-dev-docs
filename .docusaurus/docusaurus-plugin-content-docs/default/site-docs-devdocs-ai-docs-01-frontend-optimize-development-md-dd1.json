@@ -1,0 +1,24 @@
+{
+  "id": "Devdocs/AI Docs/frontend_optimize_development",
+  "title": "Frontend development",
+  "description": "Mục tiêu: Giúp Dev team tận dụng AI để giảm thời gian development frontend trên Magento 2, Shopify, React/PWA,...",
+  "source": "@site/docs/Devdocs/AI Docs/01-Frontend-optimize-development.md",
+  "sourceDirName": "Devdocs/AI Docs",
+  "slug": "/Devdocs/AI Docs/frontend_optimize_development",
+  "permalink": "/docs/Devdocs/AI Docs/frontend_optimize_development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/AI Docs/01-Frontend-optimize-development.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "frontend_optimize_development",
+    "title": "Frontend development"
+  },
+  "sidebar": "devDocsSidebar",
+  "next": {
+    "title": "Clean Code",
+    "permalink": "/docs/Devdocs/Magento/clean_code"
+  }
+}

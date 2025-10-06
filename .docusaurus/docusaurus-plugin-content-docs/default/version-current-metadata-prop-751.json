@@ -29,6 +29,21 @@
     "devDocsSidebar": [
       {
         "type": "category",
+        "label": "AI Docs",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Frontend development",
+            "href": "/docs/Devdocs/AI Docs/frontend_optimize_development",
+            "docId": "Devdocs/AI Docs/frontend_optimize_development",
+            "unlisted": false
+          }
+        ]
+      },
+      {
+        "type": "category",
         "label": "Magento",
         "collapsible": true,
         "collapsed": true,
@@ -299,6 +314,12 @@
     ]
   },
   "docs": {
+    "Devdocs/AI Docs/frontend_optimize_development": {
+      "id": "Devdocs/AI Docs/frontend_optimize_development",
+      "title": "Frontend development",
+      "description": "Mục tiêu: Giúp Dev team tận dụng AI để giảm thời gian development frontend trên Magento 2, Shopify, React/PWA,...",
+      "sidebar": "devDocsSidebar"
+    },
     "Devdocs/Magento/clean_code": {
       "id": "Devdocs/Magento/clean_code",
       "title": "Clean Code",

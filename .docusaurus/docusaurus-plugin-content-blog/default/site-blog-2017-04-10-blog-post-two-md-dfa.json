@@ -5,14 +5,15 @@
   "title": "New Blog Post",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.",
   "date": "2017-04-10T00:00:00.000Z",
-  "formattedDate": "10 tháng 4, 2017",
   "tags": [],
   "readingTime": 2.31,
   "hasTruncateMarker": true,
   "authors": [
     {
       "name": "Blog Author",
-      "url": "http://twitter.com/"
+      "url": "http://twitter.com/",
+      "key": null,
+      "page": null
     }
   ],
   "frontMatter": {

@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
+  "title": "Lighthouse",
+  "description": "Các chỉ số đo được",
+  "source": "@site/docs/Devdocs/Optimize/PerformanceAuditWebsite/02-lighthouse.md",
+  "sourceDirName": "Devdocs/Optimize/PerformanceAuditWebsite",
+  "slug": "/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
+  "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/PerformanceAuditWebsite/02-lighthouse.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "lighthouse",
+    "title": "Lighthouse"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "PageSpeed Insights",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights"
+  },
+  "next": {
+    "title": "Chrome DevTools",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools"
+  }
+}

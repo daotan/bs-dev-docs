@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
+  "title": "Chrome DevTools",
+  "description": "Các chỉ số đo được",
+  "source": "@site/docs/Devdocs/Optimize/PerformanceAuditWebsite/03-chrome-devtools.md",
+  "sourceDirName": "Devdocs/Optimize/PerformanceAuditWebsite",
+  "slug": "/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
+  "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/PerformanceAuditWebsite/03-chrome-devtools.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "chrome-devtools",
+    "title": "Chrome DevTools"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse"
+  },
+  "next": {
+    "title": "WebPageTest",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test"
+  }
+}

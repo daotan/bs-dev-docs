@@ -1,272 +1,272 @@
 {
-  "/__docusaurus/debug-598": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
+  "/blog-32f": {
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
-    }
-  },
-  "/__docusaurus/debug/config-881": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
-    }
-  },
-  "/__docusaurus/debug/content-99b": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
+      "plugin": "36994c47"
     },
-    "allContent": "allContent---docusaurus-debug-content-246-9aa"
-  },
-  "/__docusaurus/debug/globalData-6f3": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
-    }
-  },
-  "/__docusaurus/debug/metadata-e26": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
-    }
-  },
-  "/__docusaurus/debug/registry-6e3": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
-    }
-  },
-  "/__docusaurus/debug/routes-d06": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-43-e-349"
-    }
-  },
-  "/blog-d28": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
-    "__context": {
-      "plugin": "plugin---blogee-4-cf4"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-10-a-019"
+        "content": "10a2e8c0"
       },
       {
-        "content": "content---blog-517-b25"
+        "content": "517aa66b"
       },
       {
-        "content": "content---blogc-7-a-ec2"
+        "content": "c7a22f1b"
       },
       {
-        "content": "content---blog-398-050"
+        "content": "3985f3fe"
       },
       {
-        "content": "content---blog-025-31a"
+        "content": "02589645"
       }
     ],
-    "metadata": "metadata---blogb-2-b-df1"
+    "__props": "c15d9823"
   },
-  "/blog/2016/03/11/blog-post-c6a": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+  "/blog/2016/03/11/blog-post-52e": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blogee-4-cf4"
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2016-03-11-blog-postbf-9-764"
+    "sidebar": "814f3328",
+    "content": "bf9e930a"
   },
-  "/blog/2017/04/10/blog-post-two-3fc": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+  "/blog/2017/04/10/blog-post-two-dd4": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blogee-4-cf4"
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2017-04-10-blog-post-twodfa-94f"
+    "sidebar": "814f3328",
+    "content": "dfadc8c2"
   },
-  "/blog/2017/09/25/testing-rss-459": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+  "/blog/2017/09/25/testing-rss-cc0": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blogee-4-cf4"
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2017-09-25-testing-rss-4-d-8-00d"
+    "sidebar": "814f3328",
+    "content": "4d826c8d"
   },
-  "/blog/2017/09/26/adding-rss-d3e": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+  "/blog/2017/09/26/adding-rss-673": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blogee-4-cf4"
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2017-09-26-adding-rssad-7-946"
+    "sidebar": "814f3328",
+    "content": "ad7efe8c"
   },
-  "/blog/2017/10/24/new-version-1.0.0-a68": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+  "/blog/2017/10/24/new-version-1.0.0-581": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blogee-4-cf4"
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-2017-10-24-new-version-1-0-0-bbb-777"
+    "sidebar": "814f3328",
+    "content": "bbb095bf"
   },
-  "/blog/archive-fa3": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+  "/blog/archive-182": {
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---blogee-4-cf4"
+      "plugin": "36994c47"
     },
-    "archive": "archive---blog-archiveb-2-f-393"
+    "__props": "f81c1134"
   },
-  "/markdown-page-2b9": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+  "/markdown-page-3d7": {
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---markdown-pagecf-9-d1c"
+      "plugin": "a7456010"
     },
-    "content": "content---markdown-page-393-028"
+    "content": "393be207"
   },
-  "/docs-b50": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+  "/docs-8c1": {
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docse-1-b-906"
+      "plugin": "aba21aa0"
     }
   },
-  "/docs-eea": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---docs-935-398"
+  "/docs-f2f": {
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
   },
-  "/docs-3db": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+  "/docs-a54": {
+    "__comp": "a94703ab"
   },
-  "/docs/Devdocs/AI Docs/frontend_optimize_development-96b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-ai-docs-frontend-optimize-developmentdd-1-832"
+  "/docs/Devdocs/AI Docs/frontend_optimize_development-9ab": {
+    "__comp": "17896441",
+    "content": "dd1dc905"
   },
-  "/docs/Devdocs/Magento/clean_code-c5a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-magento-clean-code-820-fb6"
+  "/docs/Devdocs/Optimize/CoreWebVitals/cls-dad": {
+    "__comp": "17896441",
+    "content": "2512939e"
   },
-  "/docs/Devdocs/Optimize/cwv-85a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-optimize-cwv-24-c-087"
+  "/docs/Devdocs/Optimize/CoreWebVitals/inp-9e3": {
+    "__comp": "17896441",
+    "content": "00d29945"
   },
-  "/docs/Devdocs/Optimize/treo-c8a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-optimize-treof-74-05a"
+  "/docs/Devdocs/Optimize/CoreWebVitals/lcp-def": {
+    "__comp": "17896441",
+    "content": "4d47b7c0"
   },
-  "/docs/Devdocs/Shopify/apps/cli-454": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-clia-69-0e1"
+  "/docs/Devdocs/Optimize/cwv-31d": {
+    "__comp": "17896441",
+    "content": "24c999bc"
   },
-  "/docs/Devdocs/Shopify/apps/create-an-app-559": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-create-an-appeeb-bad"
+  "/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools-082": {
+    "__comp": "17896441",
+    "content": "802ab8dc"
   },
-  "/docs/Devdocs/Shopify/apps/intro-1fe": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-intro-3-e-9-ad3"
+  "/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix-290": {
+    "__comp": "17896441",
+    "content": "e982f069"
   },
-  "/docs/Devdocs/Shopify/apps/polaris-d54": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-polaris-3-e-0-363"
+  "/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse-503": {
+    "__comp": "17896441",
+    "content": "ec76eb62"
   },
-  "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope-6d8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-shopify-app-remix-api-access-scopee-0-e-bfe"
+  "/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights-ede": {
+    "__comp": "17896441",
+    "content": "9559fdd9"
   },
-  "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension-61e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-shopify-app-remix-api-extension-32-d-b1b"
+  "/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test-12a": {
+    "__comp": "17896441",
+    "content": "842532d6"
   },
-  "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture-bd3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-shopify-app-remix-architecture-7-fa-f96"
+  "/docs/Devdocs/Optimize/treo-c00": {
+    "__comp": "17896441",
+    "content": "f747f605"
   },
-  "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview-09d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-apps-shopify-app-remix-overviewb-03-935"
+  "/docs/Devdocs/Shopify/apps/cli-11c": {
+    "__comp": "17896441",
+    "content": "a692aec0"
   },
-  "/docs/Devdocs/Shopify/themes/Architecture/-42a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-architecture-961-f37"
+  "/docs/Devdocs/Shopify/apps/create-an-app-0a5": {
+    "__comp": "17896441",
+    "content": "eeb86100"
   },
-  "/docs/Devdocs/Shopify/themes/CLI-for-themes-2c5": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-cli-for-themesa-40-7f7"
+  "/docs/Devdocs/Shopify/apps/intro-222": {
+    "__comp": "17896441",
+    "content": "3e9f0bc4"
   },
-  "/docs/Devdocs/Shopify/themes/intro-dcd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-introd-6-c-485"
+  "/docs/Devdocs/Shopify/apps/polaris-418": {
+    "__comp": "17896441",
+    "content": "3e00a29c"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/-a01": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-4-ce-476"
+  "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-access-scope-d05": {
+    "__comp": "17896441",
+    "content": "e0ead670"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro-dfb": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-basic-intro-303-60a"
+  "/docs/Devdocs/Shopify/apps/Shopify App Remix/api-extension-7a6": {
+    "__comp": "17896441",
+    "content": "32dcb872"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators-f08": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-basic-operatorse-8-b-255"
+  "/docs/Devdocs/Shopify/apps/Shopify App Remix/architecture-009": {
+    "__comp": "17896441",
+    "content": "7fa34d86"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy-4df": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-basic-truthy-and-falsy-134-7b3"
+  "/docs/Devdocs/Shopify/apps/Shopify App Remix/overview-1c6": {
+    "__comp": "17896441",
+    "content": "b030f051"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types-d2a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-basic-typese-84-79d"
+  "/docs/Devdocs/Shopify/themes/Architecture/-88f": {
+    "__comp": "17896441",
+    "content": "96115fa1"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control-f2a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-basic-whitespace-control-288-658"
+  "/docs/Devdocs/Shopify/themes/CLI-for-themes-72b": {
+    "__comp": "17896441",
+    "content": "a4046c5f"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Filters-2cc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-filters-695-a5f"
+  "/docs/Devdocs/Shopify/themes/intro-8ff": {
+    "__comp": "17896441",
+    "content": "d6ccdde0"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet-25c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-liquid-cheat-sheetc-6-a-a8d"
+  "/docs/Devdocs/Shopify/themes/Liquid/-d24": {
+    "__comp": "17896441",
+    "content": "4ce154e7"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow-277": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-tags-control-flow-54-c-010"
+  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Intro-9cf": {
+    "__comp": "17896441",
+    "content": "303dcbfd"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration-989": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-tags-iterationf-8-d-b9d"
+  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Operators-ea9": {
+    "__comp": "17896441",
+    "content": "e8b09de6"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Template-e01": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-tags-template-2-ca-8bd"
+  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Truthy-and-Falsy-349": {
+    "__comp": "17896441",
+    "content": "134b816b"
   },
-  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Variable-4ea": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-liquid-tags-variable-1-df-538"
+  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Types-f06": {
+    "__comp": "17896441",
+    "content": "e847d19e"
   },
-  "/docs/Devdocs/Shopify/themes/Metaobjects-c35": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-metaobjectsd-10-d5f"
+  "/docs/Devdocs/Shopify/themes/Liquid/Basic/Whitespace-Control-035": {
+    "__comp": "17896441",
+    "content": "288b74f8"
   },
-  "/docs/Devdocs/Shopify/themes/Sections-and-Blocks-de0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-sections-and-blocksb-0-f-302"
+  "/docs/Devdocs/Shopify/themes/Liquid/Filters-dcb": {
+    "__comp": "17896441",
+    "content": "6950c9f3"
   },
-  "/docs/Devdocs/Shopify/themes/Templates-and-Metafields-18b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-devdocs-shopify-themes-templates-and-metafields-9-aa-03b"
+  "/docs/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet-180": {
+    "__comp": "17896441",
+    "content": "c6a162a1"
   },
-  "/docs/QCdocs/demo1-d8e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-q-cdocs-demo-1-b-9-c-ffa"
+  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Control-flow-b3e": {
+    "__comp": "17896441",
+    "content": "54c3a1b4"
   },
-  "/docs/WorkProcess/demo2-554": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-work-process-demo-21-c-4-41b"
+  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Iteration-4c0": {
+    "__comp": "17896441",
+    "content": "f8d0fe6c"
   },
-  "/-beb": {
-    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Template-9d6": {
+    "__comp": "17896441",
+    "content": "2caab9af"
+  },
+  "/docs/Devdocs/Shopify/themes/Liquid/Tags/Variable-ac8": {
+    "__comp": "17896441",
+    "content": "1df34742"
+  },
+  "/docs/Devdocs/Shopify/themes/Metaobjects-1ee": {
+    "__comp": "17896441",
+    "content": "d10867ec"
+  },
+  "/docs/Devdocs/Shopify/themes/Sections-and-Blocks-58f": {
+    "__comp": "17896441",
+    "content": "b0f6e84c"
+  },
+  "/docs/Devdocs/Shopify/themes/Templates-and-Metafields-b26": {
+    "__comp": "17896441",
+    "content": "9aa9a68e"
+  },
+  "/docs/QCdocs/demo1-ef3": {
+    "__comp": "17896441",
+    "content": "b9ce6630"
+  },
+  "/docs/WorkProcess/demo2-675": {
+    "__comp": "17896441",
+    "content": "1c4257b5"
+  },
+  "/-e5f": {
+    "__comp": "1df93b7f",
     "__context": {
-      "plugin": "plugin---markdown-pagecf-9-d1c"
+      "plugin": "a7456010"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }

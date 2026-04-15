@@ -5,14 +5,15 @@
   "title": "Adding RSS Support",
   "description": "This is a test post.",
   "date": "2017-09-26T00:00:00.000Z",
-  "formattedDate": "26 tháng 9, 2017",
   "tags": [],
-  "readingTime": 0.055,
+  "readingTime": 0.06,
   "hasTruncateMarker": false,
   "authors": [
     {
       "name": "Eric Nakagawa",
-      "url": "http://twitter.com/ericnakagawa"
+      "url": "http://twitter.com/ericnakagawa",
+      "key": null,
+      "page": null
     }
   ],
   "frontMatter": {

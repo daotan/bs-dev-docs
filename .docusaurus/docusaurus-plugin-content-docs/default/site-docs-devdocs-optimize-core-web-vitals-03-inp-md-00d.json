@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/CoreWebVitals/inp",
+  "title": "INP",
+  "description": "INP là gì?",
+  "source": "@site/docs/Devdocs/Optimize/CoreWebVitals/03-INP.md",
+  "sourceDirName": "Devdocs/Optimize/CoreWebVitals",
+  "slug": "/Devdocs/Optimize/CoreWebVitals/inp",
+  "permalink": "/docs/Devdocs/Optimize/CoreWebVitals/inp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/CoreWebVitals/03-INP.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "inp",
+    "title": "INP"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "CLS",
+    "permalink": "/docs/Devdocs/Optimize/CoreWebVitals/cls"
+  },
+  "next": {
+    "title": "PageSpeed Insights",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights"
+  }
+}

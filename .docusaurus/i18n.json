@@ -11,7 +11,10 @@
       "direction": "ltr",
       "htmlLang": "vi",
       "calendar": "gregory",
-      "path": "vi"
+      "path": "vi",
+      "translate": false,
+      "url": "https://your-docusaurus-site.example.com",
+      "baseUrl": "/"
     }
   }
 }

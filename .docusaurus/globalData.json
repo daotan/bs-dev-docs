@@ -16,13 +16,48 @@
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Magento/clean_code",
-              "path": "/docs/Devdocs/Magento/clean_code",
+              "id": "Devdocs/Optimize/CoreWebVitals/cls",
+              "path": "/docs/Devdocs/Optimize/CoreWebVitals/cls",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/CoreWebVitals/inp",
+              "path": "/docs/Devdocs/Optimize/CoreWebVitals/inp",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/CoreWebVitals/lcp",
+              "path": "/docs/Devdocs/Optimize/CoreWebVitals/lcp",
               "sidebar": "devDocsSidebar"
             },
             {
               "id": "Devdocs/Optimize/cwv",
               "path": "/docs/Devdocs/Optimize/cwv",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
+              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
+              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
+              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights",
+              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/PerformanceAuditWebsite/web-page-test",
+              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test",
               "sidebar": "devDocsSidebar"
             },
             {

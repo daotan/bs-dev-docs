@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
+  "title": "GTmetrix",
+  "description": "Các chỉ số đo được",
+  "source": "@site/docs/Devdocs/Optimize/PerformanceAuditWebsite/05-GTmetrix.md",
+  "sourceDirName": "Devdocs/Optimize/PerformanceAuditWebsite",
+  "slug": "/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
+  "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/PerformanceAuditWebsite/05-GTmetrix.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "GTmetrix",
+    "title": "GTmetrix"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "WebPageTest",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/Devdocs/Shopify/apps/intro"
+  }
+}

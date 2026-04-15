@@ -18,8 +18,8 @@
   },
   "sidebar": "devDocsSidebar",
   "previous": {
-    "title": "Core Web Vitals",
-    "permalink": "/docs/Devdocs/Optimize/cwv"
+    "title": "GTmetrix",
+    "permalink": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix"
   },
   "next": {
     "title": "Khởi tạo một app",

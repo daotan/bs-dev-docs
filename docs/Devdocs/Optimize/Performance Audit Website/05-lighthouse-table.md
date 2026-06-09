@@ -1,49 +1,9 @@
 ---
-id: lighthouse
-title: Lighthouse
+id: lighthouse-table
+title: Table Metrics Lighthouse
 ---
 
-## Các chỉ số đo được
-
-### Desktop
-<strong> Tổng quan </strong>
-
-![Lighthouse](/img/performance-audit-website/lighthouse-desktop.png)
-
-<strong> Thông tin các element cần sửa để cải thiện </strong>
-
-LCP
-
-![Lighthouse](/img/performance-audit-website/lighthouse-lcp-desktop.png)
-
-CLS
-
-![Lighthouse](/img/performance-audit-website/lighthouse-cls-desktop.png)
-
-<strong> Click view trace để mở waterfall network </strong>
-
-![Lighthouse](/img/performance-audit-website/lighthouse-waterfall-desktop.png)
-
-### Mobile
-<strong> Tổng quan </strong>
-
-![Lighthouse](/img/performance-audit-website/lighthouse-mobile.png)
-
-<strong> Thông tin các element cần sửa để cải thiện</strong>
-
-LCP
-
-![Lighthouse](/img/performance-audit-website/lighthouse-lcp-mobile.png)
-
-CLS
-
-![Lighthouse](/img/performance-audit-website/lighthouse-cls-mobile.png)
-
-<strong> Click view trace để mở waterfall network </strong>
-
-![Lighthouse](/img/performance-audit-website/lighthouse-waterfall-mobile.png)
-
-## Bảng tổng hợp metric
+# Bảng tổng hợp metric
 
 <table>
     <thead>

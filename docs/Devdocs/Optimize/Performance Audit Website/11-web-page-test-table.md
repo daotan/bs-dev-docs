@@ -1,44 +1,9 @@
 ---
-id: web-page-test
-title: WebPageTest
+id: web-page-test-table
+title: Table Metrics WebPageTest
 ---
 
-## Các chỉ số đo được
-### Desktop
-<strong> Tổng quan </strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-desktop.png)
-
-<strong> Filmstrip </strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-filmstrip-desktop.png)
-
-<strong> Size của JS, CSS, Image</strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-size-js-css-img-desktop.png)
-
-<strong> Waterfall network </strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-waterfall-desktop.png)
-
-### Mobile
-<strong> Tổng quan </strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-mobile.png)
-
-<strong> Filmstrip </strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-filmstrip-mobile.png)
-
-<strong> Size của JS, CSS, Image</strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-size-js-css-img-mobile.png)
-
-<strong> Waterfall network </strong>
-
-![WebPageTest](/img/performance-audit-website/WebPageTest-waterfall-mobile.png)
-
-## Bảng tổng hợp metric
+# Bảng tổng hợp metric
 
 <table>
     <thead>

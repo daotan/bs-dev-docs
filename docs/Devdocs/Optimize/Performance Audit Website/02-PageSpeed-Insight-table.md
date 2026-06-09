@@ -1,50 +1,10 @@
 ---
-id: pagespeed-insights
-title: PageSpeed Insights
+id: pagespeed-insights-table
+title: Table Metrics PageSpeed Insights
 ---
 
-## Các chỉ số đo được
-### Desktop
-<strong> Tổng quan </strong>
-
-![PageSpeed Insights](/img/performance-audit-website/PageSpeed-Insights-desktop.png)
-
-<strong> Treemap cho biết total size js </strong>
-
-![PageSpeed Insights](/img/performance-audit-website/Lighthouse-Treemap-desktop.png)
-
-<strong> Thông tin các element cần sửa để cải thiện </strong>
-
-LCP 
-
-![PageSpeed Insights](/img/performance-audit-website/PageSpeed-Insights-lcp-desktop.png)
-
-CLS
-
-![PageSpeed Insights](/img/performance-audit-website/PageSpeed-Insights-cls-desktop.png)
-
-### Mobile
-
-<strong> Tổng quan </strong>
-
-![PageSpeed Insights](/img/performance-audit-website/PageSpeed-Insights-mobile.png)
-
-<strong> Treemap cho biết total size js </strong>
-
-![PageSpeed Insights](/img/performance-audit-website/Lighthouse-Treemap-desktop.png)
-
-<strong> Thông tin các element cần sửa để cải thiện </strong>
-
-LCP
-
-![PageSpeed Insights](/img/performance-audit-website/PageSpeed-Insights-lcp-mobile.png)
-
-CLS
-
-![PageSpeed Insights](/img/performance-audit-website/PageSpeed-Insights-cls-mobile.png)
-
-## Bảng tổng hợp metric
-
+# Bảng tổng hợp metric
+    
 <table>
     <thead>
         <tr>

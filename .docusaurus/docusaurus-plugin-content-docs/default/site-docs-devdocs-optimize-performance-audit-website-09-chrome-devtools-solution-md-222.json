@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution",
+  "title": "Solution Chrome DevTools",
+  "description": "- Chrome devtools không có những report rõ ràng. Chỉ liệt kê những elements bị LCP, CLS như ảnh bên dưới.",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/09-chrome-devtools-solution.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/09-chrome-devtools-solution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "chrome-devtools-solution",
+    "title": "Solution Chrome DevTools"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Table Metrics Chrome DevTools",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table"
+  },
+  "next": {
+    "title": "WebPageTest",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/web-page-test"
+  }
+}

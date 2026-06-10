@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution",
+  "title": "Solution PageSpeed Insights",
+  "description": "Ảnh report",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/03-PageSpeed-Insights-solution.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/03-PageSpeed-Insights-solution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "pagespeed-insights-solution",
+    "title": "Solution PageSpeed Insights"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Table Metrics PageSpeed Insights",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-table"
+  },
+  "next": {
+    "title": "Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse"
+  }
+}

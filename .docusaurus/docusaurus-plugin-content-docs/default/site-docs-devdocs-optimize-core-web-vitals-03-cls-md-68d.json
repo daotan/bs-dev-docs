@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Core Web Vitals/cls",
+  "title": "CLS",
+  "description": "CLS là gì?",
+  "source": "@site/docs/Devdocs/Optimize/Core Web Vitals/03-CLS.md",
+  "sourceDirName": "Devdocs/Optimize/Core Web Vitals",
+  "slug": "/Devdocs/Optimize/Core Web Vitals/cls",
+  "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/cls",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Core Web Vitals/03-CLS.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "cls",
+    "title": "CLS"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Optimize LCP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/optimize-lcp"
+  },
+  "next": {
+    "title": "Optimize CLS",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/cls-optimize"
+  }
+}

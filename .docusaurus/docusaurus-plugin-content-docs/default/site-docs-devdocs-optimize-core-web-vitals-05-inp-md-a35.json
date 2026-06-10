@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Core Web Vitals/inp",
+  "title": "INP",
+  "description": "INP là gì?",
+  "source": "@site/docs/Devdocs/Optimize/Core Web Vitals/05-INP.md",
+  "sourceDirName": "Devdocs/Optimize/Core Web Vitals",
+  "slug": "/Devdocs/Optimize/Core Web Vitals/inp",
+  "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/inp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Core Web Vitals/05-INP.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "inp",
+    "title": "INP"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Optimize CLS",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/cls-optimize"
+  },
+  "next": {
+    "title": "Optimize INP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/inp-optimize"
+  }
+}

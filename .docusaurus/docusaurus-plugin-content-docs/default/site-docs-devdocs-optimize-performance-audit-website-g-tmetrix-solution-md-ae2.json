@@ -1,0 +1,27 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/GTmetrix-solution",
+  "title": "Solution GTmetrix",
+  "description": "Ảnh report",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "GTmetrix-solution",
+    "title": "Solution GTmetrix"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Table Metrics GTmetrix",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-table"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/Devdocs/Shopify/apps/intro"
+  }
+}

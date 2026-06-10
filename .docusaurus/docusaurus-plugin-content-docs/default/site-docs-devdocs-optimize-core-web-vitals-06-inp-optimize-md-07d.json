@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Core Web Vitals/inp-optimize",
+  "title": "Optimize INP",
+  "description": "Giảm Input Delay",
+  "source": "@site/docs/Devdocs/Optimize/Core Web Vitals/06-INP-Optimize.md",
+  "sourceDirName": "Devdocs/Optimize/Core Web Vitals",
+  "slug": "/Devdocs/Optimize/Core Web Vitals/inp-optimize",
+  "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/inp-optimize",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Core Web Vitals/06-INP-Optimize.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "inp-optimize",
+    "title": "Optimize INP"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "INP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/inp"
+  },
+  "next": {
+    "title": "PageSpeed Insights",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights"
+  }
+}

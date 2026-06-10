@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', '32f'),
     exact: true
@@ -38,21 +73,26 @@ export default [
     exact: true
   },
   {
+    path: '/guide',
+    component: ComponentCreator('/guide', '9a3'),
+    exact: true
+  },
+  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '3d7'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '8c1'),
+    component: ComponentCreator('/docs', '3a4'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'f2f'),
+        component: ComponentCreator('/docs', '713'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'a54'),
+            component: ComponentCreator('/docs', 'ce4'),
             routes: [
               {
                 path: '/docs/Devdocs/AI Docs/frontend_optimize_development',
@@ -61,56 +101,128 @@ export default [
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/CoreWebVitals/cls',
-                component: ComponentCreator('/docs/Devdocs/Optimize/CoreWebVitals/cls', 'dad'),
+                path: '/docs/Devdocs/Optimize/Core Web Vitals/cls',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Core Web Vitals/cls', 'fe7'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/CoreWebVitals/inp',
-                component: ComponentCreator('/docs/Devdocs/Optimize/CoreWebVitals/inp', '9e3'),
+                path: '/docs/Devdocs/Optimize/Core Web Vitals/cls-optimize',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Core Web Vitals/cls-optimize', 'dbd'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/CoreWebVitals/lcp',
-                component: ComponentCreator('/docs/Devdocs/Optimize/CoreWebVitals/lcp', 'def'),
+                path: '/docs/Devdocs/Optimize/Core Web Vitals/inp',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Core Web Vitals/inp', '188'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/cwv',
-                component: ComponentCreator('/docs/Devdocs/Optimize/cwv', '31d'),
+                path: '/docs/Devdocs/Optimize/Core Web Vitals/inp-optimize',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Core Web Vitals/inp-optimize', '95f'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools',
-                component: ComponentCreator('/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools', '082'),
+                path: '/docs/Devdocs/Optimize/Core Web Vitals/lcp',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Core Web Vitals/lcp', 'de6'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix',
-                component: ComponentCreator('/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix', '290'),
+                path: '/docs/Devdocs/Optimize/Core Web Vitals/optimize-lcp',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Core Web Vitals/optimize-lcp', '8a7'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse',
-                component: ComponentCreator('/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse', '503'),
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools', '94d'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights',
-                component: ComponentCreator('/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights', 'ede'),
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution', '75b'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
               {
-                path: '/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test',
-                component: ComponentCreator('/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test', '12a'),
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table', 'cdd'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix', '2b7'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution', '9f2'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-table',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-table', 'be9'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/lighthouse',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/lighthouse', '1a7'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-solution',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-solution', '6bf'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-table',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-table', '82c'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights', '9c7'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution', 'edd'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-table',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-table', '052'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/web-page-test',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/web-page-test', '0dd'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-solution',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-solution', '12e'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-table',
+                component: ComponentCreator('/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-table', '2a5'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               },
@@ -275,18 +387,6 @@ export default [
                 component: ComponentCreator('/docs/Devdocs/Shopify/themes/Templates-and-Metafields', 'b26'),
                 exact: true,
                 sidebar: "devDocsSidebar"
-              },
-              {
-                path: '/docs/QCdocs/demo1',
-                component: ComponentCreator('/docs/QCdocs/demo1', 'ef3'),
-                exact: true,
-                sidebar: "qcSidebar"
-              },
-              {
-                path: '/docs/WorkProcess/demo2',
-                component: ComponentCreator('/docs/WorkProcess/demo2', '675'),
-                exact: true,
-                sidebar: "workProcessSidebar"
               }
             ]
           }

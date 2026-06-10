@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/GTmetrix-table",
+  "title": "Table Metrics GTmetrix",
+  "description": "Metric",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/14-GTmetrix-table.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/GTmetrix-table",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-table",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/14-GTmetrix-table.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "id": "GTmetrix-table",
+    "title": "Table Metrics GTmetrix"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "GTmetrix",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix"
+  },
+  "next": {
+    "title": "Solution GTmetrix",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution"
+  }
+}

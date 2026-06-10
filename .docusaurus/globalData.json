@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "QCdocs/demo1",
+          "mainDocId": "Devdocs/AI Docs/frontend_optimize_development",
           "docs": [
             {
               "id": "Devdocs/AI Docs/frontend_optimize_development",
@@ -16,48 +16,108 @@
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/CoreWebVitals/cls",
-              "path": "/docs/Devdocs/Optimize/CoreWebVitals/cls",
+              "id": "Devdocs/Optimize/Core Web Vitals/cls",
+              "path": "/docs/Devdocs/Optimize/Core Web Vitals/cls",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/CoreWebVitals/inp",
-              "path": "/docs/Devdocs/Optimize/CoreWebVitals/inp",
+              "id": "Devdocs/Optimize/Core Web Vitals/cls-optimize",
+              "path": "/docs/Devdocs/Optimize/Core Web Vitals/cls-optimize",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/CoreWebVitals/lcp",
-              "path": "/docs/Devdocs/Optimize/CoreWebVitals/lcp",
+              "id": "Devdocs/Optimize/Core Web Vitals/inp",
+              "path": "/docs/Devdocs/Optimize/Core Web Vitals/inp",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/cwv",
-              "path": "/docs/Devdocs/Optimize/cwv",
+              "id": "Devdocs/Optimize/Core Web Vitals/inp-optimize",
+              "path": "/docs/Devdocs/Optimize/Core Web Vitals/inp-optimize",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
-              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/chrome-devtools",
+              "id": "Devdocs/Optimize/Core Web Vitals/lcp",
+              "path": "/docs/Devdocs/Optimize/Core Web Vitals/lcp",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
-              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/GTmetrix",
+              "id": "Devdocs/Optimize/Core Web Vitals/optimize-lcp",
+              "path": "/docs/Devdocs/Optimize/Core Web Vitals/optimize-lcp",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
-              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/lighthouse",
+              "id": "Devdocs/Optimize/Performance Audit Website/chrome-devtools",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights",
-              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/pagespeed-insights",
+              "id": "Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution",
               "sidebar": "devDocsSidebar"
             },
             {
-              "id": "Devdocs/Optimize/PerformanceAuditWebsite/web-page-test",
-              "path": "/docs/Devdocs/Optimize/PerformanceAuditWebsite/web-page-test",
+              "id": "Devdocs/Optimize/Performance Audit Website/chrome-devtools-table",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/GTmetrix",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/GTmetrix-solution",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-solution",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/GTmetrix-table",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix-table",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/lighthouse",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/lighthouse-solution",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-solution",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/lighthouse-table",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-table",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/pagespeed-insights",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/pagespeed-insights-table",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-table",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/web-page-test",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/web-page-test",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/web-page-test-solution",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-solution",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/Optimize/Performance Audit Website/web-page-test-table",
+              "path": "/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-table",
               "sidebar": "devDocsSidebar"
             },
             {
@@ -194,32 +254,10 @@
               "id": "Devdocs/Shopify/themes/Templates-and-Metafields",
               "path": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields",
               "sidebar": "devDocsSidebar"
-            },
-            {
-              "id": "QCdocs/demo1",
-              "path": "/docs/QCdocs/demo1",
-              "sidebar": "qcSidebar"
-            },
-            {
-              "id": "WorkProcess/demo2",
-              "path": "/docs/WorkProcess/demo2",
-              "sidebar": "workProcessSidebar"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "qcSidebar": {
-              "link": {
-                "path": "/docs/QCdocs/demo1",
-                "label": "QCdocs/demo1"
-              }
-            },
-            "workProcessSidebar": {
-              "link": {
-                "path": "/docs/WorkProcess/demo2",
-                "label": "WorkProcess/demo2"
-              }
-            },
             "devDocsSidebar": {
               "link": {
                 "path": "/docs/Devdocs/AI Docs/frontend_optimize_development",

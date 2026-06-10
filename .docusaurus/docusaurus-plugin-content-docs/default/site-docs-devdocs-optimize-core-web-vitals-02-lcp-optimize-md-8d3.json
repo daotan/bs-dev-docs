@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Core Web Vitals/optimize-lcp",
+  "title": "Optimize LCP",
+  "description": "1. Giảm TTFB",
+  "source": "@site/docs/Devdocs/Optimize/Core Web Vitals/02-LCP-Optimize.md",
+  "sourceDirName": "Devdocs/Optimize/Core Web Vitals",
+  "slug": "/Devdocs/Optimize/Core Web Vitals/optimize-lcp",
+  "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/optimize-lcp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Core Web Vitals/02-LCP-Optimize.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "optimize-lcp",
+    "title": "Optimize LCP"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "LCP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/lcp"
+  },
+  "next": {
+    "title": "CLS",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/cls"
+  }
+}

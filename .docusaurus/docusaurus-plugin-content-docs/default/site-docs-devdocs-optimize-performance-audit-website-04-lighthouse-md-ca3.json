@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/lighthouse",
+  "title": "Lighthouse",
+  "description": "Các chỉ số đo được",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/04-lighthouse.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/lighthouse",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/04-lighthouse.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "lighthouse",
+    "title": "Lighthouse"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Solution PageSpeed Insights",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-solution"
+  },
+  "next": {
+    "title": "Table Metrics Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-table"
+  }
+}

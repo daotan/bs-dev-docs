@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Core Web Vitals/lcp",
+  "title": "LCP",
+  "description": "LCP Là Gì?",
+  "source": "@site/docs/Devdocs/Optimize/Core Web Vitals/01-LCP.md",
+  "sourceDirName": "Devdocs/Optimize/Core Web Vitals",
+  "slug": "/Devdocs/Optimize/Core Web Vitals/lcp",
+  "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/lcp",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Core Web Vitals/01-LCP.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "lcp",
+    "title": "LCP"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Treo.sh",
+    "permalink": "/docs/Devdocs/Optimize/treo"
+  },
+  "next": {
+    "title": "Optimize LCP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/optimize-lcp"
+  }
+}

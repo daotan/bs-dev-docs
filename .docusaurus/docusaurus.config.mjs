@@ -63,21 +63,14 @@ export default {
       "items": [
         {
           "type": "docSidebar",
-          "sidebarId": "qcSidebar",
-          "position": "left",
-          "label": "QC"
-        },
-        {
-          "type": "docSidebar",
-          "sidebarId": "workProcessSidebar",
-          "position": "left",
-          "label": "Work Process"
-        },
-        {
-          "type": "docSidebar",
           "sidebarId": "devDocsSidebar",
           "position": "left",
           "label": "Dev"
+        },
+        {
+          "to": "/guide",
+          "position": "left",
+          "label": "Guide Slides"
         }
       ],
       "hideOnScroll": false

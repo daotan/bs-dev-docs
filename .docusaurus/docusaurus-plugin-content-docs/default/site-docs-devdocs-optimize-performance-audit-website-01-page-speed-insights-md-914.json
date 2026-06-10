@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/pagespeed-insights",
+  "title": "PageSpeed Insights",
+  "description": "Các chỉ số đo được",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/01-PageSpeed-Insights.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/pagespeed-insights",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/01-PageSpeed-Insights.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "pagespeed-insights",
+    "title": "PageSpeed Insights"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Optimize INP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/inp-optimize"
+  },
+  "next": {
+    "title": "Table Metrics PageSpeed Insights",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/pagespeed-insights-table"
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Claude guide for starter - TAND",
+    "url": "https://bs-docs-tool.vercel.app/slides/claude-guide.html"
+  },
+  {
+    "id": 2,
+    "name": "Claude guide for Agents - PENDING",
+    "url": "https://bs-docs-tool.vercel.app/"
+  }
+]

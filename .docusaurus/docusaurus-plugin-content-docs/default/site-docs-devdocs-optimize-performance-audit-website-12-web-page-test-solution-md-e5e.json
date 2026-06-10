@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/web-page-test-solution",
+  "title": "Solution WebPageTest",
+  "description": "Ảnh report",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/12-web-page-test-solution.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/web-page-test-solution",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-solution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/12-web-page-test-solution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "id": "web-page-test-solution",
+    "title": "Solution WebPageTest"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Table Metrics WebPageTest",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/web-page-test-table"
+  },
+  "next": {
+    "title": "GTmetrix",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/GTmetrix"
+  }
+}

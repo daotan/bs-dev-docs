@@ -22,7 +22,7 @@
     "permalink": "/docs/Devdocs/AI Docs/frontend_optimize_development"
   },
   "next": {
-    "title": "Core Web Vitals",
-    "permalink": "/docs/Devdocs/Optimize/cwv"
+    "title": "LCP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/lcp"
   }
 }

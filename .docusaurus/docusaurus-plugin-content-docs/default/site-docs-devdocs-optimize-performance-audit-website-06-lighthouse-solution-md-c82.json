@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/lighthouse-solution",
+  "title": "Solution Lighthouse",
+  "description": "Ảnh report",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/06-lighthouse-solution.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/lighthouse-solution",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-solution",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/06-lighthouse-solution.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "lighthouse-solution",
+    "title": "Solution Lighthouse"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Table Metrics Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-table"
+  },
+  "next": {
+    "title": "Chrome DevTools",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools"
+  }
+}

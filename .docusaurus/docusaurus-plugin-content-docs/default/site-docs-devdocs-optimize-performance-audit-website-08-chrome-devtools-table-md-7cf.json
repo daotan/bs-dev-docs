@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/chrome-devtools-table",
+  "title": "Table Metrics Chrome DevTools",
+  "description": "Bảng tổng hợp metric",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/08-chrome-devtools-table.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/08-chrome-devtools-table.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "chrome-devtools-table",
+    "title": "Table Metrics Chrome DevTools"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Chrome DevTools",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools"
+  },
+  "next": {
+    "title": "Solution Chrome DevTools",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-solution"
+  }
+}

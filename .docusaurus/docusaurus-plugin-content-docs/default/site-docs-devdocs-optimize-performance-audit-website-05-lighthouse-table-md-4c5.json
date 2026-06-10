@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/lighthouse-table",
+  "title": "Table Metrics Lighthouse",
+  "description": "Metric",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/05-lighthouse-table.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/lighthouse-table",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-table",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/05-lighthouse-table.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "lighthouse-table",
+    "title": "Table Metrics Lighthouse"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse"
+  },
+  "next": {
+    "title": "Solution Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-solution"
+  }
+}

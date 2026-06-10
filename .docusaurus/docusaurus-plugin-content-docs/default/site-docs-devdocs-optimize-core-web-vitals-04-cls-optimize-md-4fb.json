@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Core Web Vitals/cls-optimize",
+  "title": "Optimize CLS",
+  "description": "Image/video luôn có width/height hoặc aspect-ratio",
+  "source": "@site/docs/Devdocs/Optimize/Core Web Vitals/04-CLS-Optimize.md",
+  "sourceDirName": "Devdocs/Optimize/Core Web Vitals",
+  "slug": "/Devdocs/Optimize/Core Web Vitals/cls-optimize",
+  "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/cls-optimize",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Core Web Vitals/04-CLS-Optimize.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "cls-optimize",
+    "title": "Optimize CLS"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "CLS",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/cls"
+  },
+  "next": {
+    "title": "INP",
+    "permalink": "/docs/Devdocs/Optimize/Core Web Vitals/inp"
+  }
+}

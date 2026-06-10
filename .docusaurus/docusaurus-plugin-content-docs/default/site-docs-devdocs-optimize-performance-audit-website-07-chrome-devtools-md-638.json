@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/Optimize/Performance Audit Website/chrome-devtools",
+  "title": "Chrome DevTools",
+  "description": "Các chỉ số đo được",
+  "source": "@site/docs/Devdocs/Optimize/Performance Audit Website/07-chrome-devtools.md",
+  "sourceDirName": "Devdocs/Optimize/Performance Audit Website",
+  "slug": "/Devdocs/Optimize/Performance Audit Website/chrome-devtools",
+  "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/Optimize/Performance Audit Website/07-chrome-devtools.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "chrome-devtools",
+    "title": "Chrome DevTools"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Solution Lighthouse",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/lighthouse-solution"
+  },
+  "next": {
+    "title": "Table Metrics Chrome DevTools",
+    "permalink": "/docs/Devdocs/Optimize/Performance Audit Website/chrome-devtools-table"
+  }
+}

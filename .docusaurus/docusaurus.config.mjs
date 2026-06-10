@@ -5,7 +5,7 @@
  */
 export default {
   "title": "BS Documents",
-  "tagline": "Learn more with friendly documents",
+  "tagline": "Shopify development, performance & app engineering docs",
   "favicon": "img/favicon.ico",
   "url": "https://your-docusaurus-site.example.com",
   "baseUrl": "/",
@@ -79,29 +79,54 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Dev Docs",
           "items": [
             {
-              "label": "Shopify Official Documents",
-              "to": "https://shopify.dev/docs/themes"
+              "label": "Shopify Themes & Liquid",
+              "to": "/docs/Devdocs/Shopify/themes/intro"
+            },
+            {
+              "label": "App Development",
+              "to": "/docs/Devdocs/Shopify/apps/intro"
+            },
+            {
+              "label": "Performance & Speed",
+              "to": "/docs/Devdocs/Optimize/treo"
             }
           ]
         },
         {
-          "title": "Community",
+          "title": "Resources",
           "items": [
             {
-              "label": "Shopify Community",
-              "href": "https://community.shopify.com/c/shopify-community/ct-p/en"
+              "label": "Shopify Dev",
+              "href": "https://shopify.dev"
             },
             {
-              "label": "Reddit",
-              "href": "https://www.reddit.com/r/shopify/"
+              "label": "Shopify Community",
+              "href": "https://community.shopify.com"
+            },
+            {
+              "label": "MDN Web Docs",
+              "href": "https://developer.mozilla.org"
+            }
+          ]
+        },
+        {
+          "title": "BSS Commerce",
+          "items": [
+            {
+              "label": "BSS Commerce",
+              "href": "https://bsscommerce.com"
+            },
+            {
+              "label": "Shopify Partner",
+              "href": "https://partners.shopify.com"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2026 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2026 BSS Commerce. Made for developers."
     },
     "prism": {
       "additionalLanguages": [

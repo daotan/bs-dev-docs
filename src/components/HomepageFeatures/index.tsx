@@ -1,56 +1,60 @@
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type FeatureItem = {
+  icon: string;
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+  description: string;
+  link: string;
+  tags: string[];
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    icon: '🎨',
+    title: 'Shopify Themes & Liquid',
+    description:
+      'Deep dive into Liquid templating, sections, blocks, metafields, and OS 2.0 theme architecture for production-grade Shopify stores.',
+    link: '/docs/Devdocs/Shopify/themes/intro',
+    tags: ['Liquid', 'Sections', 'Metafields', 'OS 2.0'],
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    icon: '⚡',
+    title: 'Performance & Speed',
+    description:
+      'Analyze and optimize Core Web Vitals with PageSpeed Insights, Treo, Lighthouse, Chrome DevTools, and WebPageTest.',
+    link: '/docs/Devdocs/Optimize/treo',
+    tags: ['PageSpeed', 'Core Web Vitals', 'Lighthouse', 'Treo'],
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    icon: '🔌',
+    title: 'App Development',
+    description:
+      'Build Shopify apps using the Remix framework, configure OAuth access scopes, and ship UI with Polaris design components.',
+    link: '/docs/Devdocs/Shopify/apps/intro',
+    tags: ['Remix', 'Polaris', 'OAuth', 'GraphQL'],
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ icon, title, description, link, tags }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className={clsx('col col--4', styles.featureCol)}>
+      <Link to={link} className={styles.featureCard}>
+        <div className={styles.featureIconWrap}>
+          <span className={styles.featureIcon}>{icon}</span>
+        </div>
+        <h3 className={styles.featureTitle}>{title}</h3>
+        <p className={styles.featureDesc}>{description}</p>
+        <div className={styles.featureTags}>
+          {tags.map((tag, i) => (
+            <span key={i} className={styles.tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+        <div className={styles.featureArrow}>Explore docs →</div>
+      </Link>
     </div>
   );
 }
@@ -59,6 +63,13 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionLabel}>// Documentation</span>
+          <h2 className={styles.sectionTitle}>What's inside</h2>
+          <p className={styles.sectionSubtitle}>
+            Technical guides for Shopify & performance-focused developers
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

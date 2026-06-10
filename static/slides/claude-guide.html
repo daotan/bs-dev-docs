@@ -66,13 +66,25 @@ body::before{
 .progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--amber),var(--accent));
   box-shadow:0 0 12px rgba(217,119,87,.6);transition:width .5s cubic-bezier(.4,0,.2,1)}
 
-.dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:40;
-  display:flex;flex-direction:column;gap:9px}
-.dots button{width:9px;height:9px;border-radius:50%;border:1px solid var(--border-bright);
-  background:transparent;cursor:pointer;padding:0;transition:all .3s}
-.dots button:hover{border-color:var(--accent)}
-.dots button.on{background:var(--accent);border-color:var(--accent);
-  box-shadow:0 0 10px rgba(217,119,87,.7);transform:scale(1.25)}
+.toc-nav{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;
+  display:flex;flex-direction:column;
+  background:rgba(20,16,13,.93);
+  border:1px solid var(--border-bright);border-right:none;
+  border-radius:12px 0 0 12px;
+  padding:8px 0;backdrop-filter:blur(14px);
+  max-height:80vh;overflow-y:auto;overflow-x:hidden;
+  width:196px;scrollbar-width:none}
+.toc-nav::-webkit-scrollbar{display:none}
+.toc-nav-item{display:flex;align-items:center;gap:9px;padding:7px 14px;
+  cursor:pointer;font-family:var(--mono);font-size:11.5px;color:var(--text-faint);
+  transition:color .2s,background .2s;white-space:nowrap;
+  border-left:2px solid transparent;user-select:none}
+.toc-nav-item:hover{color:var(--text);background:rgba(255,255,255,.04)}
+.toc-nav-item.on{color:var(--accent-soft);border-left-color:var(--accent);
+  background:rgba(217,119,87,.07)}
+.toc-nav-item .tn{color:var(--accent);font-weight:700;font-size:10.5px;
+  flex:0 0 auto;min-width:20px}
+.toc-nav-item.on .tn{color:var(--accent-soft)}
 
 .hint{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:40;
   font-family:var(--mono);font-size:11.5px;color:var(--text-faint);
@@ -224,11 +236,14 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
 .close .by{margin-top:26px;font-family:var(--mono);font-size:14px;color:var(--text-faint)}
 .close .endprompt{margin-top:40px;font-family:var(--mono);font-size:14px;color:var(--text-dim)}
 
+@media(min-width:761px){
+  .slide{padding-right:212px}
+}
 @media(max-width:760px){
   .g2,.g3,.vs,.toc{grid-template-columns:1fr}
   .bar-row{grid-template-columns:1fr;gap:6px}
   .bar-row .pct{text-align:left}
-  .dots{display:none}
+  .toc-nav{display:none}
   .slide{padding:74px 22px 70px}
 }
 @media(prefers-reduced-motion:reduce){
@@ -248,13 +263,13 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   <div class="counter"><b id="cur">01</b> / <span id="tot">16</span></div>
 </div>
 <div class="progress"><div class="progress-bar" id="pbar"></div></div>
-<nav class="dots" id="dots"></nav>
+<nav class="toc-nav" id="toc-nav"></nav>
 <div class="hint" id="hint"><kbd>↑↓</kbd> hoặc cuộn · <kbd>F</kbd> fullscreen · <kbd>Home</kbd> về đầu</div>
 
 <main class="deck" id="deck">
 
   <!-- 1. COVER -->
-  <section class="slide cover" data-tab="readme.md">
+  <section class="slide cover" data-tab="readme.md" data-toc="Cover">
     <div class="slide-inner">
       <div class="badge reveal"><span class="dot"></span>BEST PRACTICES GUIDE · [Starter]</div>
       <h1 class="reveal"><span class="g">Claude</span> Code<br>cho Developer Team</h1>
@@ -266,7 +281,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 2. OVERVIEW -->
-  <section class="slide" data-tab="overview.md">
+  <section class="slide" data-tab="overview.md" data-toc="Tổng quan">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> cat overview.md</div>
       <div class="kicker reveal">Tổng quan &amp; Mục tiêu</div>
@@ -284,7 +299,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 3. TOC -->
-  <section class="slide" data-tab="index.md">
+  <section class="slide" data-tab="index.md" data-toc="Mục lục">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> ls ./</div>
       <div class="kicker reveal">Mục lục</div>
@@ -305,7 +320,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 4. CLAUDE.md concept -->
-  <section class="slide" data-tab="01-claude-md.md">
+  <section class="slide" data-tab="01-claude-md.md" data-toc="01 · CLAUDE.md">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">01-claude-md.md</span></div>
       <div class="kicker reveal">Chương 01</div>
@@ -320,7 +335,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 5. CLAUDE.md template -->
-  <section class="slide" data-tab="01-claude-md.md">
+  <section class="slide" data-tab="01-claude-md.md" data-toc="01 · Template">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> cat <span class="f">CLAUDE.md</span></div>
       <div class="kicker reveal">Chương 01 · Template</div>
@@ -348,7 +363,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 6. ET TASK -->
-  <section class="slide" data-tab="02-et-task.md">
+  <section class="slide" data-tab="02-et-task.md" data-toc="02 · ET Task">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">02-et-task.md</span></div>
       <div class="kicker reveal">Chương 02</div>
@@ -373,7 +388,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 7. IMPLEMENT -->
-  <section class="slide" data-tab="03-implement.md">
+  <section class="slide" data-tab="03-implement.md" data-toc="03 · Implement">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">03-implement.md</span></div>
       <div class="kicker reveal">Chương 03</div>
@@ -389,7 +404,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 8. DEBUG -->
-  <section class="slide" data-tab="04-debug.md">
+  <section class="slide" data-tab="04-debug.md" data-toc="04 · Debug">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">04-debug.md</span></div>
       <div class="kicker reveal">Chương 04</div>
@@ -407,7 +422,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 9. SELF-TEST -->
-  <section class="slide" data-tab="05-self-test.md">
+  <section class="slide" data-tab="05-self-test.md" data-toc="05 · Self-test">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">05-self-test.md</span></div>
       <div class="kicker reveal">Chương 05</div>
@@ -424,7 +439,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 10. FIX BUG -->
-  <section class="slide" data-tab="06-fix-bug.md">
+  <section class="slide" data-tab="06-fix-bug.md" data-toc="06 · Fix Bug">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">06-fix-bug.md</span></div>
       <div class="kicker reveal">Chương 06</div>
@@ -440,7 +455,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 11. TOKEN -->
-  <section class="slide" data-tab="07-token.md">
+  <section class="slide" data-tab="07-token.md" data-toc="07 · Token">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">07-token.md</span></div>
       <div class="kicker reveal">Chương 07</div>
@@ -468,7 +483,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 12. ADVANCED -->
-  <section class="slide" data-tab="08-advanced.md">
+  <section class="slide" data-tab="08-advanced.md" data-toc="08 · Advanced">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">08-advanced.md</span></div>
       <div class="kicker reveal">Chương 08</div>
@@ -489,7 +504,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 13. SKILLS -->
-  <section class="slide" data-tab="09-skills.md">
+  <section class="slide" data-tab="09-skills.md" data-toc="09 · Skills">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">09-skills.md</span></div>
       <div class="kicker reveal">Chương 09</div>
@@ -516,7 +531,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 14. BEST PRACTICES -->
-  <section class="slide" data-tab="10-best-practices.md">
+  <section class="slide" data-tab="10-best-practices.md" data-toc="10 · Anti-patterns">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> open <span class="f">10-best-practices.md</span></div>
       <div class="kicker reveal">Chương 10</div>
@@ -542,7 +557,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 15. CHEAT SHEET -->
-  <section class="slide" data-tab="cheat-sheet.md">
+  <section class="slide" data-tab="cheat-sheet.md" data-toc="Cheat Sheet">
     <div class="slide-inner">
       <div class="prompt reveal"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> cat <span class="f">cheat-sheet.md</span></div>
       <div class="kicker reveal">Quick Reference</div>
@@ -559,7 +574,7 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
   </section>
 
   <!-- 16. CLOSE -->
-  <section class="slide close" data-tab="EOF">
+  <section class="slide close" data-tab="EOF" data-toc="EOF">
     <div class="slide-inner">
       <div class="prompt reveal" style="text-align:center"><span class="u">tandv@bsscommerce</span><span class="c">:</span><span class="p">~</span><span class="c">$</span> echo $PHILOSOPHY</div>
       <div class="quote reveal">Claude Code là công cụ —<br><span class="g">bạn</span> là người có quyền quyết định.</div>
@@ -574,33 +589,43 @@ h2{font-family:var(--display);font-weight:600;line-height:1.05;letter-spacing:-.
 (function(){
   const deck=document.getElementById('deck');
   const slides=[...deck.querySelectorAll('.slide')];
-  const dotsWrap=document.getElementById('dots');
+  const tocNav=document.getElementById('toc-nav');
   const pbar=document.getElementById('pbar');
   const curEl=document.getElementById('cur');
   const totEl=document.getElementById('tot');
   const tabEl=document.getElementById('tabname');
   const hint=document.getElementById('hint');
-  let idx=0,locked=false;
+  let idx=0;
 
   totEl.textContent=String(slides.length).padStart(2,'0');
 
-  // dots
+  // build toc items
   slides.forEach((s,i)=>{
-    const b=document.createElement('button');
-    b.setAttribute('aria-label','Slide '+(i+1));
-    b.addEventListener('click',()=>go(i));
-    dotsWrap.appendChild(b);
+    const item=document.createElement('div');
+    item.className='toc-nav-item';
+    item.setAttribute('role','button');
+    item.setAttribute('aria-label','Slide '+(i+1));
+    const num=document.createElement('span');
+    num.className='tn';
+    num.textContent=String(i+1).padStart(2,'0');
+    const label=document.createElement('span');
+    label.textContent=s.dataset.toc||'';
+    item.appendChild(num);
+    item.appendChild(label);
+    item.addEventListener('click',()=>go(i));
+    tocNav.appendChild(item);
   });
-  const dots=[...dotsWrap.children];
+  const tocItems=[...tocNav.children];
 
   function setActive(i){
     idx=i;
     slides.forEach((s,k)=>s.classList.toggle('active',k===i));
-    dots.forEach((d,k)=>d.classList.toggle('on',k===i));
+    tocItems.forEach((d,k)=>d.classList.toggle('on',k===i));
     curEl.textContent=String(i+1).padStart(2,'0');
     pbar.style.width=((i)/(slides.length-1)*100)+'%';
     const tab=slides[i].dataset.tab;
     if(tab) tabEl.textContent=tab;
+    tocItems[i]?.scrollIntoView({block:'nearest',behavior:'smooth'});
   }
 
   function go(i){

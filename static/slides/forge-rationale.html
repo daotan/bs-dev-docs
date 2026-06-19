@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forge — Why LLM Workflows Need an Orchestrator</title>
+<style>
+  :root {
+    --bg: #f5f3ef;
+    --surface: #ffffff;
+    --surface2: #eceae4;
+    --border: #d6d3cc;
+    --text: #2c2c2c;
+    --text-muted: #6b6560;
+    --accent: #2563eb;
+    --green: #16a34a;
+    --red: #dc2626;
+    --orange: #ca8a04;
+    --purple: #7c3aed;
+    --cyan: #0891b2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 56px 24px 40px;
+    background: linear-gradient(180deg, #eceae4 0%, var(--bg) 100%);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero h1 { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .hero h1 span { color: var(--accent); }
+  .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  section + section { border-top: 1px solid var(--border); }
+  h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; text-align: center; }
+  h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
+  .subtitle { color: var(--text-muted); text-align: center; max-width: 650px; margin: -12px auto 24px; font-size: 0.95rem; }
+
+  /* ── Problem cards ── */
+  .problems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .problem-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .problem-card::before {
+    content: attr(data-num);
+    position: absolute; top: -8px; right: 10px;
+    font-size: 3rem; font-weight: 900; color: rgba(220,38,38,0.06); line-height: 1;
+  }
+  .problem-card h3 { color: var(--red); font-size: 0.95rem; }
+  .problem-card p { color: var(--text-muted); font-size: 0.85rem; }
+  .problem-card .effect {
+    margin-top: 10px; padding: 8px 12px;
+    background: rgba(220,38,38,0.04); border-left: 3px solid var(--red);
+    border-radius: 0 6px 6px 0; font-size: 0.8rem; color: var(--text-muted);
+  }
+
+  /* ── Cycle (inline in problems section) ── */
+  .cycle-bar {
+    margin-top: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    flex-wrap: wrap;
+  }
+  .cycle-bar .cycle-label {
+    font-weight: 700; font-size: 0.9rem; color: var(--text);
+    flex-shrink: 0;
+  }
+  .cycle-bar .cycle-label small {
+    display: block; font-weight: 400; font-size: 0.8rem; color: var(--text-muted);
+  }
+  .cycle-bar .cycle-chain {
+    display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+    font-size: 0.82rem;
+  }
+  .cycle-bar .cc-node {
+    padding: 5px 10px; border-radius: 6px; font-weight: 600; border: 1.5px solid;
+    background: var(--surface); white-space: nowrap;
+  }
+  .cycle-bar .cc-node.bad { border-color: var(--red); color: var(--red); }
+  .cycle-bar .cc-node.warn { border-color: var(--orange); color: var(--orange); }
+  .cycle-bar .cc-arr { color: var(--text-muted); font-size: 1rem; }
+  .cycle-bar .cc-loop {
+    padding: 5px 10px; border-radius: 6px;
+    border: 1.5px dashed var(--red); color: var(--red);
+    font-size: 0.8rem; font-style: italic;
+  }
+
+  /* ── Breakdown side-by-side ── */
+  .breakdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .breakdown-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .breakdown-panel .bp-header {
+    padding: 12px 16px; font-weight: 700; font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .breakdown-panel.current .bp-header { background: rgba(220,38,38,0.05); color: var(--red); }
+  .breakdown-panel.forge .bp-header { background: rgba(37,99,235,0.05); color: var(--accent); }
+  .breakdown-panel .bp-body { padding: 14px 16px; }
+  .bp-file {
+    background: var(--surface2); border-radius: 6px;
+    padding: 10px 12px; margin-bottom: 10px;
+    font-family: 'SF Mono','Fira Code','Consolas',monospace;
+    font-size: 0.78rem; line-height: 1.55; white-space: pre-wrap;
+  }
+  .bp-file .fn { font-weight: 700; color: var(--text); display: block; margin-bottom: 2px; font-size: 0.82rem; }
+  .bp-file .bad { color: var(--red); font-weight: 600; }
+  .bp-file .ok { color: var(--green); font-weight: 600; }
+  .bp-note { font-size: 0.82rem; color: var(--text-muted); padding: 6px 0 0; }
+
+  /* ── Architecture ── */
+  .arch-diagram {
+    display: flex; flex-direction: column; align-items: center;
+    margin: 20px auto; max-width: 760px;
+  }
+  .arch-row {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px; width: 100%; flex-wrap: wrap;
+  }
+  .arch-box {
+    padding: 12px 20px; border-radius: 10px; text-align: center;
+    font-weight: 600; font-size: 0.9rem; min-width: 140px;
+    border: 2px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .arch-box.human { background: rgba(124,58,237,0.06); border-color: var(--purple); color: var(--purple); }
+  .arch-box.forge { background: rgba(37,99,235,0.06); border-color: var(--accent); color: var(--accent); }
+  .arch-box.llm { background: rgba(22,163,74,0.06); border-color: var(--green); color: var(--green); }
+  .arch-box small { display: block; font-weight: 400; font-size: 0.75rem; opacity: 0.7; margin-top: 3px; }
+  .arch-conn {
+    display: flex; flex-direction: column; align-items: center; padding: 3px 0;
+  }
+  .arch-conn .ln { width: 2px; height: 14px; background: var(--border); }
+  .arch-conn .hd { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid var(--border); }
+  .arch-conn .lb { color: var(--text-muted); font-size: 0.73rem; margin: 1px 0; }
+
+  /* Evidence loop */
+  .ev-flow {
+    display: flex; align-items: center; justify-content: center;
+    gap: 0; margin: 20px auto; flex-wrap: wrap;
+  }
+  .ev-b {
+    padding: 10px 16px; border-radius: 8px; border: 1.5px solid;
+    background: var(--surface); text-align: center; box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .ev-b strong { display: block; font-size: 0.85rem; }
+  .ev-b span { font-size: 0.75rem; color: var(--text-muted); }
+  .ev-b.fb { border-color: var(--accent); } .ev-b.fb strong { color: var(--accent); }
+  .ev-b.cb { border-color: var(--green); } .ev-b.cb strong { color: var(--green); }
+  .ev-b.pb { border-color: var(--green); background: rgba(22,163,74,0.04); } .ev-b.pb strong { color: var(--green); }
+  .ev-b.xb { border-color: var(--red); background: rgba(220,38,38,0.03); } .ev-b.xb strong { color: var(--red); }
+  .ev-a { font-size: 1.1rem; color: var(--text-muted); padding: 0 8px; }
+  .ev-br { display: flex; flex-direction: column; gap: 8px; margin-left: 8px; }
+
+  /* ── Principles ── */
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .principle-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .principle-card .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    font-weight: 700; font-size: 0.78rem; margin-bottom: 8px;
+  }
+  .principle-card h3 { color: var(--cyan); font-size: 0.95rem; }
+  .principle-card p { color: var(--text-muted); font-size: 0.85rem; }
+  .principle-card code { background: var(--surface2); padding: 1px 4px; border-radius: 3px; font-size: 0.82em; }
+
+  /* ── Workflow phases ── */
+  .phase-list { margin: 20px auto; max-width: 800px; }
+  .phase-row {
+    display: flex; align-items: flex-start; gap: 16px;
+    padding: 14px 0; border-bottom: 1px dashed var(--border);
+  }
+  .phase-row:last-child { border-bottom: none; }
+  .phase-lbl { flex-shrink: 0; width: 70px; font-size: 0.73rem; font-weight: 600; color: var(--text-muted); padding-top: 3px; }
+  .phase-nm { font-weight: 700; color: var(--accent); font-size: 0.95rem; margin-bottom: 6px; }
+  .phase-steps { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .sc {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 4px 10px; border-radius: 6px; font-size: 0.8rem;
+    border: 1.5px solid; background: var(--surface);
+  }
+  .sc.pass { border-color: var(--green); color: var(--green); }
+  .sc.fail { border-color: var(--red); color: var(--red); }
+  .sc.gate { border-color: var(--purple); color: var(--purple); background: rgba(124,58,237,0.06); font-weight: 700; }
+  .sn { font-size: 0.75rem; color: var(--text-muted); font-style: italic; }
+
+  /* ── Before/After ── */
+  .compare {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;
+  }
+  .compare-panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .compare-panel .ph {
+    padding: 12px 16px; font-weight: 700; font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .compare-panel.before .ph { background: rgba(220,38,38,0.05); color: var(--red); }
+  .compare-panel.after .ph { background: rgba(22,163,74,0.05); color: var(--green); }
+  .compare-panel .pb {
+    padding: 14px 16px;
+    font-family: 'SF Mono','Fira Code','Consolas',monospace;
+    font-size: 0.78rem; line-height: 1.65; color: var(--text-muted); white-space: pre-wrap;
+  }
+  .pb .ok { color: var(--green); } .pb .warn { color: var(--orange); }
+  .pb .bad { color: var(--red); } .pb .hl { color: var(--accent); }
+  .pb .gate { color: var(--purple); }
+
+  /* ── Insight ── */
+  .insight {
+    text-align: center; max-width: 680px; margin: 0 auto; padding: 36px 24px;
+  }
+  .insight blockquote {
+    font-size: 1.15rem; font-style: italic; color: var(--accent);
+    border: none; margin-bottom: 12px; line-height: 1.5;
+  }
+  .insight p { color: var(--text-muted); font-size: 0.95rem; }
+
+  /* ── Evolution timeline ── */
+  .evo-stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .evo-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .evo-card .evo-header {
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .evo-card .evo-header .evo-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .evo-card.done .evo-header { background: rgba(22,163,74,0.05); color: var(--green); }
+  .evo-card.done .evo-badge { background: rgba(22,163,74,0.12); color: var(--green); }
+  .evo-card.wip .evo-header { background: rgba(37,99,235,0.05); color: var(--accent); }
+  .evo-card.wip .evo-badge { background: rgba(37,99,235,0.12); color: var(--accent); }
+  .evo-card.next .evo-header { background: rgba(124,58,237,0.05); color: var(--purple); }
+  .evo-card.next .evo-badge { background: rgba(124,58,237,0.12); color: var(--purple); }
+  .evo-card .evo-body {
+    padding: 14px 16px;
+  }
+  .evo-card .evo-body p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .evo-card .evo-body p:last-child { margin-bottom: 0; }
+  .evo-card .evo-code {
+    background: var(--surface2);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-family: 'SF Mono','Fira Code','Consolas',monospace;
+    font-size: 0.76rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    color: var(--text-muted);
+    margin-top: 8px;
+  }
+  .evo-card .evo-code .kw { color: var(--accent); font-weight: 600; }
+  .evo-card .evo-code .cm { color: var(--green); }
+  .evo-card .evo-code .st { color: var(--orange); }
+  .evo-arrow-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--border);
+  }
+
+  /* ── Sidebar nav ── */
+  .page-wrap {
+    display: flex;
+    min-height: 100vh;
+  }
+  .sidebar {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 24px 16px;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .sidebar .nav-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar a {
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 2px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1.4;
+  }
+  .sidebar a:hover {
+    background: var(--surface2);
+    color: var(--text);
+  }
+  .sidebar a.active {
+    background: rgba(37,99,235,0.08);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .main-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  @media (max-width: 900px) {
+    .sidebar { display: none; }
+    .hero h1 { font-size: 2rem; }
+    .problems { grid-template-columns: 1fr; }
+    .principles { grid-template-columns: 1fr; }
+    .breakdown { grid-template-columns: 1fr; }
+    .compare { grid-template-columns: 1fr; }
+    section { padding: 32px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+<!-- ═══ SIDEBAR NAV ═══ -->
+<nav class="sidebar">
+  <div class="nav-title">Forge</div>
+  <a href="#problems">The 6 Problems</a>
+  <a href="#commands">How Commands Work</a>
+  <a href="#evolution">What We've Built So Far</a>
+  <a href="#architecture">Architecture</a>
+  <a href="#principles">5 Principles</a>
+  <a href="#workflow">Workflow Phases</a>
+  <a href="#comparison">Before vs After</a>
+  <a href="#insight">Key Insight</a>
+</nav>
+
+<div class="main-content">
+
+<!-- ═══ HERO ═══ -->
+<div class="hero" id="top">
+  <h1><span>Forge</span> Orchestrator</h1>
+  <p>Why LLM workflows need a deterministic orchestrator &mdash; and how Forge separates the worker from the supervisor.</p>
+</div>
+
+<!-- ═══ PROBLEMS + CYCLE ═══ -->
+<section id="problems">
+  <h2>The 6 Problems with Model-Driven Workflows</h2>
+  <div class="problems">
+    <div class="problem-card" data-num="1">
+      <h3>Bloated Context</h3>
+      <p>300-600 lines of instructions dumped at once. By Phase 8, Phase 1 is compressed or forgotten.</p>
+      <div class="effect">Starts strong, then operates on vibes.</div>
+    </div>
+    <div class="problem-card" data-num="2">
+      <h3>Hallucinated Completion</h3>
+      <p>&ldquo;Design verified&rdquo; after checking 2 of 15 components. &ldquo;Build passes&rdquo; without running it.</p>
+      <div class="effect">You believe &ldquo;done&rdquo; — bugs surface in QA.</div>
+    </div>
+    <div class="problem-card" data-num="3">
+      <h3>Skipped Phases</h3>
+      <p>12 phases = 12 chances to skip. The model silently walks around your safety net.</p>
+      <div class="effect">Phases designed to catch problems get skipped.</div>
+    </div>
+    <div class="problem-card" data-num="4">
+      <h3>Assumption Cascade</h3>
+      <p>Ambiguity in Phase 2? Model assumes instead of asking. By Phase 6, three assumptions stack.</p>
+      <div class="effect">Code works but solves the wrong problem.</div>
+    </div>
+    <div class="problem-card" data-num="5">
+      <h3>Context Window Decay</h3>
+      <p>Long conversations compress earlier messages. A 50-line rule becomes one sentence.</p>
+      <div class="effect">First phase excellent, last phase sloppy.</div>
+    </div>
+    <div class="problem-card" data-num="6">
+      <h3>Mindset Drift</h3>
+      <p>Rules about <em>how to think</em> are followed when fresh, ignored when not.</p>
+      <div class="effect">Patches first, asks never. Declares done early.</div>
+    </div>
+  </div>
+
+  <!-- Cycle bar -->
+  <div class="cycle-bar">
+    <div class="cycle-label">
+      Why more rules don't fix it:
+      <small>The model is both the worker and the supervisor.</small>
+    </div>
+    <div class="cycle-chain">
+      <span class="cc-node bad">Skip step</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-node warn">Add rule</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-node warn">300&rarr;600 lines</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-node bad">Compressed</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-node bad">Drift</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-loop">&#x21BA; repeat</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW COMMANDS WORK TODAY ═══ -->
+<section id="commands">
+  <h2>How Commands Work Today</h2>
+  <p class="subtitle">
+    A workflow lives as one massive skill file or CLAUDE.md. The model receives <em>everything</em> in a single context dump.
+  </p>
+  <div class="breakdown">
+    <div class="breakdown-panel current">
+      <div class="bp-header">Current: One Giant Instruction Dump</div>
+      <div class="bp-body">
+        <div class="bp-file"><span class="fn">CLAUDE.md</span>Cross-app rules, commit conventions, stack info, security rules…
+<span class="bad">~200 lines</span> loaded into every conversation</div>
+        <div class="bp-file"><span class="fn">/build-feature (skill file)</span>Phase 0a: download SRS
+Phase 0b: download design
+Phase 1: explore spec &amp; produce findings
+Phase 2: write plan &amp; contract
+Phase 3: design discovery
+Phase 4: build backend (schema, domain, persistence, API)
+Phase 5: build frontend
+Phase 6: design verification
+Phase 7: SRS audit
+Phase 8: tests
+Phase 9: review …
+<span class="bad">~594 lines</span> — all loaded at once into one session</div>
+        <div class="bp-file"><span class="fn">server/CLAUDE.md + frontend/CLAUDE.md</span>Architecture patterns, layer rules, conventions…
+<span class="bad">~400 more lines</span></div>
+        <p class="bp-note">Total: <strong>~1,200 lines</strong> competing for attention in one context window.</p>
+      </div>
+    </div>
+
+    <div class="breakdown-panel forge">
+      <div class="bp-header">Forge: Focused Steps from YAML</div>
+      <div class="bp-body">
+        <div class="bp-file"><span class="fn">workflows/build-feature.yaml</span>phases:
+  gather:
+    steps: [download-srs, download-design, read-spec]
+  explore:
+    steps: [explore-spec]
+    gate: human
+  plan:
+    steps: [design-discovery, write-plan]
+    gate: human
+  build-backend:
+    steps: [schema, domain, persistence, api]
+  verify:
+    steps: [design-verify, srs-audit, tests]
+    gate: human
+
+<span class="ok">~40 lines</span> — Forge reads this, model never sees it</div>
+        <div class="bp-file"><span class="fn">steps/explore-spec.yaml</span>prompt: |
+  Read the spec at {{spec_path}}.
+  Identify ambiguities, missing rules, and
+  questions for the BA. Output as JSON.
+evidence:
+  - output_contains: "findings"
+inject: [spec_path, srs_path]
+
+<span class="ok">~15 lines</span> — ALL the model sees for this step</div>
+        <div class="bp-file"><span class="fn">steps/build-domain.yaml</span>prompt: |
+  Build the domain layer for {{feature}}.
+  Schema: {{schema_output}}
+evidence:
+  - files_exist: ["**/*aggregate*", "**/*mapper*"]
+  - command: "yarn build"
+inject: [plan_path, schema_output]
+
+<span class="ok">~20 lines</span> — fresh session, only relevant context</div>
+        <p class="bp-note">Each step: <strong>10-30 lines</strong>. No phase-skipping. Evidence checked by Forge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHAT WE'VE BUILT SO FAR ═══ -->
+<section id="evolution">
+  <h2>What We've Built So Far</h2>
+  <p class="subtitle">
+    We didn't jump straight to Forge. Each iteration taught us what the model can and can't be trusted to do.
+  </p>
+  <div class="evo-stages">
+
+    <div class="evo-card done">
+      <div class="evo-header"><span class="evo-badge">Done</span> Stage 1: Text-Only Skills</div>
+      <div class="evo-body">
+        <p>Skill files are pure markdown: "Phase 1: do X. Phase 2: do Y." The model reads the whole thing and we hope it follows every step.</p>
+        <p><strong>Problem:</strong> The model treats it as a suggestion. Skips phases, self-reports completion, drifts in long conversations.</p>
+        <div class="evo-code"><span class="cm"># /build-feature skill (594 lines)</span>
+Phase 0a: Download SRS
+Phase 0b: Download design
+Phase 1: Explore spec, produce findings
+Phase 2: Write plan, get approval
+Phase 3: Design discovery
+Phase 4: Build backend
+<span class="cm">... 8 more phases, all in one blob</span></div>
+      </div>
+    </div>
+
+    <div class="evo-card done">
+      <div class="evo-header"><span class="evo-badge">Done</span> Stage 2: Tool Calls as Scripts</div>
+      <div class="evo-body">
+        <p>Key insight: <strong>skills shouldn't be just text</strong>. We converted deterministic operations (fetch SRS, download design, run validation) into actual tool calls wrapped in scripts.</p>
+        <p>The LLM's job shifts from "follow these instructions" to <strong>analyze context and pass the right arguments</strong> to a script that executes deterministically.</p>
+        <div class="evo-code"><span class="cm"># Instead of: "download the SRS document"</span>
+<span class="cm"># The skill calls a script:</span>
+
+<span class="kw">fetch-srs</span> <span class="st">--doc-id</span> ${analyzed_doc_id}
+<span class="kw">fetch-design</span> <span class="st">--url</span> ${design_url}
+<span class="kw">validate</span> <span class="st">--app</span> server
+
+<span class="cm"># LLM analyzes which doc, which URL</span>
+<span class="cm"># Script handles the actual download</span>
+<span class="cm"># No hallucinated "I downloaded it"</span></div>
+      </div>
+    </div>
+
+    <div class="evo-card next">
+      <div class="evo-header"><span class="evo-badge">Next</span> Stage 3: Forge Orchestrator</div>
+      <div class="evo-body">
+        <p>Take the script pattern to its conclusion: <strong>every step</strong> is a script, <strong>every transition</strong> is enforced by a state machine, <strong>every output</strong> is evidence-checked.</p>
+        <p>The LLM never sees the full workflow. It gets one focused prompt, does one thing, and Forge decides what's next.</p>
+        <div class="evo-code"><span class="cm"># Forge reads the YAML, not the LLM:</span>
+
+<span class="kw">phase</span>: build-backend
+  <span class="kw">step</span>: domain
+    <span class="kw">prompt</span>: <span class="st">"Build aggregate for {{feature}}"</span>
+    <span class="kw">inject</span>: [plan_path, schema_output]
+    <span class="kw">evidence</span>:
+      - files_exist: [<span class="st">"*aggregate*"</span>]
+      - command: <span class="st">"yarn build"</span>
+    <span class="kw">on_fail</span>: retry(3)</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Progression summary bar -->
+  <div class="cycle-bar" style="margin-top:20px;">
+    <div class="cycle-label">
+      The evolution:
+      <small>From hoping the model follows text &rarr; to deterministic execution.</small>
+    </div>
+    <div class="cycle-chain">
+      <span class="cc-node warn">Text blob</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-node" style="border-color:var(--green);color:var(--green);">LLM + scripts</span>
+      <span class="cc-arr">&rarr;</span>
+      <span class="cc-node" style="border-color:var(--accent);color:var(--accent);">Forge</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ARCHITECTURE + EVIDENCE ═══ -->
+<section id="architecture">
+  <h2>The Forge Architecture</h2>
+  <p class="subtitle">Separation of concerns — each role does what it's best at.</p>
+
+  <div class="arch-diagram">
+    <div class="arch-row">
+      <div class="arch-box human">Human<small>Defines workflow (YAML) &middot; Approves at gates</small></div>
+    </div>
+    <div class="arch-conn"><div class="ln"></div><div class="hd"></div><span class="lb">YAML workflow + gate decisions</span></div>
+    <div class="arch-row">
+      <div class="arch-box forge" style="min-width:460px;">Forge — Rust Binary (Deterministic State Machine)<small>Reads YAML &middot; Enforces sequence &middot; Checks evidence &middot; Manages sessions</small></div>
+    </div>
+    <div class="arch-conn"><div class="ln"></div><div class="hd"></div><span class="lb">10-30 line prompt per step &middot; Only needed context injected</span></div>
+    <div class="arch-row" style="gap:10px;">
+      <div class="arch-box llm">Session 1<small>explore spec</small></div>
+      <div class="arch-box llm">Session 2<small>write plan</small></div>
+      <div class="arch-box llm">Session 3<small>build domain</small></div>
+      <div class="arch-box llm" style="opacity:0.4;">&hellip;<small>one task at a time</small></div>
+    </div>
+  </div>
+
+  <h3 style="text-align:center; color:var(--accent); margin:28px 0 16px;">Evidence Check Loop (per step)</h3>
+  <div class="ev-flow">
+    <div class="ev-b fb"><strong>Forge</strong><span>sends prompt</span></div>
+    <div class="ev-a">&rarr;</div>
+    <div class="ev-b cb"><strong>Claude</strong><span>does focused work</span></div>
+    <div class="ev-a">&rarr;</div>
+    <div class="ev-b fb"><strong>Forge</strong><span>checks evidence</span></div>
+    <div class="ev-a">&rarr;</div>
+    <div class="ev-br">
+      <div class="ev-b pb"><strong>Pass</strong><span>next step or gate</span></div>
+      <div class="ev-b xb"><strong>Fail</strong><span>retry with error (max 3)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 5 PRINCIPLES ═══ -->
+<section id="principles">
+  <h2>5 Core Principles</h2>
+  <div class="principles">
+    <div class="principle-card">
+      <div class="num">1</div>
+      <h3>LLM Never Sees Full Workflow</h3>
+      <p>Each step gets 10-30 lines. Can't skip Phase 3 — doesn't know Phase 4 exists.</p>
+    </div>
+    <div class="principle-card">
+      <div class="num">2</div>
+      <h3>Evidence, Not Self-Report</h3>
+      <p>Forge runs <code>yarn build</code> itself. File exists or doesn't. Command passes or fails.</p>
+    </div>
+    <div class="principle-card">
+      <div class="num">3</div>
+      <h3>Fresh Session Per Step</h3>
+      <p>No accumulated context. Only explicitly injected data carries forward.</p>
+    </div>
+    <div class="principle-card">
+      <div class="num">4</div>
+      <h3>No AI in Orchestration</h3>
+      <p>Rust binary. Cannot be convinced to skip. Cannot hallucinate a file exists.</p>
+    </div>
+    <div class="principle-card">
+      <div class="num">5</div>
+      <h3>Human Gates</h3>
+      <p>At spec, plan, design, SRS audit — the tool stops. Only the human can approve.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WORKFLOW PHASES ═══ -->
+<section id="workflow">
+  <h2>How Forge Runs a Feature Workflow</h2>
+  <div class="phase-list">
+    <div class="phase-row">
+      <div class="phase-lbl">PHASE 1</div>
+      <div>
+        <div class="phase-nm">GATHER</div>
+        <div class="phase-steps">
+          <div class="sc pass">&#x2713; download-srs</div>
+          <div class="sc pass">&#x2713; download-design</div>
+          <div class="sc pass">&#x2713; read-spec</div>
+          <span class="sn">evidence: files exist</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-row">
+      <div class="phase-lbl">PHASE 2</div>
+      <div>
+        <div class="phase-nm">EXPLORE</div>
+        <div class="phase-steps">
+          <div class="sc pass">&#x2713; explore-spec</div>
+          <div class="sc gate">GATE</div>
+          <span class="sn">Human reviews findings — approve / feedback / skip / quit</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-row">
+      <div class="phase-lbl">PHASE 3</div>
+      <div>
+        <div class="phase-nm">PLAN</div>
+        <div class="phase-steps">
+          <div class="sc pass">&#x2713; design-discovery</div>
+          <div class="sc pass">&#x2713; write-plan</div>
+          <div class="sc gate">GATE</div>
+          <span class="sn">Human approves plan</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-row">
+      <div class="phase-lbl">PHASE 4</div>
+      <div>
+        <div class="phase-nm">BUILD BACKEND</div>
+        <div class="phase-steps">
+          <div class="sc pass">&#x2713; schema</div>
+          <div class="sc pass">&#x2713; domain</div>
+          <div class="sc fail">&#x25B8; persistence</div>
+          <div class="sc pass">&#x2713; api</div>
+        </div>
+        <div class="sn" style="margin-top:4px;">persistence failed &rarr; Forge retries with error &rarr; passes on retry 1/3</div>
+      </div>
+    </div>
+    <div class="phase-row">
+      <div class="phase-lbl">PHASE 5+</div>
+      <div>
+        <div class="phase-nm">VERIFY &amp; REVIEW</div>
+        <div class="phase-steps">
+          <div class="sc pass">&#x2713; design-verify</div>
+          <div class="sc pass">&#x2713; srs-audit</div>
+          <div class="sc pass">&#x2713; tests</div>
+          <div class="sc gate">GATE</div>
+          <span class="sn">Final human review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BEFORE / AFTER ═══ -->
+<section id="comparison">
+  <h2>Before vs After</h2>
+  <div class="compare">
+    <div class="compare-panel before">
+      <div class="ph">Before: Model-Driven Workflow</div>
+      <div class="pb"><span class="hl">Human:</span> /build-feature --ticket V535NS-270
+<span class="warn">Model:</span> (reads 594 lines of instructions)
+<span class="ok">Phase 1:</span> downloads SRS — good
+<span class="warn">Phase 2:</span> explores spec — misses 2 ambiguities
+<span class="bad">Phase 3:</span> skips design discovery, assumes simple
+<span class="warn">Phase 4-5:</span> builds — decent, assumptions compound
+<span class="bad">Phase 6:</span> "design verified" — checked 3 of 12
+<span class="bad">Phase 7:</span> "build passes" — no validation run
+<span class="bad">Phase 8:</span> skips review entirely
+<span class="bad">Phase 9:</span> "SRS audit done" — 8 of 30 rules
+
+<span class="warn">Model:</span> "Feature complete!"
+<span class="bad">Human:</span> 6 bugs, 2 design mismatches, 4 missing BRs</div>
+    </div>
+    <div class="compare-panel after">
+      <div class="ph">After: Forge-Driven Workflow</div>
+      <div class="pb"><span class="hl">Human:</span> forge run build-feature --ticket V535NS-270
+
+<span class="ok">GATHER</span>  &#x2713; download-srs  &#x2713; download-design  &#x2713; read-spec
+         <span style="color:var(--text-muted)">evidence: files exist, output has summary</span>
+
+<span class="ok">EXPLORE</span> &#x2713; explore-spec (fresh session)
+         <span class="gate">GATE</span> &rarr; Human: "Point 3 is wrong, max 50"
+         Forge re-runs with feedback &rarr; Human approves
+
+<span class="ok">PLAN</span>    &#x2713; design-discovery  &#x2713; write-plan
+         <span class="gate">GATE</span> &rarr; Human approves plan
+
+<span class="ok">BUILD</span>   &#x2713; schema  &#x2713; domain  <span class="bad">&#x25B8; persistence FAIL</span>
+         Forge retries with error &rarr; <span class="ok">&#x2713; pass</span>  &#x2713; api
+
+<span class="ok">VERIFY</span>  &#x2713; design  &#x2713; srs-audit  &#x2713; tests  <span class="gate">GATE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ KEY INSIGHT ═══ -->
+<section id="insight" class="insight" style="border-top: 1px solid var(--border);">
+  <blockquote>
+    &ldquo;The problem was never that models are bad at coding. The problem is that we asked them to be both the worker and the project manager.&rdquo;
+  </blockquote>
+  <p>Forge gives project management back to deterministic code and lets the model do what it does best: <strong>solve one clear problem at a time.</strong></p>
+</section>
+
+</div><!-- .main-content -->
+</div><!-- .page-wrap -->
+
+<script>
+  // Highlight active nav link on scroll
+  const links = document.querySelectorAll('.sidebar a');
+  const sections = [];
+  links.forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    const el = document.getElementById(id);
+    if (el) sections.push({ el, a });
+  });
+  function updateActive() {
+    let current = sections[0];
+    for (const s of sections) {
+      if (s.el.getBoundingClientRect().top <= 80) current = s;
+    }
+    links.forEach(a => a.classList.remove('active'));
+    if (current) current.a.classList.add('active');
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+</script>
+</body>
+</html>

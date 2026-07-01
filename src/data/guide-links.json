@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Claude guide for forge-rationale - Hoang TH",
     "url": "https://bs-docs-tool.vercel.app/slides/forge-rationale.html"
+  },
+  {
+    "id": 3,
+    "name": "AI Standards for Mobile App Team - Truong TD",
+    "url": "https://bs-docs-tool.vercel.app/slides/mobile-ai-standards.html"
   }
 ]

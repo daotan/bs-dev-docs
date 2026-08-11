@@ -26,6 +26,26 @@ Yếu tố khác ảnh hưởng tốc độ ngoài "loại hosting":
 Dùng DNS service ngoài (Cloudflare DNS, Route 53...) thay vì để chính server WordPress xử lý DNS — giảm tải cho server gốc.
 :::
 
+## Nén dữ liệu truyền tải
+
+- **Gzip**: bật nén Gzip để giảm dung lượng dữ liệu truyền qua mạng — hầu hết server đều hỗ trợ sẵn.
+- **Brotli**: nén tốt hơn Gzip, một số host dùng mặc định (vd: WP Engine). Nếu server hỗ trợ thì ưu tiên Brotli.
+
+## Gắn CDN (Cloudflare) + HTTPS
+
+1. **Thêm site vào Cloudflare**: đăng nhập → **Add a Site** → nhập domain → chọn gói → Cloudflare quét DNS hiện có → **Continue**.
+2. **Trỏ Nameservers** (vd trên Namecheap): copy 2 nameserver Cloudflare cung cấp → vào domain trên Namecheap → **Manage → Nameservers → Custom DNS** → dán và lưu → quay lại Cloudflare bấm **Done, check nameservers**.
+3. **Bảo mật & tối ưu trên Cloudflare**:
+   - **SSL/TLS**: chọn **Full** để mã hoá traffic giữa Cloudflare và server.
+   - **Always Use HTTPS**: không nên bật trực tiếp trên Cloudflare (đôi khi gây lỗi) — dùng plugin WordPress thay thế.
+   - **Auto Minify**: nên thực hiện qua plugin WordPress để hiệu quả hơn.
+4. **Cấu hình HTTPS trên WordPress**: cài **Really Simple SSL** → **Go ahead, activate SSL** (tự redirect HTTP → HTTPS). Kiểm tra **Settings → General**: cả *WordPress Address* và *Site Address* phải bắt đầu bằng `https://`.
+5. **Kiểm tra kết quả**: dùng [httpstatus.io](https://httpstatus.io) — đảm bảo mọi biến thể domain (có/không `www`) đều trả về `200 OK` qua HTTPS.
+
+:::note
+Muốn cache cả HTML trên Cloudflare gói free (không chỉ static asset), cần thêm Page Rule riêng — xem [combo D](./wp-speed-stack-deep-dive) ở trang So sánh combo.
+:::
+
 ## PHP: version & cấu hình
 
 **Version**: chạy PHP 8.x bản mới nhất còn được hỗ trợ chính thức. PHP 7.4 đã hết vòng đời (EOL) — nếu site còn chạy 7.4 hoặc thấp hơn, đây là rủi ro bảo mật, không chỉ là vấn đề tốc độ. Luôn test trên staging trước khi upgrade (một số plugin/theme cũ có thể chưa tương thích PHP 8).
@@ -93,7 +113,7 @@ Nếu vượt 800KB: dùng plugin **Query Monitor** hoặc **WP-Optimize** để
 ## Khi 1 server không còn đủ tải
 
 - **Load balancer**: phân traffic ra nhiều web server.
-- **HyperDB**: plugin chính thức của WordPress.com để phân tán database (replicated hoặc partitioned) ra nhiều server, dùng khi 1 database server không còn đáp ứng nổi.
+- **HyperDB**: plugin chính thức của WordPress.com để phân tán database (replicated hoặc partitioned) ra nhiều server, dùng khi 1 database server không còn đáp ứng nổi. https://wordpress.com/plugins/hyperdb
 
 Đây là mức tối ưu cho site traffic rất lớn — phần lớn site sẽ không cần tới, nhưng cần biết để không tự tối ưu sai hướng khi vấn đề thực chất là hạ tầng.
 

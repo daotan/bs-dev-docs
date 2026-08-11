@@ -28,14 +28,16 @@ Chọn **1 trong 4** theo loại hosting, ngân sách và mục tiêu. Nguyên t
 
 | Phương án | Stack | Phù hợp khi |
 | --- | --- | --- |
-| **A — Host LiteSpeed** (rẻ & mạnh nhất) | LiteSpeed Cache (free) + QUIC.cloud CDN + ShortPixel/Imagify + (tuỳ chọn) Perfmatters | Host dùng LiteSpeed (Hostinger, A2 Hosting, Cloudways...) — cache cấp máy chủ, thường nhanh nhất mà miễn phí |
-| **B — Host thường** (Nginx/Apache) | WP Rocket (~$59/năm) + Cloudflare hoặc BunnyCDN + Imagify + Perfmatters | ~80% website — cấu hình nhanh, ít lỗi, chạy trên mọi server |
-| **C — Tối ưu CWV/INP tối đa** | FlyingPress (~$60/năm) + BunnyCDN + ShortPixel + Perfmatters | Ưu tiên điểm Core Web Vitals (đặc biệt INP) cao nhất; giao diện gọn, ít chỗ "gãy" |
-| **D — Ngân sách tối thiểu** | Autoptimize (free) + Cloudflare (free CDN) | Site nhỏ/ngân sách 0đ — rẻ và vẫn hiệu quả, đổi lại phải tự cấu hình nhiều hơn 3 phương án trên |
+| **A — Host LiteSpeed** (rẻ & mạnh nhất) | [LiteSpeed Cache](https://wordpress.org/plugins/litespeed-cache/) (free) + [QUIC.cloud](https://quic.cloud/) CDN + [ShortPixel](https://shortpixel.com/)/[Imagify](https://imagify.io/) + (tuỳ chọn) [Perfmatters](https://perfmatters.io/) | Host dùng LiteSpeed (Hostinger, A2 Hosting, Cloudways...) — cache cấp máy chủ, thường nhanh nhất mà miễn phí |
+| **B — Host thường** (Nginx/Apache) | [WP Rocket](https://wp-rocket.me/) (~$59/năm) + [Cloudflare](https://www.cloudflare.com/) hoặc [BunnyCDN](https://bunny.net/) + [Imagify](https://imagify.io/) + [Perfmatters](https://perfmatters.io/) | ~80% website — cấu hình nhanh, ít lỗi, chạy trên mọi server |
+| **C — Tối ưu CWV/INP tối đa** | [FlyingPress](https://flyingpress.com/) (~$60/năm) + [BunnyCDN](https://bunny.net/) + [ShortPixel](https://shortpixel.com/) + [Perfmatters](https://perfmatters.io/) | Ưu tiên điểm Core Web Vitals (đặc biệt INP) cao nhất; giao diện gọn, ít chỗ "gãy" |
+| **D — Ngân sách tối thiểu** | [Autoptimize](https://vi.wordpress.org/plugins/autoptimize/) (free) + [Cloudflare](https://www.cloudflare.com/) (free CDN) | Site nhỏ/ngân sách 0đ — rẻ và vẫn hiệu quả, đổi lại phải tự cấu hình nhiều hơn 3 phương án trên |
 
 :::tip
 Nếu host đã có cache cấp máy chủ (Kinsta, WP Engine, Cloudflare APO, Nginx FastCGI, LiteSpeed...), có thể **không cần** plugin cache đầy đủ — chỉ cần plugin tối ưu front-end (Perfmatters/FlyingPress) để lo critical CSS, gỡ unused CSS và delay JS.
 :::
+
+Muốn hiểu cơ chế bên dưới (tại sao combo này nhanh hơn combo kia), chi phí thực tế hay khi nào nên đổi combo? Xem [Cách hoạt động & So sánh 4 combo](./wp-speed-stack-deep-dive).
 
 ## Vai trò từng plugin trong các stack trên
 

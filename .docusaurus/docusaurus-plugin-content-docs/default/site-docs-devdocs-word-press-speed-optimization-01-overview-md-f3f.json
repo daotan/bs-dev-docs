@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/WordPress/Speed Optimization/wp-speed-overview",
+  "title": "Tổng quan",
+  "description": "Ghi chú tổng hợp từ khoá học Optimize Speed WP. Mục này chỉ tóm tắt nhanh; chi tiết từng phần nằm ở các trang tiếp theo.",
+  "source": "@site/docs/Devdocs/WordPress/Speed Optimization/01-overview.md",
+  "sourceDirName": "Devdocs/WordPress/Speed Optimization",
+  "slug": "/Devdocs/WordPress/Speed Optimization/wp-speed-overview",
+  "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/WordPress/Speed Optimization/01-overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "wp-speed-overview",
+    "title": "Tổng quan"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Liquid Cheat Sheet",
+    "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Liquid-Cheat-Sheet"
+  },
+  "next": {
+    "title": "Playbook LCP / INP / CLS trên WordPress",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook"
+  }
+}

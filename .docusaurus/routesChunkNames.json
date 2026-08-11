@@ -143,17 +143,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-3a4": {
+  "/docs-b66": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-713": {
+  "/docs-75d": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-ce4": {
+  "/docs-eed": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/Devdocs/AI Docs/frontend_optimize_development-9ab": {
@@ -351,6 +351,26 @@
   "/docs/Devdocs/Shopify/themes/Templates-and-Metafields-b26": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-devdocs-shopify-themes-templates-and-metafields-9-aa-03b"
+  },
+  "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook-0b7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-devdocs-word-press-speed-optimization-wp-speed-cwv-playbook-31-b-5d7"
+  },
+  "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db-56f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-devdocs-word-press-speed-optimization-wp-speed-hosting-php-db-2-b-5-77a"
+  },
+  "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview-16c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-devdocs-word-press-speed-optimization-wp-speed-overviewf-3-f-5fb"
+  },
+  "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist-3f8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-devdocs-word-press-speed-optimization-wp-speed-plugin-checklist-189-fad"
+  },
+  "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive-5a4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-devdocs-word-press-speed-optimization-wp-speed-stack-deep-dive-24-c-f95"
   },
   "/-e5f": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",

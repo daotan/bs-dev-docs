@@ -84,15 +84,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3a4'),
+    component: ComponentCreator('/docs', 'b66'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '713'),
+        component: ComponentCreator('/docs', '75d'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'ce4'),
+            component: ComponentCreator('/docs', 'eed'),
             routes: [
               {
                 path: '/docs/Devdocs/AI Docs/frontend_optimize_development',
@@ -385,6 +385,36 @@ export default [
               {
                 path: '/docs/Devdocs/Shopify/themes/Templates-and-Metafields',
                 component: ComponentCreator('/docs/Devdocs/Shopify/themes/Templates-and-Metafields', 'b26'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook',
+                component: ComponentCreator('/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook', '0b7'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db',
+                component: ComponentCreator('/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db', '56f'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview',
+                component: ComponentCreator('/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview', '16c'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist',
+                component: ComponentCreator('/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist', '3f8'),
+                exact: true,
+                sidebar: "devDocsSidebar"
+              },
+              {
+                path: '/docs/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive',
+                component: ComponentCreator('/docs/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive', '5a4'),
                 exact: true,
                 sidebar: "devDocsSidebar"
               }

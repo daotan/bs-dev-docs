@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db",
+  "title": "Hosting, PHP & Database",
+  "description": "Các trang trước tập trung vào plugin và front-end. Trang này nói về tầng hạ tầng bên dưới — thứ quyết định \"trần\" performance mà plugin không tự sửa được. Tổng hợp từ WordPress Advanced Administration Handbook.",
+  "source": "@site/docs/Devdocs/WordPress/Speed Optimization/04-hosting-php-database.md",
+  "sourceDirName": "Devdocs/WordPress/Speed Optimization",
+  "slug": "/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db",
+  "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/WordPress/Speed Optimization/04-hosting-php-database.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "wp-speed-hosting-php-db",
+    "title": "Hosting, PHP & Database"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Bộ plugin đề xuất & Checklist",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist"
+  },
+  "next": {
+    "title": "Cách hoạt động & So sánh 4 combo",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive"
+  }
+}

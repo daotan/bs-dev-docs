@@ -254,6 +254,31 @@
               "id": "Devdocs/Shopify/themes/Templates-and-Metafields",
               "path": "/docs/Devdocs/Shopify/themes/Templates-and-Metafields",
               "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook",
+              "path": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db",
+              "path": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/WordPress/Speed Optimization/wp-speed-overview",
+              "path": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist",
+              "path": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist",
+              "sidebar": "devDocsSidebar"
+            },
+            {
+              "id": "Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive",
+              "path": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive",
+              "sidebar": "devDocsSidebar"
             }
           ],
           "draftIds": [],

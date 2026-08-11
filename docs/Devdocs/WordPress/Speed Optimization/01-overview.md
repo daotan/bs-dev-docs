@@ -10,7 +10,7 @@ title: Tổng quan
 ## Điểm cốt lõi cần nhớ
 
 - **Core Web Vitals** là trọng tâm: tối ưu LCP, TBT (proxy của INP) và CLS — đo bằng Lighthouse / PageSpeed Insights.
-- **3 việc cốt lõi cần lo**: Cache → Minify & Combine → Dọn CSS/JS dư thừa. Cách nhanh nhất là chọn **1 plugin all-in-one** (WP Rocket/LiteSpeed Cache/FlyingPress) tự lo cả 3 — xem [bộ plugin đề xuất](./wp-speed-plugin-checklist). Cách DIY bằng nhiều plugin riêng (WP Fastest Cache + Autoptimize + Asset CleanUp) rẻ hơn nhưng tốn công cấu hình hơn — xem [Caching, font, CDN](./wp-speed-caching-cdn).
+- **3 việc cốt lõi cần lo**: Cache → Minify & Combine → Dọn CSS/JS dư thừa. Cách nhanh nhất là chọn **1 plugin all-in-one** (WP Rocket/LiteSpeed Cache/FlyingPress) tự lo cả 3 — xem [bộ plugin đề xuất](./wp-speed-plugin-checklist).
 - **Ảnh**: luôn convert sang WebP/AVIF, khai báo `width`/`height`, không lazy-load ảnh hero.
 - **Hạ tầng**: dùng CDN (Cloudflare/BunnyCDN) + HTTPS.
 
@@ -35,6 +35,6 @@ Nguồn: [Page Experience Update — OneUpWeb](https://www.oneupweb.com/resource
 ## Đi tiếp
 
 1. [Playbook LCP / INP / CLS trên WordPress](./wp-speed-cwv-playbook) — nguyên nhân, giải pháp, cách làm cụ thể bằng plugin.
-2. [Caching, font, CDN](./wp-speed-caching-cdn) — htaccess, Google Fonts, ảnh WebP, render-blocking, Cloudflare.
-3. [Bộ plugin đề xuất & checklist bảo trì](./wp-speed-plugin-checklist) — performance stack, so sánh plugin, danh sách nên tránh.
-4. [Hosting, PHP & Database](./wp-speed-hosting-php-db) — chọn hosting, version/config PHP, tuning MySQL, ngưỡng autoloaded options.
+2. [Bộ plugin đề xuất & checklist bảo trì](./wp-speed-plugin-checklist) — performance stack, vai trò từng plugin, anti-patterns.
+3. [Hosting, PHP & Database](./wp-speed-hosting-php-db) — chọn hosting, Cloudflare + HTTPS, config PHP, tuning MySQL, ngưỡng autoloaded options.
+4. [Cách hoạt động & So sánh 4 combo](./wp-speed-stack-deep-dive) — luồng xử lý 1 request qua từng lớp cache, ưu/nhược điểm, chi phí, khi nào nên đổi combo.

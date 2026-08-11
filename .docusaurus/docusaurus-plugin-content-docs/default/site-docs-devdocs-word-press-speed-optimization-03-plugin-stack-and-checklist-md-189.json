@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist",
+  "title": "Bộ plugin đề xuất & Checklist",
+  "description": "Bảng ưu tiên 80/20 (Impact / Effort)",
+  "source": "@site/docs/Devdocs/WordPress/Speed Optimization/03-plugin-stack-and-checklist.md",
+  "sourceDirName": "Devdocs/WordPress/Speed Optimization",
+  "slug": "/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist",
+  "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/WordPress/Speed Optimization/03-plugin-stack-and-checklist.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "wp-speed-plugin-checklist",
+    "title": "Bộ plugin đề xuất & Checklist"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Playbook LCP / INP / CLS trên WordPress",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook"
+  },
+  "next": {
+    "title": "Hosting, PHP & Database",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db"
+  }
+}

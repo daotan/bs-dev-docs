@@ -32,6 +32,21 @@ Mỗi metric trình bày theo cấu trúc: **nguyên nhân thường gặp → g
 - Cache + Critical CSS: **WP Rocket**, **LiteSpeed Cache**, hoặc **FlyingPress** (tự sinh critical CSS, gỡ unused CSS).
 - Tối ưu ảnh: **ShortPixel**, **Imagify** hoặc **EWWW** (tự convert WebP/AVIF + nén hàng loạt).
 - Ưu tiên ảnh hero & preconnect: **Perfmatters** cho phép preload, loại ảnh đầu khỏi lazy-load, thêm preconnect.
+- Host font local + preload: **OMGF**. Lưu ý **không preload toàn bộ font** — mỗi font preload đều làm trình duyệt phải tải xong trước khi hiển thị trang; chỉ preload font dùng ở above-the-fold.
+
+<details>
+<summary>Convert ảnh sang WebP bằng WebP Express (nếu không dùng ShortPixel/Imagify)</summary>
+
+Vào **Settings → WebP Express** và cấu hình:
+
+| Tuỳ chọn | Giá trị |
+| --- | --- |
+| Operation mode | Varied image responses |
+| Destination folder | Mingled |
+| Destination structure | Document root |
+| Alter HTML | Bật — để plugin tự sửa HTML, phục vụ WebP cho trình duyệt hỗ trợ |
+
+</details>
 
 :::info[Lưu ý HTTP/2]
 Với HTTP/2 multiplexing, việc gộp (combine) nhiều file CSS/JS thành 1 bundle ít lợi và có thể hại cache. Ưu tiên loại bỏ CSS/JS thừa thay vì gộp file.

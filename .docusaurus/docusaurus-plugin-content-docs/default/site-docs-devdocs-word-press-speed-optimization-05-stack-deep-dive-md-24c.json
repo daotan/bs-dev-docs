@@ -1,0 +1,24 @@
+{
+  "id": "Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive",
+  "title": "Cách hoạt động & So sánh 4 combo",
+  "description": "Trang này đào sâu về 4 Performance Stack: cơ chế xử lý bên dưới → so sánh → chi phí → khi nào nên đổi. Nếu chỉ cần bảng tóm tắt để chọn nhanh, xem Performance Stack khuyến nghị. Link tài liệu & hướng dẫn cấu hình nằm ở cuối trang.",
+  "source": "@site/docs/Devdocs/WordPress/Speed Optimization/05-stack-deep-dive.md",
+  "sourceDirName": "Devdocs/WordPress/Speed Optimization",
+  "slug": "/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive",
+  "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-stack-deep-dive",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/WordPress/Speed Optimization/05-stack-deep-dive.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "wp-speed-stack-deep-dive",
+    "title": "Cách hoạt động & So sánh 4 combo"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Hosting, PHP & Database",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-hosting-php-db"
+  }
+}

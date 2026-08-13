@@ -19,5 +19,9 @@
   "previous": {
     "title": "Filters",
     "permalink": "/docs/Devdocs/Shopify/themes/Liquid/Filters"
+  },
+  "next": {
+    "title": "Tổng quan",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview"
   }
 }

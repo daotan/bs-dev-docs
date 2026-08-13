@@ -1,0 +1,28 @@
+{
+  "id": "Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook",
+  "title": "Playbook LCP / INP / CLS trên WordPress",
+  "description": "Trang này tập trung vào plugin/setting nào xử lý vấn đề gì trên WordPress. Muốn hiểu bản chất kỹ thuật (code-level, không riêng WP) thì xem thêm mục Core Web Vitals.",
+  "source": "@site/docs/Devdocs/WordPress/Speed Optimization/02-core-web-vitals-playbook.md",
+  "sourceDirName": "Devdocs/WordPress/Speed Optimization",
+  "slug": "/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook",
+  "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-cwv-playbook",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://bitbucket.org/tandv_bs/treo-sh-speed-tool/commits/branch/main/docs/Devdocs/WordPress/Speed Optimization/02-core-web-vitals-playbook.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "wp-speed-cwv-playbook",
+    "title": "Playbook LCP / INP / CLS trên WordPress"
+  },
+  "sidebar": "devDocsSidebar",
+  "previous": {
+    "title": "Tổng quan",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-overview"
+  },
+  "next": {
+    "title": "Bộ plugin đề xuất & Checklist",
+    "permalink": "/docs/Devdocs/WordPress/Speed Optimization/wp-speed-plugin-checklist"
+  }
+}

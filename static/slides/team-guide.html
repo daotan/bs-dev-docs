@@ -1,0 +1,2695 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hướng dẫn cài đặt và sử dụng BS RN Review cho team Mobile."
+    />
+    <title>BS RN Review · Team Guide</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../img/mobile-ai-standards/React_Native_Logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    />
+    <style>
+      :root {
+        /* Navy theme */
+        --bg: #0b1a28;
+        --bg-elevated: #112538;
+        --bg-subtle: #0f2030;
+        --bg-code: #0a1622;
+        --text: #e6eef5;
+        --text-secondary: #b0bfd0;
+        --text-muted: #7790a8;
+        --text-faint: #4d6378;
+        --border: #1c3046;
+        --border-strong: #284560;
+        --accent: #7dd3fc;
+        --accent-hover: #bae6fd;
+        --accent-bg: #0c2538;
+        --accent-border: #1e4a6b;
+        /* Semantic */
+        --green: #6ee7b7;
+        --green-bg: #0a2620;
+        --green-border: #134e4a;
+        --amber: #fcd34d;
+        --amber-bg: #2a1f08;
+        --amber-border: #4a3a12;
+        --red: #fca5a5;
+        --red-bg: #2a1418;
+        --red-border: #4a1f28;
+        --blue: #93c5fd;
+        --blue-bg: #0c2538;
+        --blue-border: #1e4263;
+        --tip: #93c5fd;
+        --tip-bg: transparent;
+        --tip-border: #1e4263;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          system-ui,
+          sans-serif;
+        font-size: 15px;
+        line-height: 1.7;
+        color: var(--text);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* ===== TOP NAV ===== */
+      .topnav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: saturate(180%) blur(8px);
+      }
+
+      .topnav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1600px;
+        margin: 0 auto;
+        height: 56px;
+        padding: 0 34px;
+      }
+
+      .topnav-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(125, 211, 252, 0.08);
+        border: 1px solid rgba(125, 211, 252, 0.22);
+        color: var(--accent);
+        display: grid;
+        place-items: center;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .brand-logo {
+        width: 24px;
+        height: 24px;
+        display: block;
+      }
+
+      .brand-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        line-height: 1.15;
+      }
+
+      .brand-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .brand-sub {
+        color: var(--text-muted);
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      .topnav-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-badge {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--text-muted);
+        font-size: 12px;
+        line-height: 1;
+        padding: 7px 10px;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .icon-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 7px;
+        background: transparent;
+        border: 1px solid transparent;
+        color: var(--text-secondary);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      .icon-btn:hover {
+        background: var(--bg-subtle);
+        color: var(--text);
+      }
+      .icon-btn svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .menu-btn {
+        display: none;
+      }
+
+      /* ===== LAYOUT ===== */
+      .layout {
+        display: grid;
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: 0;
+        max-width: 1600px;
+        margin: 0 auto;
+      }
+
+      /* ===== SIDEBAR ===== */
+      .sidebar {
+        position: sticky;
+        top: 56px;
+        height: calc(100vh - 56px);
+        overflow-y: auto;
+        padding: 28px 16px 40px 24px;
+        border-right: 1px solid var(--border);
+      }
+
+      .sidebar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .sidebar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .sidebar::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 3px;
+      }
+
+      .sb-group {
+        margin-bottom: 20px;
+      }
+
+      .sb-group-title {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 0 10px 8px;
+        display: block;
+      }
+
+      .sb-link {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        padding: 6px 10px;
+        font-size: 13.5px;
+        color: var(--text-secondary);
+        text-decoration: none;
+        border-radius: 6px;
+        line-height: 1.4;
+        transition: all 0.12s;
+      }
+      .sb-link:hover {
+        background: var(--bg-subtle);
+        color: var(--text);
+      }
+      .sb-link.active {
+        background: var(--accent-bg);
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      .sb-num {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        color: var(--text-faint);
+        min-width: 18px;
+        font-weight: 400;
+      }
+      .sb-link.active .sb-num {
+        color: var(--accent);
+      }
+
+      /* ===== CONTENT ===== */
+      .content {
+        padding: 56px 80px 120px;
+        max-width: 1180px;
+        min-width: 0;
+      }
+
+      /* Page header */
+      .page-eyebrow {
+        display: inline-block;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 8px;
+        letter-spacing: 0.02em;
+      }
+
+      h1.page-title {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.1;
+        letter-spacing: -0.025em;
+        margin-bottom: 12px;
+        color: var(--text);
+      }
+
+      .page-subtitle {
+        font-size: 17px;
+        color: var(--text-muted);
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .page-subtitle .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--text-faint);
+        flex-shrink: 0;
+      }
+
+      /* Section headers */
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        margin: 56px 0 16px;
+        color: var(--text);
+        padding-top: 8px;
+        position: relative;
+        scroll-margin-top: 80px;
+      }
+
+      h2 .h-num {
+        font-family: "JetBrains Mono", monospace;
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+        padding: 3px 8px;
+        background: var(--accent-bg);
+        border: 1px solid var(--accent-border);
+        border-radius: 5px;
+        margin-right: 12px;
+        vertical-align: 4px;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4;
+        margin: 32px 0 10px;
+        color: var(--text);
+        scroll-margin-top: 80px;
+      }
+
+      h4 {
+        font-size: 15px;
+        font-weight: 600;
+        margin: 24px 0 8px;
+        color: var(--text);
+      }
+
+      /* Heading anchor link */
+      .anchor {
+        opacity: 0;
+        margin-left: 6px;
+        color: var(--text-faint);
+        text-decoration: none;
+        font-weight: 400;
+        transition: opacity 0.15s;
+      }
+      h2:hover .anchor,
+      h3:hover .anchor {
+        opacity: 1;
+      }
+      .anchor:hover {
+        color: var(--accent);
+      }
+
+      /* Paragraphs */
+      p {
+        margin: 12px 0;
+        color: var(--text);
+        line-height: 1.75;
+      }
+
+      strong {
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .term-highlight {
+        color: var(--accent-hover);
+        font-weight: 600;
+      }
+      em {
+        font-style: italic;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.15s;
+      }
+      a:hover {
+        border-bottom-color: var(--accent);
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin: 12px 0 12px 4px;
+        padding-left: 22px;
+      }
+      li {
+        margin: 6px 0;
+        color: var(--text);
+        line-height: 1.7;
+      }
+      li::marker {
+        color: var(--text-faint);
+      }
+
+      ul ul,
+      ol ol,
+      ul ol,
+      ol ul {
+        margin: 4px 0;
+      }
+
+      /* Inline code */
+      code {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.88em;
+        background: var(--bg-code);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 1px 6px;
+        color: var(--text);
+      }
+
+      /* Code blocks */
+      pre {
+        background: var(--bg-code);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 16px 18px;
+        overflow-x: auto;
+        margin: 16px 0;
+        font-size: 13px;
+        line-height: 1.65;
+      }
+      pre code {
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-size: 13px;
+        color: var(--text);
+      }
+
+      /* Tables */
+      .table-wrap {
+        margin: 20px 0;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13.5px;
+      }
+
+      thead {
+        background: var(--bg-subtle);
+      }
+
+      th {
+        text-align: left;
+        padding: 10px 14px;
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid var(--border);
+      }
+
+      td {
+        padding: 11px 14px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+        vertical-align: top;
+        line-height: 1.6;
+      }
+
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+      tbody tr:hover {
+        background: var(--bg-subtle);
+      }
+
+      td code,
+      th code {
+        font-size: 12.5px;
+      }
+
+      /* Callouts */
+      .callout {
+        display: flex;
+        gap: 12px;
+        margin: 20px 0;
+        padding: 14px 16px;
+        border-radius: 8px;
+        border: 1px solid;
+        font-size: 14px;
+        line-height: 1.65;
+      }
+
+      .callout-icon {
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        margin-top: 2px;
+      }
+
+      .callout-body {
+        flex: 1;
+        min-width: 0;
+      }
+      .callout-body > *:first-child {
+        margin-top: 0;
+      }
+      .callout-body > *:last-child {
+        margin-bottom: 0;
+      }
+      .callout-body p {
+        margin: 6px 0;
+        line-height: 1.65;
+      }
+      .callout-body ul,
+      .callout-body ol {
+        margin: 6px 0;
+      }
+
+      .callout-label {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+      }
+
+      .callout-tip {
+        background: transparent;
+        border-color: transparent;
+        border-left: 2px solid var(--tip);
+        border-radius: 0;
+        padding: 8px 16px 8px 18px;
+      }
+      .callout-tip .callout-icon,
+      .callout-tip .callout-label {
+        color: var(--tip);
+      }
+      .callout-tip .callout-body p {
+        color: var(--text-secondary);
+      }
+
+      .callout-note {
+        background: var(--blue-bg);
+        border-color: var(--blue-border);
+      }
+      .callout-note .callout-icon,
+      .callout-note .callout-label {
+        color: var(--blue);
+      }
+
+      .callout-warning {
+        background: var(--amber-bg);
+        border-color: var(--amber-border);
+      }
+      .callout-warning .callout-icon,
+      .callout-warning .callout-label {
+        color: var(--amber);
+      }
+
+      .callout-important {
+        background: var(--red-bg);
+        border-color: var(--red-border);
+      }
+      .callout-important .callout-icon,
+      .callout-important .callout-label {
+        color: var(--red);
+      }
+
+      .callout-good {
+        background: var(--green-bg);
+        border-color: var(--green-border);
+      }
+      .callout-good .callout-icon,
+      .callout-good .callout-label {
+        color: var(--green);
+      }
+
+      /* Inline disclosure for the optional Gitea recap setup */
+      .recap-disclosure {
+        margin: 18px 0 22px;
+        overflow: hidden;
+        border: 1px solid var(--accent-border);
+        border-radius: 10px;
+        background: var(--bg-subtle);
+      }
+
+      .recap-disclosure summary {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 15px 17px;
+        cursor: pointer;
+        list-style: none;
+        user-select: none;
+        transition: background 0.15s;
+      }
+
+      .recap-disclosure summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .recap-disclosure summary:hover,
+      .recap-disclosure summary:focus-visible {
+        background: var(--accent-bg);
+        outline: none;
+      }
+
+      .recap-summary-icon {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        place-items: center;
+        border: 1px solid var(--accent-border);
+        border-radius: 8px;
+        color: var(--accent);
+        background: rgba(125, 211, 252, 0.06);
+      }
+
+      .recap-summary-icon svg {
+        width: 17px;
+        height: 17px;
+      }
+
+      .recap-summary-copy {
+        display: flex;
+        min-width: 0;
+        flex: 1;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .recap-summary-title {
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .recap-summary-meta {
+        color: var(--text-muted);
+        font-size: 12px;
+      }
+
+      .recap-chevron {
+        width: 17px;
+        height: 17px;
+        flex: 0 0 17px;
+        color: var(--text-muted);
+        transition: transform 0.2s ease;
+      }
+
+      .recap-disclosure[open] .recap-chevron {
+        transform: rotate(180deg);
+      }
+
+      .recap-disclosure-body {
+        padding: 4px 17px 18px;
+        border-top: 1px solid var(--border);
+      }
+
+      .recap-disclosure-body > p:first-child {
+        color: var(--text-secondary);
+      }
+
+      .recap-steps {
+        display: grid;
+        gap: 10px;
+        margin: 16px 0;
+      }
+
+      .recap-step {
+        display: grid;
+        grid-template-columns: 26px minmax(0, 1fr);
+        gap: 10px;
+        align-items: start;
+      }
+
+      .recap-step-number {
+        display: grid;
+        width: 24px;
+        height: 24px;
+        place-items: center;
+        border: 1px solid var(--accent-border);
+        border-radius: 50%;
+        color: var(--accent);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+      }
+
+      .recap-step-content {
+        min-width: 0;
+        color: var(--text-secondary);
+        font-size: 13.5px;
+        line-height: 1.65;
+      }
+
+      .recap-step-content strong {
+        color: var(--text);
+      }
+
+      .recap-step-content pre {
+        margin: 9px 0 2px;
+      }
+
+      .recap-facts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin: 16px 0;
+      }
+
+      .recap-fact {
+        padding: 11px 12px;
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        color: var(--text-secondary);
+        font-size: 13px;
+        line-height: 1.6;
+        background: var(--bg-code);
+      }
+
+      .recap-fact strong {
+        display: block;
+        margin-bottom: 2px;
+        color: var(--text);
+        font-size: 12px;
+      }
+
+      @media (max-width: 640px) {
+        .recap-facts {
+          grid-template-columns: 1fr;
+        }
+
+        .recap-summary-meta {
+          display: none;
+        }
+      }
+
+      /* Tip stack,  for grouping multiple consecutive notes */
+      .tip-stack {
+        margin: 24px 0;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: var(--bg-subtle);
+        overflow: hidden;
+      }
+      .tip-stack-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 18px;
+        background: var(--bg-code);
+        border-bottom: 1px solid var(--border);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--tip);
+      }
+      .tip-stack-header svg {
+        width: 14px;
+        height: 14px;
+      }
+      .tip-stack-item {
+        padding: 14px 18px 16px;
+        border-bottom: 1px solid var(--border);
+      }
+      .tip-stack-item:last-child {
+        border-bottom: none;
+      }
+      .tip-stack-item-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 6px;
+        letter-spacing: 0.01em;
+      }
+      .tip-stack-item-body {
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.65;
+      }
+      .tip-stack-item-body p {
+        margin: 4px 0;
+        color: var(--text-secondary);
+      }
+      .tip-stack-item-body p:first-child {
+        margin-top: 0;
+      }
+      .tip-stack-item-body p:last-child {
+        margin-bottom: 0;
+      }
+      .tip-stack-item-body code {
+        font-size: 12.5px;
+      }
+
+      /* Quote */
+      blockquote {
+        border-left: 3px solid var(--border-strong);
+        padding: 4px 0 4px 16px;
+        margin: 16px 0;
+        color: var(--text-secondary);
+        font-style: italic;
+      }
+
+      /* HR */
+      hr {
+        border: none;
+        height: 1px;
+        background: var(--border);
+        margin: 56px 0;
+      }
+
+      /* Divider for top of part */
+      .part-divider {
+        text-align: center;
+        margin: 96px 0 48px;
+        position: relative;
+      }
+      .part-divider::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--border);
+        z-index: 0;
+      }
+      .part-divider span {
+        position: relative;
+        background: var(--bg);
+        padding: 0 20px;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        color: var(--accent);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      /* Part header */
+      .part-header {
+        margin: 24px 0 32px;
+      }
+      .part-header h2 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        border: none;
+        padding: 0;
+      }
+      .part-header > p {
+        color: var(--text-muted);
+        font-size: 15px;
+        margin: 0;
+        letter-spacing: 0.01em;
+      }
+
+      /* Checkbox lists */
+      .checklist {
+        list-style: none;
+        padding-left: 0;
+        margin: 12px 0;
+      }
+      .checklist li {
+        position: relative;
+        padding-left: 28px;
+        margin: 8px 0;
+      }
+      .checklist li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid var(--border-strong);
+        border-radius: 4px;
+      }
+
+      /* ===== MOBILE ===== */
+      .backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 40;
+      }
+
+      @media (max-width: 768px) {
+        .topnav-inner {
+          padding: 0 16px;
+        }
+        .layout {
+          grid-template-columns: 1fr;
+        }
+        .menu-btn {
+          display: grid;
+        }
+        .sidebar {
+          position: fixed;
+          top: 56px;
+          left: 0;
+          width: 280px;
+          z-index: 41;
+          background: var(--bg);
+          transform: translateX(-100%);
+          transition: transform 0.25s;
+        }
+        .sidebar.open {
+          transform: translateX(0);
+        }
+        .backdrop.show {
+          display: block;
+        }
+        .content {
+          padding: 28px 20px 80px;
+        }
+        h1.page-title {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 20px;
+          margin: 40px 0 12px;
+        }
+        .brand-sub {
+          display: none;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .nav-badge {
+          display: none;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .content {
+          padding: 48px 40px 100px;
+        }
+      }
+
+      /* ===== Custom syntax highlighting,  monochrome sky-blue ===== */
+      code[class*="language-"],
+      pre[class*="language-"],
+      pre code,
+      code {
+        color: var(--text);
+        text-shadow: none;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 13px;
+        line-height: 1.7;
+        background: transparent;
+        /* Disable ligatures,  Prism wraps tokens in spans, breaking ligature rendering
+     for sequences like >&, :=, ::, => which render as empty glyph boxes */
+        font-variant-ligatures: none;
+        font-feature-settings:
+          "liga" 0,
+          "calt" 0;
+      }
+
+      pre {
+        background: var(--bg-code);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: auto;
+        margin: 16px 0;
+        padding: 16px 18px;
+      }
+      pre code {
+        background: transparent;
+        border: none;
+        padding: 0;
+      }
+
+      .code-preview {
+        position: relative;
+        margin: 16px 0;
+      }
+
+      .code-preview pre {
+        margin: 0;
+        max-height: 360px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        transition: max-height 0.2s ease;
+      }
+
+      .code-preview.is-expanded pre {
+        max-height: none;
+        overflow: auto;
+      }
+
+      .code-preview:not(.is-expanded)::after {
+        content: "";
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        bottom: 42px;
+        height: 72px;
+        pointer-events: none;
+        background: linear-gradient(
+          to bottom,
+          rgba(10, 22, 34, 0),
+          var(--bg-code)
+        );
+      }
+
+      .code-toggle {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-top: 0;
+        border-radius: 0 0 8px 8px;
+        background: var(--bg-subtle);
+        color: var(--accent);
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 9px 12px;
+        text-align: center;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+
+      .code-toggle:hover,
+      .code-toggle:focus-visible {
+        background: var(--accent-bg);
+        color: var(--accent-hover);
+        outline: none;
+      }
+
+      .code-preview pre {
+        border-radius: 8px 8px 0 0;
+      }
+
+      :not(pre) > code[class*="language-"] {
+        padding: 1px 6px;
+        border-radius: 4px;
+        background: var(--bg-code);
+        border: 1px solid var(--border);
+        white-space: normal;
+      }
+
+      /* Monochrome sky-blue,  only brightness varies, no other hues */
+      .token.comment,
+      .token.prolog,
+      .token.doctype,
+      .token.cdata {
+        color: #4f6b85;
+        font-style: italic;
+      }
+
+      .token.punctuation {
+        color: #6b829a;
+      }
+
+      .token.operator,
+      .token.entity,
+      .token.variable,
+      .token.deleted {
+        color: #8fa8c0;
+      }
+
+      .token.keyword,
+      .token.atrule,
+      .token.important,
+      .token.tag,
+      .token.attr-name,
+      .token.property,
+      .token.selector {
+        color: #bae6fd;
+      }
+
+      .token.string,
+      .token.attr-value,
+      .token.char,
+      .token.regex,
+      .token.url,
+      .token.inserted {
+        color: #7dd3fc;
+      }
+
+      .token.number,
+      .token.boolean,
+      .token.constant,
+      .token.symbol {
+        color: #38bdf8;
+      }
+
+      .token.function,
+      .token.class-name,
+      .token.builtin {
+        color: #0ea5e9;
+        font-weight: 500;
+      }
+
+      /* Markdown tokens */
+      .token.title,
+      .token.title.important {
+        color: #bae6fd;
+        font-weight: 600;
+      }
+      .token.list.punctuation {
+        color: #6b829a;
+      }
+      .token.bold {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .token.italic {
+        color: var(--text-secondary);
+        font-style: italic;
+      }
+      .token.code.keyword {
+        color: #7dd3fc;
+        background: rgba(125, 211, 252, 0.08);
+        padding: 1px 4px;
+        border-radius: 3px;
+      }
+      .token.url-reference,
+      .token.url .token.string {
+        color: var(--accent);
+      }
+
+      /* Hide markdown bold/italic asterisks for cleaner template display */
+      .token.bold > .token.punctuation,
+      .token.italic > .token.punctuation {
+        display: none;
+      }
+
+      /* Closing line emphasis */
+      .closing-card {
+        margin: 56px 0 0;
+        padding: 28px 32px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: var(--bg-subtle);
+        position: relative;
+        overflow: hidden;
+      }
+      .closing-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: var(--accent);
+      }
+      .closing-card .closing-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 6px;
+        letter-spacing: -0.01em;
+      }
+      .closing-card .closing-sub {
+        font-size: 14.5px;
+        color: var(--text-secondary);
+        margin: 0;
+      }
+
+      /* Footer */
+      .footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0 0;
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+      .footer-meta {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .footer-meta span {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .footer-version {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        padding: 2px 8px;
+        background: var(--bg-subtle);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        color: var(--text-secondary);
+      }
+
+      /* Back to top */
+      .back-top {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--bg-elevated);
+        border: 1px solid var(--border-strong);
+        color: var(--text-secondary);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(8px);
+        transition: all 0.2s;
+        z-index: 30;
+      }
+      .back-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      .back-top:hover {
+        background: var(--accent-bg);
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      .back-top svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* ===== Code rendering fixes: Prism + monospace on dark UI =====
+   Prism's default theme gives some operators/entities a light background.
+   On the navy code block this looks like broken glyph boxes around symbols
+   such as |, :, !=, quotes, and >&2. Keep all token boxes transparent and
+   disable ligature/calt rendering for every token span. */
+      pre code,
+      pre code *,
+      code[class*="language-"],
+      code[class*="language-"] * {
+        font-variant-ligatures: none !important;
+        font-feature-settings:
+          "liga" 0,
+          "calt" 0 !important;
+        -webkit-font-feature-settings:
+          "liga" 0,
+          "calt" 0 !important;
+        text-shadow: none !important;
+      }
+
+      pre .token,
+      code[class*="language-"] .token,
+      .token.operator,
+      .token.entity,
+      .token.url,
+      .token.punctuation {
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .token.punctuation,
+      .token.operator {
+        color: #b0bfd0 !important;
+      }
+
+      pre,
+      pre code {
+        font-size: 13.5px;
+        line-height: 1.75;
+      }
+
+      /* Selection */
+      ::selection {
+        background: var(--accent);
+        color: var(--bg);
+      }
+
+      /* Scrollbar for body */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--border-strong);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="topnav">
+      <div class="topnav-inner">
+        <div class="topnav-left">
+          <button
+            class="icon-btn menu-btn"
+            id="menuBtn"
+            aria-label="Mở mục lục"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <a href="#" class="brand">
+            <span class="brand-mark" aria-hidden="true"
+              ><svg
+                class="brand-logo"
+                viewBox="-11.5 -10.23174 23 20.46348"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="0" cy="0" r="2.05" fill="currentColor" />
+                <ellipse
+                  rx="11"
+                  ry="4.2"
+                  stroke="currentColor"
+                  stroke-width="1.05"
+                />
+                <ellipse
+                  rx="11"
+                  ry="4.2"
+                  stroke="currentColor"
+                  stroke-width="1.05"
+                  transform="rotate(60)"
+                />
+                <ellipse
+                  rx="11"
+                  ry="4.2"
+                  stroke="currentColor"
+                  stroke-width="1.05"
+                  transform="rotate(120)"
+                /></svg
+            ></span>
+            <span class="brand-copy"
+              ><span class="brand-title">BS RN Review</span
+              ><span class="brand-sub">Mobile App Team</span></span
+            >
+          </a>
+        </div>
+        <div class="topnav-actions">
+          <span class="nav-badge">Plugin v0.2.10</span>
+        </div>
+      </div>
+    </nav>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="sb-group">
+          <span class="sb-group-title">Hướng dẫn sử dụng</span
+          ><a class="sb-link" href="#s01"
+            ><span class="sb-num">01</span>Plugin này giải quyết vấn đề gì?</a
+          >
+          <a class="sb-link" href="#s02"
+            ><span class="sb-num">02</span>Vì sao đóng gói thành plugin?</a
+          >
+          <a class="sb-link" href="#s03"
+            ><span class="sb-num">03</span>Plugin hoạt động như thế nào?</a
+          >
+          <a class="sb-link" href="#s04"
+            ><span class="sb-num">04</span>Plugin kiểm tra những gì?</a
+          >
+          <a class="sb-link" href="#s05"
+            ><span class="sb-num">05</span>Cài đặt</a
+          >
+          <a class="sb-link" href="#s06"
+            ><span class="sb-num">06</span>Sử dụng hằng ngày</a
+          >
+          <a class="sb-link" href="#s07"
+            ><span class="sb-num">07</span>Cách đọc kết quả</a
+          >
+          <a class="sb-link" href="#s08"
+            ><span class="sb-num">08</span>Những điểm cần lưu ý</a
+          >
+          <a class="sb-link" href="#s09"
+            ><span class="sb-num">09</span>Phản hồi vấn đề plugin báo</a
+          >
+          <a class="sb-link" href="#s10"
+            ><span class="sb-num">10</span>Cập nhật plugin</a
+          >
+          <a class="sb-link" href="#s11"
+            ><span class="sb-num">11</span>Checklist cho Dev</a
+          >
+          <a class="sb-link" href="#s12"
+            ><span class="sb-num">12</span>Câu hỏi thường gặp</a
+          >
+        </div>
+      </aside>
+      <main class="content">
+        <div class="page-eyebrow">Mobile App Team · Plugin Guide</div>
+        <h1 class="page-title">BS RN Review</h1>
+        <div class="page-subtitle">
+          <span>v567app</span><span class="dot"></span
+          ><span>v551-react-native</span><span class="dot"></span
+          ><span>v560ns-mobile</span>
+        </div>
+        <h2 id="s01">
+          <span class="h-num">01</span>Plugin này giải quyết vấn đề gì?<a
+            class="anchor"
+            href="#s01"
+            >#</a
+          >
+        </h2>
+        <p>
+          Các app của team Mobile có kiến trúc và cách tổ chức code khác nhau,
+          ví dụ: <code>v567app</code> dùng Expo CNG và Redux,
+          <code>v560ns</code> lạo dùng React Native bare và MobX, còn
+          <code>v551</code> được tổ chức theo các module legacy. Một checklist
+          chung cần có thêm thông tin riêng của từng app để review sát với từng
+          project.
+        </p>
+        <p>
+          Skill review giúp AI làm theo checklist, nhưng nếu chỉ dựa vào hướng
+          dẫn, AI vẫn có thể bỏ bước, chọn sai phạm vi, báo sai vị trí code hoặc
+          trả về format không đồng bộ. Kết quả nằm rải rác trong các phiên chat
+          của dev cũng khiến team khó tổng hợp và đánh giá chất lượng review.
+        </p>
+        <p>BS RN Review giải quyết các vấn đề này bằng ba thành phần:</p>
+        <ul>
+          <li>
+            <strong>Quy tắc chung và binding riêng:</strong> Best practice React
+            Native được duy trì trong plugin; binding khai báo kiến trúc, quy
+            ước và cấu hình review của từng dự án.
+          </li>
+          <li>
+            <strong>Hướng dẫn kết hợp script:</strong> AI phân tích logic;
+            script lấy diff theo cấu hình, đối chiếu file, dòng AI báo và tạo
+            báo cáo theo format cố định.
+          </li>
+          <li>
+            <strong>Báo cáo và feedback tập trung:</strong> Kết quả được lưu và
+            gửi lên Gitea khi đã cấu hình, thay vì chỉ nằm trong từng phiên chat
+            của dev như khi dùng Skill thông thường. Team có thể xem lại, phản
+            hồi và dùng dữ liệu này để cải thiện plugin ở các version sau.
+          </li>
+        </ul>
+        <p>
+          Toàn bộ được đóng gói thành Plugin để team cài đặt, cập nhật chung và
+          sử dụng trên cả Claude lẫn Codex.
+        </p>
+        <hr />
+        <h2 id="s02">
+          <span class="h-num">02</span>Vì sao đóng gói thành plugin?<a
+            class="anchor"
+            href="#s02"
+            >#</a
+          >
+        </h2>
+        <p>
+          Một skill tối giản thường bắt đầu bằng file <code>SKILL.md</code> chứa
+          hướng dẫn:
+        </p>
+        <pre><code>Đọc phần code thay đổi → áp dụng checklist → trả lời</code></pre>
+        <p>
+          Với nhu cầu cá nhân, cách này có thể đã đủ tốt. Skill cũng có thể gọi
+          tool, tạo subagent hoặc đi kèm script; vì vậy
+          <strong
+            >không phải cứ là plugin thì tự động review tốt hơn skill</strong
+          >.
+        </p>
+        <p>
+          BS RN Review được đóng gói thành plugin vì nó cần phân phối và cập
+          nhật đồng thời nhiều thành phần cho cả team:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Thành phần</th>
+                <th>Vai trò</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>rn-review</code> - skill chạy review</td>
+                <td>
+                  Hướng dẫn AI thực hiện quy trình: chạy Gate → tạo subagent
+                  review → kiểm tra kết quả → xuất báo cáo.
+                </td>
+              </tr>
+              <tr>
+                <td><code>rn-review-setup</code> — skill cấu hình app</td>
+                <td>
+                  Khảo sát project và tạo file <code>rn-binding.md</code>, ghi
+                  nhánh dùng để so sánh, cấu trúc app, lệnh kiểm tra và các nhóm
+                  review được bật. Team kiểm tra và commit cấu hình này để dùng
+                  chung.
+                </td>
+              </tr>
+              <tr>
+                <td>Reviewer — subagent chuyên review</td>
+                <td>
+                  Một phiên AI đọc diff, code liên quan và quy tắc của plugin để
+                  tìm lỗi. Không nhận lịch sử chat trước đó, giúp hạn chế việc
+                  bị ảnh hưởng bởi context rác.
+                </td>
+              </tr>
+              <tr>
+                <td>Gate — script chuẩn bị dữ liệu</td>
+                <td>
+                  Lấy diff theo cấu hình, tổng hợp kết quả kiểm tra tự động và
+                  tìm những nơi có thể bị ảnh hưởng bởi thay đổi để cô đọng phần
+                  context cho reviewer phân tích.
+                </td>
+              </tr>
+              <tr>
+                <td>Validator — script kiểm tra kết quả AI</td>
+                <td>
+                  Đối chiếu file, dòng và đoạn code AI báo; kiểm tra quy tắc và
+                  mức ảnh hưởng trước khi đưa vào báo cáo.
+                </td>
+              </tr>
+              <tr>
+                <td>Bộ tạo báo cáo</td>
+                <td>
+                  Chuyển kết quả đã qua Validator thành báo cáo tiếng Việt theo
+                  format cố định: vấn đề ở đâu, xảy ra khi nào, hậu quả và hướng
+                  xử lý; kèm phạm vi đã kiểm tra và các giới hạn.
+                </td>
+              </tr>
+              <tr>
+                <td>Recap — lưu kết quả và nhận phản hồi</td>
+                <td>
+                  Lưu báo cáo trên máy và gửi lên Gitea khi đã cấu hình. Team
+                  phản hồi nhận định đúng, sai hoặc không cần xử lý để theo dõi
+                  và cải thiện chất lượng review.
+                </td>
+              </tr>
+              <tr>
+                <td>Bộ quy tắc và tài liệu tham chiếu</td>
+                <td>
+                  Hướng dẫn reviewer kiểm tra logic, crash, quy ước app, rủi ro
+                  phát hành và hiệu năng. Phần hiệu năng sử dụng tài liệu
+                  Callstack được đóng gói cùng plugin.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Plugin giúp đóng gói toàn bộ các phần trên thành
+          <strong
+            >một đơn vị có version, cài đặt và cập nhật được cho cả team trên
+            Claude và Codex</strong
+          >.
+        </p>
+        <h3 id="s02-so-sanh-nhanh">
+          So sánh nhanh<a class="anchor" href="#s02-so-sanh-nhanh">#</a>
+        </h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Skill chỉ có hướng dẫn/checklist</th>
+                <th>BS RN Review plugin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AI tự xác định phần code cần đọc theo hướng dẫn</td>
+                <td>Script lấy diff theo nhánh so sánh và cấu hình của app</td>
+              </tr>
+              <tr>
+                <td>Có thể review ngay trong phiên chat đang viết code</td>
+                <td>
+                  Tạo subagent chuyên review, không nhận lịch sử chat trước đó
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  File, dòng và đoạn code do AI chỉ ra có thể chưa được kiểm tra
+                  lại
+                </td>
+                <td>Validator đối chiếu các thông tin này với code thực tế</td>
+              </tr>
+              <tr>
+                <td>Format báo cáo phụ thuộc vào việc AI làm đúng hướng dẫn</td>
+                <td>Script tạo báo cáo tiếng Việt theo format cố định</td>
+              </tr>
+              <tr>
+                <td>
+                  Kết quả thường nằm riêng trong từng phiên chat, khó tổng hợp
+                </td>
+                <td>
+                  Lưu báo cáo tập trung trên Gitea khi đã cấu hình, hỗ trợ
+                  feedback và có bộ kiểm thử để đánh giá chất lượng
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Plugin không làm model “thông minh hơn”. Lợi thế của nó là tách rõ
+          trách nhiệm:
+        </p>
+        <ul>
+          <li><strong>AI:</strong> hiểu logic và đưa ra nhận định.</li>
+          <li>
+            <strong>Script:</strong> thực hiện các bước cần tính lặp lại và đối
+            chiếu dữ liệu.
+          </li>
+          <li><strong>Dev:</strong> đọc nhận định và quyết định cuối cùng.</li>
+        </ul>
+        <hr />
+        <h2 id="s03">
+          <span class="h-num">03</span>Plugin hoạt động như thế nào?<a
+            class="anchor"
+            href="#s03"
+            >#</a
+          >
+        </h2>
+        <p>Trước khi đi vào flow, cần hiểu các khái niệm:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Khái niệm</th>
+                <th>Hiểu đơn giản</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Gate</strong></td>
+                <td>
+                  Bước chuẩn bị trước khi AI review: lấy đúng phần code đã đổi,
+                  chạy các kiểm tra tự động và chuẩn bị dữ liệu cho Reviewer.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Reviewer</strong></td>
+                <td>Spawn ra một subagent, chỉ làm nhiệm vụ review</td>
+              </tr>
+              <tr>
+                <td><strong>Validator</strong></td>
+                <td>
+                  Script đối chiếu issue AI báo với file, dòng và đoạn code thực
+                  tế.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Flow đầy đủ:</p>
+        <pre><code>Code thay đổi
+    ↓
+Gate lấy diff và chuẩn bị dữ liệu review
+    ↓
+Reviewer phân tích code và tìm issue
+    ↓
+Validator kiểm tra vị trí code và quy tắc của từng issue
+    ↓
+Tạo báo cáo tiếng Việt, lưu lên Gitea để lưu lại báo cáo</code></pre>
+        <h3 id="s03-buoc-0-binding-file-cau-hinh-rieng-cua-tung-app">
+          Bước 0 — Binding: file cấu hình riêng của từng app<a
+            class="anchor"
+            href="#s03-buoc-0-binding-file-cau-hinh-rieng-cua-tung-app"
+            >#</a
+          >
+        </h3>
+        <p>Mỗi app có một file:</p>
+        <pre><code>docs/agents/rn-binding.md</code></pre>
+        <p>
+          Binding là file giúp một plugin dùng chung hiểu cấu trúc riêng của
+          từng app. Nó cho plugin biết:
+        </p>
+        <ul>
+          <li>Base branch dùng để so sánh code.</li>
+          <li>App dùng Expo CNG, bare hay hybrid workflow.</li>
+          <li>File nào quản lý analytics, storage, config và navigation.</li>
+          <li>Lệnh kiểm tra nào app thực sự hỗ trợ.</li>
+          <li>File nào được công cụ sinh tự động và không nên review.</li>
+          <li>Nhóm review nào đang được bật.</li>
+        </ul>
+        <p>
+          <strong
+            >Quy tắc dùng review chung nằm trong plugin; thông tin riêng của app
+            nằm trong binding.</strong
+          >
+          Không copy binding từ app này sang app khác.
+        </p>
+        <h3 id="s03-buoc-1-gate-xac-dinh-pham-vi-va-chuan-bi-du-lieu-review">
+          Bước 1 — Gate: xác định phạm vi và chuẩn bị dữ liệu review<a
+            class="anchor"
+            href="#s03-buoc-1-gate-xac-dinh-pham-vi-va-chuan-bi-du-lieu-review"
+            >#</a
+          >
+        </h3>
+        <p>
+          Gate lấy mọi thay đổi từ điểm branch hiện tại tách ra khỏi base branch
+          cho tới trạng thái code đang có trên máy, gồm:
+        </p>
+        <ul>
+          <li>Commit trên branch hiện tại.</li>
+          <li>File đã stage.</li>
+          <li>File chưa stage.</li>
+          <li>File mới chưa commit nhưng không bị Git ignore.</li>
+        </ul>
+        <p>Sau đó Gate:</p>
+        <ul>
+          <li>
+            Chụp lại phần code thay đổi để reviewer dùng cùng một phiên bản.
+          </li>
+          <li>Loại các file được sinh tự động khỏi review.</li>
+          <li>Chạy secret scan nếu app có scanner.</li>
+          <li>
+            Chạy các kiểm tra tự động theo cấu hình app và lưu kết quả cho báo
+            cáo.
+          </li>
+          <li>Phân loại rủi ro native, dependency và release.</li>
+        </ul>
+        <p>
+          Gate <strong>không tự kết luận bug</strong>. Nó chỉ xác định phạm vi
+          và chạy các công cụ để chuẩn bị dữ liệu cho subagent Reviewer.
+        </p>
+        <h3 id="s03-buoc-2-mot-subagent-chuyen-review">
+          Bước 2 — Một subagent chuyên review<a
+            class="anchor"
+            href="#s03-buoc-2-mot-subagent-chuyen-review"
+            >#</a
+          >
+        </h3>
+        <p>
+          Plugin tạo đúng một <strong>subagent</strong>: một phiên AI có khu vực
+          làm việc riêng và chỉ thực hiện review. Subagent nhận đường dẫn tới
+          repo, cấu hình app, kết quả Gate và nơi ghi kết quả; nó không nhận:
+        </p>
+        <ul>
+          <li>Lời giải thích của người viết code.</li>
+          <li>Các vấn đề AI đã báo ở lần review trước.</li>
+          <li>Context của session chat.</li>
+        </ul>
+        <p>
+          Subagent đọc phần code đã đổi, cấu hình app, code liên quan và các quy
+          tắc phù hợp. Mỗi vấn đề nó báo phải trả lời được:
+        </p>
+        <ol>
+          <li>Lỗi nằm ở đâu?</li>
+          <li>Xảy ra trong tình huống nào?</li>
+          <li>Hậu quả thực tế là gì?</li>
+          <li>Nên xử lý theo hướng nào?</li>
+          <li>Dựa trên quy tắc kiểm tra nào?</li>
+        </ol>
+        <h3 id="s03-buoc-3-validator-doi-chieu-ket-qua-ai-voi-code-that">
+          Bước 3 — Validator: đối chiếu kết quả AI với code thật<a
+            class="anchor"
+            href="#s03-buoc-3-validator-doi-chieu-ket-qua-ai-voi-code-that"
+            >#</a
+          >
+        </h3>
+        <p>
+          Subagent ghi danh sách vấn đề vào <code>findings.json</code>.
+          Validator kiểm tra từng vấn đề:
+        </p>
+        <ul>
+          <li>Loại vấn đề đó có nằm trong các nhóm app đã bật review không?</li>
+          <li>
+            Mức ảnh hưởng có đủ cao để đưa vào báo cáo không? Ví dụ app có thể
+            chỉ muốn báo từ mức <strong>Nhẹ</strong> trở lên và bỏ các góp ý quá
+            nhỏ.
+          </li>
+          <li>File và số dòng có thật trong phần code vừa thay đổi không?</li>
+          <li>
+            Đoạn code nguyên dòng mà AI trích lại có khớp với code thật không?
+          </li>
+          <li>
+            Nếu AI nói “hàm này đổi cách trả kết quả và làm hỏng nơi đang dùng
+            nó”, plugin có thực sự tìm thấy file đang import và sử dụng hàm đó
+            không?
+          </li>
+        </ul>
+        <p>
+          Trong dữ liệu nội bộ, mỗi vấn đề có <strong>nhóm</strong> và
+          <strong>mã quy tắc</strong>. Ví dụ, nhóm <code>correctness</code> chứa
+          các kiểm tra về logic; mã <code>correctness/B1</code> chỉ ra chính xác
+          quy tắc AI đã dùng. Dev không cần học thuộc các mã này. Chúng giúp
+          plugin không chấp nhận loại lỗi do AI tự nghĩ ra, đồng thời giúp team
+          biết quy tắc nào thường báo đúng hoặc báo sai.
+        </p>
+        <p>
+          Issue qua được các Validator trên mới xuất hiện trong báo cáo chính.
+        </p>
+        <div class="callout callout-note">
+          <svg
+            class="callout-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path stroke-linecap="round" d="M12 16v-4M12 8h.01" />
+          </svg>
+          <div class="callout-body">
+            <span class="callout-label">Lưu ý</span>
+            <p>
+              Validator xác nhận AI đã chỉ đúng phần code liên quan. Nó không
+              thể tự chứng minh toàn bộ suy luận nghiệp vụ của AI chắc chắn
+              đúng; Dev vẫn cần đọc và quyết định.
+            </p>
+          </div>
+        </div>
+        <h3 id="s03-buoc-4-tao-bao-cao-va-luu-recap">
+          Bước 4 — Tạo báo cáo và lưu recap<a
+            class="anchor"
+            href="#s03-buoc-4-tao-bao-cao-va-luu-recap"
+            >#</a
+          >
+        </h3>
+        <p>Plugin tạo báo cáo tiếng Việt thống nhất:</p>
+        <ul>
+          <li>Kết luận đầu báo cáo: có thể push, nên sửa hoặc đừng push.</li>
+          <li>Tối đa 5 vấn đề, xếp theo mức ảnh hưởng.</li>
+          <li>Phạm vi đã kiểm tra.</li>
+          <li>
+            Nhóm nào đã kiểm tra, không liên quan hoặc không thể kiểm tra.
+          </li>
+          <li>Kết quả kiểm tra tự động và phiên bản code đã review.</li>
+          <li>
+            Việc Dev cần tự kiểm tra thêm ở những nơi plugin không tự lần theo
+            được.
+          </li>
+        </ul>
+        <p>
+          <code>Recap</code> là bản lưu của lần review dành cho team và người
+          duy trì plugin. Nó được lưu trên máy trước, sau đó plugin thử đăng lên
+          repo Gitea. Mất mạng hoặc thiếu token chỉ làm recap chờ gửi lại;
+          <strong>không thay đổi kết quả review</strong>.
+        </p>
+        <hr />
+        <h2 id="s04">
+          <span class="h-num">04</span>Plugin kiểm tra những gì?<a
+            class="anchor"
+            href="#s04"
+            >#</a
+          >
+        </h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Nhóm</th>
+                <th>Nội dung kiểm tra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Logic</strong></td>
+                <td>
+                  Thay đổi có làm sai hành vi hoặc ảnh hưởng đến code đang sử
+                  dụng không?
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Crash</strong></td>
+                <td>Code render và JSX có nguy cơ làm app crash không?</td>
+              </tr>
+              <tr>
+                <td><strong>Quy ước dự án</strong></td>
+                <td>
+                  Code thay đổi có tuân thủ các quy ước và cấu trúc của app
+                  không?
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Build và phát hành</strong></td>
+                <td>
+                  Thay đổi có ảnh hưởng đến native, OTA, dữ liệu đã lưu hoặc
+                  hành vi trên iOS/Android không?
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Hiệu năng</strong></td>
+                <td>
+                  Có rủi ro về render, xử lý tương tác, tài nguyên hoặc thời
+                  gian khởi động theo hướng dẫn Callstack không?
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr />
+        <h2 id="s05">
+          <span class="h-num">05</span>Cài đặt<a class="anchor" href="#s05"
+            >#</a
+          >
+        </h2>
+        <h3 id="s05-yeu-cau-chung">
+          Yêu cầu chung<a class="anchor" href="#s05-yeu-cau-chung">#</a>
+        </h3>
+        <ul>
+          <li>Git hoạt động và repo app có <code>HEAD</code> hợp lệ.</li>
+          <li>Node.js 20 trở lên.</li>
+          <li>Dependencies của app đã được cài theo workflow của app.</li>
+          <li>
+            App đã có <code>docs/agents/rn-binding.md</code>; nếu chưa có, người
+            phụ trách app chạy setup một lần.
+          </li>
+        </ul>
+        <h3 id="s05-cach-a-claude-code">
+          Cách A — Claude Code<a class="anchor" href="#s05-cach-a-claude-code"
+            >#</a
+          >
+        </h3>
+        <pre><code class="language-bash">claude plugin marketplace add https://git.bssdev.cloud/truongtd/rn-code-review.git
+claude plugin install bs-rn-review@bs-mobile</code></pre>
+        <p>Mở Claude Code trong repo app. Nếu app chưa có binding:</p>
+        <pre><code>/bs-rn-review:rn-review-setup</code></pre>
+        <p>
+          Setup chỉ cần thực hiện một lần cho mỗi app. Review các giá trị được
+          đề xuất, sau đó commit binding và settings mà setup tạo ra. Nếu repo
+          đã có binding, không cần chạy lại.
+        </p>
+        <h3 id="s05-cach-b-codex">
+          Cách B — Codex<a class="anchor" href="#s05-cach-b-codex">#</a>
+        </h3>
+        <pre><code class="language-bash">codex plugin marketplace add https://git.bssdev.cloud/truongtd/rn-code-review
+codex plugin add bs-rn-review@bs-mobile</code></pre>
+        <p>
+          Sau khi cài, mở một Codex session mới trong repo app. Nếu app chưa có
+          binding:
+        </p>
+        <pre><code>$rn-review-setup</code></pre>
+        <p>
+          Nếu terminal chưa nhận lệnh <code>codex</code> khi dùng Codex trong
+          app ChatGPT trên macOS:
+        </p>
+        <pre><code class="language-bash">echo 'export PATH=&quot;/Applications/ChatGPT.app/Contents/Resources/codex-cli/bin:$PATH&quot;' &gt;&gt; ~/.zshrc
+source ~/.zshrc</code></pre>
+        <h3 id="s05-cau-hinh-recap-khuyen-nghi">
+          Cấu hình recap — khuyến nghị<a
+            class="anchor"
+            href="#s05-cau-hinh-recap-khuyen-nghi"
+            >#</a
+          >
+        </h3>
+        <p>
+          Review vẫn chạy khi không có token, nhưng recap sẽ chỉ được lưu local.
+          Mỗi Dev chỉ cần cấu hình Gitea token một lần.
+        </p>
+        <details class="recap-disclosure">
+          <summary>
+            <span class="recap-summary-icon" aria-hidden="true">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 16V4m0 0-4 4m4-4 4 4M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"
+                />
+              </svg>
+            </span>
+            <span class="recap-summary-copy">
+              <span class="recap-summary-title"
+                >Lưu kết quả review lên Gitea</span
+              >
+              <span class="recap-summary-meta"
+                >Thiết lập một lần · Chỉ cần quyền write:issue</span
+              >
+            </span>
+            <svg
+              class="recap-chevron"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" d="m6 9 6 6 6-6" />
+            </svg>
+          </summary>
+
+          <div class="recap-disclosure-body">
+            <p>
+              Sau mỗi lần review, plugin lưu báo cáo trên máy rồi tạo một issue
+              trong repo recap để team xem lại. Không có token thì review vẫn
+              chạy bình thường; chỉ bước đăng recap bị bỏ qua.
+            </p>
+
+            <div class="recap-steps">
+              <div class="recap-step">
+                <span class="recap-step-number">1</span>
+                <div class="recap-step-content">
+                  <strong>Tạo token.</strong> Mở
+                  <a href="https://git.bssdev.cloud">git.bssdev.cloud</a> →
+                  avatar → <strong>Settings → Applications</strong> →
+                  <strong>Generate New Token</strong>, rồi chỉ chọn quyền
+                  <code>write:issue</code>.
+                </div>
+              </div>
+
+              <div class="recap-step">
+                <span class="recap-step-number">2</span>
+                <div class="recap-step-content">
+                  <strong>Lưu token trên máy.</strong> Tự chạy lệnh sau trong
+                  terminal và dán token khi được hỏi:
+                  <pre><code class="language-bash">mkdir -p -m 700 ~/.config/bs-rn-review &amp;&amp; (umask 077; printf 'Gitea token: '; read -rs t; printf '%s' "$t" &gt; ~/.config/bs-rn-review/recap-token; chmod 600 ~/.config/bs-rn-review/recap-token; echo; echo "Đã lưu")</code></pre>
+                </div>
+              </div>
+
+              <div class="recap-step">
+                <span class="recap-step-number">3</span>
+                <div class="recap-step-content">
+                  <strong>Chạy review như bình thường.</strong> Không cần khởi
+                  động lại Claude Code, Codex, VS Code hay terminal.
+                </div>
+              </div>
+            </div>
+
+            <div class="callout callout-warning">
+              <svg
+                class="callout-icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"
+                />
+              </svg>
+              <div class="callout-body">
+                <span class="callout-label">Bảo mật token</span>
+                <p>
+                  Không dán token vào chat, không nhờ agent chạy lệnh này và
+                  không commit token vào repo. File token chỉ cho tài khoản của
+                  bạn đọc với quyền <code>600</code>.
+                </p>
+              </div>
+            </div>
+
+            <div class="recap-facts">
+              <div class="recap-fact">
+                <strong>Nội dung được gửi</strong>
+                Phạm vi review, coverage và findings đã xác nhận. Plugin không
+                gửi toàn bộ diff, log môi trường hay chuỗi secret.
+              </div>
+              <div class="recap-fact">
+                <strong>Nếu đăng issue thất bại</strong>
+                Recap vẫn được giữ local với trạng thái <code>pending</code>.
+                Copy nguyên <code>retryCommand</code> trong output để gửi lại.
+              </div>
+            </div>
+
+            <p>
+              Review sạch cũng được lưu. Sau khi đọc recap, phản hồi bằng label
+              <code>đúng</code>, <code>sai</code> hoặc <code>skip</code> theo
+              hướng dẫn tại <a href="#s09">phần phản hồi</a>.
+            </p>
+          </div>
+        </details>
+        <hr />
+        <h2 id="s06">
+          <span class="h-num">06</span>Sử dụng hằng ngày<a
+            class="anchor"
+            href="#s06"
+            >#</a
+          >
+        </h2>
+        <p>Chạy sau khi hoàn thành code và trước commit hoặc push.</p>
+        <h3 id="s06-claude-code">
+          Claude Code<a class="anchor" href="#s06-claude-code">#</a>
+        </h3>
+        <pre><code>/bs-rn-review:rn-review</code></pre>
+        <h3 id="s06-codex">Codex<a class="anchor" href="#s06-codex">#</a></h3>
+        <pre><code>$rn-review</code></pre>
+        <h3 id="s06-trong-luc-review">
+          Trong lúc review<a class="anchor" href="#s06-trong-luc-review">#</a>
+        </h3>
+        <ul>
+          <li>Không sửa code cho tới khi review kết thúc.</li>
+          <li>Chờ các bước kiểm tra hoàn tất.</li>
+          <li>
+            Plugin chỉ tìm và báo lỗi; bạn quyết định có sửa hay không và sửa
+            như thế nào.
+          </li>
+        </ul>
+        <hr />
+        <h2 id="s07">
+          <span class="h-num">07</span>Cách đọc kết quả<a
+            class="anchor"
+            href="#s07"
+            >#</a
+          >
+        </h2>
+        <h3 id="s07-ket-luan-o-dau-bao-cao">
+          Kết luận ở đầu báo cáo<a
+            class="anchor"
+            href="#s07-ket-luan-o-dau-bao-cao"
+            >#</a
+          >
+        </h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Kết quả</th>
+                <th>Ý nghĩa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Có thể push trong phạm vi đã kiểm tra</strong></td>
+                <td>
+                  Không có vấn đề nghiêm trọng hoặc vấn đề ở mức chặn push trong
+                  phần đã review
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Nên sửa trước khi push</strong></td>
+                <td>Có ít nhất một vấn đề nghiêm trọng</td>
+              </tr>
+              <tr>
+                <td><strong>Đừng push</strong></td>
+                <td>Có vấn đề ở mức chặn push cần xử lý trước</td>
+              </tr>
+              <tr>
+                <td><strong>Chưa review được</strong></td>
+                <td>
+                  Một bước trong quy trình không hoàn tất; không được hiểu là
+                  code không có vấn đề
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 id="s07-muc-do-anh-huong">
+          Mức độ ảnh hưởng<a class="anchor" href="#s07-muc-do-anh-huong">#</a>
+        </h3>
+        <p>
+          Mức độ ảnh hưởng được gọi là <code>severity</code>. Dev chỉ cần hiểu
+          bốn mức hiển thị trong báo cáo:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Mức</th>
+                <th>Ý nghĩa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chặn push</td>
+                <td>Rủi ro rất cao, không nên tiếp tục release</td>
+              </tr>
+              <tr>
+                <td>Nghiêm trọng</td>
+                <td>Nên sửa trước khi push</td>
+              </tr>
+              <tr>
+                <td>Nhẹ</td>
+                <td>Vấn đề có thật nhưng tác động thấp hơn</td>
+              </tr>
+              <tr>
+                <td>Góp ý</td>
+                <td>Cải thiện nhỏ nhưng vẫn đạt ngưỡng mà app muốn hiển thị</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 id="s07-mot-van-de-duoc-bao-gom">
+          Một vấn đề được báo gồm<a
+            class="anchor"
+            href="#s07-mot-van-de-duoc-bao-gom"
+            >#</a
+          >
+        </h3>
+        <ul>
+          <li>Vị trí và dòng code thay đổi.</li>
+          <li>Tình huống gây lỗi.</li>
+          <li>Hậu quả.</li>
+          <li>Cách xử lý.</li>
+          <li>Quy tắc kiểm tra được sử dụng.</li>
+        </ul>
+        <h3 id="s07-hieu-dung-khong-phat-hien-van-de">
+          Hiểu đúng “không phát hiện vấn đề”<a
+            class="anchor"
+            href="#s07-hieu-dung-khong-phat-hien-van-de"
+            >#</a
+          >
+        </h3>
+        <p>“Không phát hiện vấn đề” có nghĩa:</p>
+        <div class="callout callout-note">
+          <svg
+            class="callout-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path stroke-linecap="round" d="M12 16v-4M12 8h.01" />
+          </svg>
+          <div class="callout-body">
+            <span class="callout-label">Lưu ý</span>
+            <p>
+              Reviewer không tìm thấy vấn đề được xác nhận trong phạm vi và nhóm
+              đã kiểm tra.
+            </p>
+          </div>
+        </div>
+        <p>Nó không có nghĩa:</p>
+        <ul>
+          <li>Code chắc chắn không có bug.</li>
+          <li>Mọi luồng có thể xảy ra khi app chạy đã được kiểm tra.</li>
+          <li>Mọi nơi gọi code theo cách động đã được tìm thấy.</li>
+          <li>Có thể bỏ qua self-test hoặc review của con người.</li>
+        </ul>
+        <p>
+          Nên đọc phần <strong>Mức độ kiểm tra</strong> và
+          <strong>Bạn nên tự kiểm tra thêm</strong>.
+        </p>
+        <hr />
+        <h2 id="s08">
+          <span class="h-num">08</span>Những điểm cần lưu ý<a
+            class="anchor"
+            href="#s08"
+            >#</a
+          >
+        </h2>
+        <h3 id="s08-plugin-review-toan-bo-thay-doi-cua-branch">
+          Plugin review toàn bộ thay đổi của branch<a
+            class="anchor"
+            href="#s08-plugin-review-toan-bo-thay-doi-cua-branch"
+            >#</a
+          >
+        </h3>
+        <p>
+          Phạm vi không chỉ là file đang mở hoặc commit cuối. Plugin bắt đầu từ
+          điểm branch hiện tại tách khỏi base branch, rồi lấy toàn bộ commit và
+          thay đổi chưa commit trên máy.
+        </p>
+        <h3 id="s08-khong-sua-code-khi-review-dang-chay">
+          Không sửa code khi review đang chạy<a
+            class="anchor"
+            href="#s08-khong-sua-code-khi-review-dang-chay"
+            >#</a
+          >
+        </h3>
+        <p>
+          Phần code dùng cho reviewer được chụp lại khi bắt đầu, nhưng các công
+          cụ kiểm tra và bước tìm nơi sử dụng vẫn đọc file hiện tại. Nếu sửa
+          code giữa lúc review, các bước có thể nhìn thấy những phiên bản code
+          khác nhau.
+        </p>
+        <h3 id="s08-generated-files-khong-duoc-review">
+          Generated files không được review<a
+            class="anchor"
+            href="#s08-generated-files-khong-duoc-review"
+            >#</a
+          >
+        </h3>
+        <p>
+          Các đường dẫn được binding đánh dấu là file sinh tự động sẽ bị loại
+          khỏi phần review. Plugin không cố đoán những file này được sinh bằng
+          tool hay bị sửa tay.
+        </p>
+        <h3 id="s08-plugin-khong-the-tu-tim-duoc-moi-noi-dang-su-dung-code">
+          Plugin không thể tự tìm được mọi nơi đang sử dụng code<a
+            class="anchor"
+            href="#s08-plugin-khong-the-tu-tim-duoc-moi-noi-dang-su-dung-code"
+            >#</a
+          >
+        </h3>
+        <p>
+          Plugin lần theo các câu lệnh <code>import</code> và
+          <code>export</code> để tìm nơi đang sử dụng hàm hoặc giá trị vừa bị
+          đổi. Cách này hữu ích nhưng không hiểu được mọi hành vi xảy ra lúc app
+          chạy. Nó có thể bỏ sót:
+        </p>
+        <ul>
+          <li>Route được gọi bằng string.</li>
+          <li>Store path qua <code>useSelector</code>.</li>
+          <li>Dynamic <code>import()</code>.</li>
+          <li>Computed <code>require()</code>.</li>
+          <li>Generated code và test files.</li>
+          <li>Custom Metro resolver.</li>
+        </ul>
+        <p>
+          Khi thay đổi có khả năng đi qua các đường này, báo cáo sẽ chỉ rõ Dev
+          nên tìm và kiểm tra thêm ở đâu.
+        </p>
+        <h3 id="s08-reviewer-tren-claude-va-codex-duoc-tach-biet-hoi-khac-nhau">
+          Reviewer trên Claude và Codex được tách biệt hơi khác nhau<a
+            class="anchor"
+            href="#s08-reviewer-tren-claude-va-codex-duoc-tach-biet-hoi-khac-nhau"
+            >#</a
+          >
+        </h3>
+        <ul>
+          <li>
+            <strong>Claude:</strong> tạo một agent đã được khai báo sẵn, không
+            tự nạp <code>CLAUDE.md</code> và chỉ được dùng các công cụ đã cho
+            phép.
+          </li>
+          <li>
+            <strong>Codex:</strong> không truyền cuộc trò chuyện của Dev sang
+            subagent, nhưng subagent vẫn có thể nhận hướng dẫn hệ thống và file
+            <code>AGENTS.md</code> của project.
+          </li>
+        </ul>
+        <p>
+          Hai bản dùng chung quy tắc, Gate, validator và format báo cáo; chỉ
+          khác một chút ở cách mỗi công cụ tạo subagent.
+        </p>
+        <h3 id="s08-kiem-tra-hieu-nang-can-tai-lieu-callstack">
+          Kiểm tra hiệu năng cần tài liệu Callstack<a
+            class="anchor"
+            href="#s08-kiem-tra-hieu-nang-can-tai-lieu-callstack"
+            >#</a
+          >
+        </h3>
+        <p>
+          Plugin dùng một phiên bản tài liệu Callstack được đóng gói sẵn. Nếu
+          không đọc được tài liệu này, phần hiệu năng phải báo
+          <code>Không thể kiểm tra</code>; reviewer không được tự nghĩ ra quy
+          tắc thay thế.
+        </p>
+        <hr />
+        <h2 id="s09">
+          <span class="h-num">09</span>Phản hồi vấn đề plugin báo<a
+            class="anchor"
+            href="#s09"
+            >#</a
+          >
+        </h2>
+        <p>
+          Feedback giúp người duy trì plugin biết quy tắc nào đúng và có giá trị
+          trong code thật.
+        </p>
+        <p>Sau khi kiểm tra một recap trên Gitea:</p>
+        <ul>
+          <li>Gắn label <code>đúng</code> nếu nhận định đúng và hữu ích.</li>
+          <li>Gắn label <code>sai</code> nếu nhận định không đúng.</li>
+          <li>
+            Gắn label <code>skip</code> nếu nhận định có thể đúng nhưng không
+            đáng làm phiền Dev.
+          </li>
+        </ul>
+        <p>
+          Nếu từng vấn đề trong cùng recap có kết luận khác nhau, comment theo
+          ID:
+        </p>
+        <pre><code>feedback: F1 | đúng | đã tái hiện trên Android
+feedback: F2 | sai | nơi gọi hàm đã kiểm tra trường hợp này ở phía trên
+feedback: F3 | skip | edge case không tồn tại trong sản phẩm</code></pre>
+        <p>
+          Lý do ngắn quan trọng hơn số đếm: nó giúp người duy trì biết phải sửa
+          quy tắc ở đâu.
+        </p>
+        <hr />
+        <h2 id="s10">
+          <span class="h-num">10</span>Cập nhật plugin<a
+            class="anchor"
+            href="#s10"
+            >#</a
+          >
+        </h2>
+        <h3 id="s10-claude-code">
+          Claude Code<a class="anchor" href="#s10-claude-code">#</a>
+        </h3>
+        <pre><code class="language-bash">claude plugin update bs-rn-review@bs-mobile</code></pre>
+        <p>
+          Nếu skill mới chưa xuất hiện, đóng session hiện tại và mở session mới.
+        </p>
+        <h3 id="s10-codex">Codex<a class="anchor" href="#s10-codex">#</a></h3>
+        <pre><code class="language-bash">codex plugin marketplace upgrade bs-mobile</code></pre>
+        <p>Sau đó mở Codex session mới.</p>
+        <p>Chỉ remove/add lại khi upgrade không cập nhật đúng:</p>
+        <pre><code class="language-bash">codex plugin remove bs-rn-review@bs-mobile
+codex plugin add bs-rn-review@bs-mobile</code></pre>
+        <hr />
+        <h2 id="s11">
+          <span class="h-num">11</span>Checklist cho Dev<a
+            class="anchor"
+            href="#s11"
+            >#</a
+          >
+        </h2>
+        <h3 id="s11-truoc-review">
+          Trước review<a class="anchor" href="#s11-truoc-review">#</a>
+        </h3>
+        <ul class="checklist">
+          <li data-checked="false">
+            Feature/fix đã hoàn thành ở mức sẵn sàng self-review.
+          </li>
+          <li data-checked="false">Dependencies của app đã được cài.</li>
+          <li data-checked="false">
+            Không còn file chứa token, key hoặc thông tin đăng nhập trong phần
+            code chưa commit.
+          </li>
+          <li data-checked="false">
+            Không có process khác đang tự động sửa code.
+          </li>
+        </ul>
+        <h3 id="s11-sau-review">
+          Sau review<a class="anchor" href="#s11-sau-review">#</a>
+        </h3>
+        <ul class="checklist">
+          <li data-checked="false">
+            Đọc kết luận đầu báo cáo và trạng thái từng nhóm kiểm tra.
+          </li>
+          <li data-checked="false">
+            Kiểm tra từng vấn đề plugin báo trong code thật.
+          </li>
+          <li data-checked="false">
+            Thực hiện manual checks nếu report yêu cầu.
+          </li>
+          <li data-checked="false">
+            Sửa và self-test lại; chạy review lần nữa nếu thay đổi đáng kể.
+          </li>
+          <li data-checked="false">
+            Không blind merge chỉ vì report nói “có thể push”.
+          </li>
+          <li data-checked="false">
+            Phản hồi từng vấn đề trên recap để cải thiện quy tắc review.
+          </li>
+        </ul>
+        <hr />
+        <h2 id="s12">
+          <span class="h-num">12</span>Câu hỏi thường gặp<a
+            class="anchor"
+            href="#s12"
+            >#</a
+          >
+        </h2>
+        <h3 id="s12-plugin-co-sua-code-giup-minh-khong">
+          Plugin có sửa code giúp mình không?<a
+            class="anchor"
+            href="#s12-plugin-co-sua-code-giup-minh-khong"
+            >#</a
+          >
+        </h3>
+        <p>Không. Plugin chỉ review và báo cáo. Dev quyết định cách sửa.</p>
+        <h3 id="s12-plugin-co-chay-tren-ci-khong">
+          Plugin có chạy trên CI không?<a
+            class="anchor"
+            href="#s12-plugin-co-chay-tren-ci-khong"
+            >#</a
+          >
+        </h3>
+        <p>Không. Đây là review local trước commit/push.</p>
+        <h3 id="s12-co-can-chay-setup-moi-lan-review-khong">
+          Có cần chạy setup mỗi lần review không?<a
+            class="anchor"
+            href="#s12-co-can-chay-setup-moi-lan-review-khong"
+            >#</a
+          >
+        </h3>
+        <p>
+          Không. Setup chạy một lần cho mỗi app. Khi binding đã được commit, mọi
+          Dev dùng chung.
+        </p>
+        <h3 id="s12-claude-va-codex-co-cho-ket-qua-giong-het-nhau-khong">
+          Claude và Codex có cho kết quả giống hệt nhau không?<a
+            class="anchor"
+            href="#s12-claude-va-codex-co-cho-ket-qua-giong-het-nhau-khong"
+            >#</a
+          >
+        </h3>
+        <p>
+          Hai bản dùng chung dữ liệu, quy tắc và validator. Kết luận AI vẫn có
+          thể khác do model hoặc môi trường chạy, nhưng format đầu ra và cách
+          đối chiếu code giống nhau.
+        </p>
+        <h3 id="s12-vi-sao-chi-co-mot-reviewer">
+          Vì sao chỉ có một reviewer?<a
+            class="anchor"
+            href="#s12-vi-sao-chi-co-mot-reviewer"
+            >#</a
+          >
+        </h3>
+        <p>
+          Một reviewer đọc toàn bộ phần code thay đổi giúp tránh báo trùng, giảm
+          lượng nội dung phải truyền giữa nhiều AI và xếp mọi vấn đề trên cùng
+          một danh sách mức ảnh hưởng. Cấu hình app chỉ chọn nhóm kiến thức cần
+          dùng, không tạo thêm reviewer.
+        </p>
+        <h3 id="s12-vi-sao-khong-co-ai-thu-hai-verify-ket-qua">
+          Vì sao không có AI thứ hai verify kết quả?<a
+            class="anchor"
+            href="#s12-vi-sao-khong-co-ai-thu-hai-verify-ket-qua"
+            >#</a
+          >
+        </h3>
+        <p>
+          Một AI thứ hai vẫn có thể sai và làm tăng chi phí. Thay vào đó, plugin
+          dùng chương trình có quy tắc cố định để đối chiếu file, dòng và đoạn
+          code AI đã chỉ ra. Các bộ tình huống kiểm thử và phản hồi từ code thật
+          được dùng để đánh giá chất lượng suy luận của AI.
+        </p>
+        <h3 id="s12-review-sach-co-duoc-luu-recap-khong">
+          Review sạch có được lưu recap không?<a
+            class="anchor"
+            href="#s12-review-sach-co-duoc-luu-recap-khong"
+            >#</a
+          >
+        </h3>
+        <p>
+          Có. Lần review không phát hiện vấn đề vẫn giúp team biết plugin đã
+          kiểm tra những phần nào và theo dõi chất lượng của plugin.
+        </p>
+        <footer class="footer">
+          <div class="footer-meta">
+            <span class="footer-version">v0.2.10</span><span>BS RN Review</span>
+          </div>
+          <div class="footer-meta"><span>Mobile App Team</span></div>
+        </footer>
+      </main>
+    </div>
+    <button class="back-top" id="backTop" aria-label="Lên đầu trang">
+      <svg
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const sidebar = document.getElementById("sidebar");
+      const backdrop = document.getElementById("backdrop");
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("open");
+        backdrop.classList.add("show");
+      });
+      backdrop.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        backdrop.classList.remove("show");
+      });
+      const sbLinks = document.querySelectorAll(".sb-link");
+      const sections = document.querySelectorAll("h2[id]");
+      let scrollLock = false;
+      let scrollLockTimer = null;
+      function setActiveLink(href) {
+        sbLinks.forEach((link) => link.classList.remove("active"));
+        document
+          .querySelector(`.sb-link[href="${href}"]`)
+          ?.classList.add("active");
+      }
+      sbLinks.forEach((link) =>
+        link.addEventListener("click", () => {
+          setActiveLink(link.getAttribute("href"));
+          scrollLock = true;
+          clearTimeout(scrollLockTimer);
+          scrollLockTimer = setTimeout(() => {
+            scrollLock = false;
+          }, 900);
+          sidebar.classList.remove("open");
+          backdrop.classList.remove("show");
+        }),
+      );
+      function updateActive() {
+        if (scrollLock) return;
+        let active = null;
+        if (
+          window.scrollY + window.innerHeight >=
+          document.documentElement.scrollHeight - 1
+        )
+          active = sections[sections.length - 1];
+        else
+          sections.forEach((section) => {
+            if (section.getBoundingClientRect().top <= 110) active = section;
+          });
+        if (active) setActiveLink(`#${active.id}`);
+      }
+      window.addEventListener("scroll", updateActive, { passive: true });
+      updateActive();
+      const backTop = document.getElementById("backTop");
+      window.addEventListener(
+        "scroll",
+        () => backTop.classList.toggle("visible", window.scrollY > 600),
+        { passive: true },
+      );
+      backTop.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
+
+      // Give the core product names and review concepts a little more visual weight.
+      const importantTermTest =
+        /BS RN Review|Claude Code|Claude|Codex|Gate|Reviewer|Validator|Binding|Recap|Gitea/;
+      const importantTermPattern =
+        /BS RN Review|Claude Code|Claude|Codex|Gate|Reviewer|Validator|Binding|Recap|Gitea/g;
+      const termNodes = [];
+      const termWalker = document.createTreeWalker(
+        document.querySelector(".content"),
+        NodeFilter.SHOW_TEXT,
+        {
+          acceptNode(node) {
+            const parent = node.parentElement;
+            if (
+              !importantTermTest.test(node.nodeValue) ||
+              parent.closest(
+                "code, pre, a, strong, h1, h2, .page-eyebrow, .page-subtitle, .footer, .term-highlight",
+              )
+            ) {
+              return NodeFilter.FILTER_REJECT;
+            }
+            return NodeFilter.FILTER_ACCEPT;
+          },
+        },
+      );
+      while (termWalker.nextNode()) termNodes.push(termWalker.currentNode);
+      termNodes.forEach((textNode) => {
+        const fragment = document.createDocumentFragment();
+        let cursor = 0;
+        for (const match of textNode.nodeValue.matchAll(importantTermPattern)) {
+          fragment.append(textNode.nodeValue.slice(cursor, match.index));
+          const term = document.createElement("span");
+          term.className = "term-highlight";
+          term.textContent = match[0];
+          fragment.append(term);
+          cursor = match.index + match[0].length;
+        }
+        fragment.append(textNode.nodeValue.slice(cursor));
+        textNode.replaceWith(fragment);
+      });
+
+      document.querySelectorAll("pre").forEach((pre, index) => {
+        if (pre.scrollHeight <= 460) return;
+        const wrapper = document.createElement("div");
+        wrapper.className = "code-preview";
+        wrapper.dataset.codePreview = String(index);
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "code-toggle";
+        button.setAttribute("aria-expanded", "false");
+        button.textContent = "Xem đầy đủ";
+        pre.parentNode.insertBefore(wrapper, pre);
+        wrapper.appendChild(pre);
+        wrapper.appendChild(button);
+        button.addEventListener("click", () => {
+          const expanded = wrapper.classList.toggle("is-expanded");
+          button.setAttribute("aria-expanded", String(expanded));
+          button.textContent = expanded ? "Thu gọn" : "Xem đầy đủ";
+        });
+      });
+    </script>
+  </body>
+</html>

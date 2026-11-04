@@ -1379,7 +1379,7 @@
           </a>
         </div>
         <div class="topnav-actions">
-          <span class="nav-badge">Plugin v0.2.10</span>
+          <span class="nav-badge">Plugin v0.2.14</span>
         </div>
       </div>
     </nav>
@@ -1444,7 +1444,7 @@
         <p>
           Các app của team Mobile có kiến trúc và cách tổ chức code khác nhau,
           ví dụ: <code>v567app</code> dùng Expo CNG và Redux,
-          <code>v560ns</code> lạo dùng React Native bare và MobX, còn
+          <code>v560ns</code> lại dùng React Native bare và MobX, còn
           <code>v551</code> được tổ chức theo các module legacy. Một checklist
           chung cần có thêm thông tin riêng của từng app để review sát với từng
           project.
@@ -1512,7 +1512,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><code>rn-review</code> - skill chạy review</td>
+                <td><code>rn-review</code> — skill chạy review</td>
                 <td>
                   Hướng dẫn AI thực hiện quy trình: chạy Gate → tạo subagent
                   review → kiểm tra kết quả → xuất báo cáo.
@@ -1668,7 +1668,7 @@
               </tr>
               <tr>
                 <td><strong>Reviewer</strong></td>
-                <td>Spawn ra một subagent, chỉ làm nhiệm vụ review</td>
+                <td>Tạo một subagent chỉ làm nhiệm vụ review</td>
               </tr>
               <tr>
                 <td><strong>Validator</strong></td>
@@ -1689,7 +1689,9 @@ Reviewer phân tích code và tìm issue
     ↓
 Validator kiểm tra vị trí code và quy tắc của từng issue
     ↓
-Tạo báo cáo tiếng Việt, lưu lên Gitea để lưu lại báo cáo</code></pre>
+Tạo báo cáo tiếng Việt, lưu lên Gitea để lưu lại báo cáo
+    ↓
+Review đạt: tạo thêm Description cho PR từ template của app</code></pre>
         <h3 id="s03-buoc-0-binding-file-cau-hinh-rieng-cua-tung-app">
           Bước 0 — Binding: file cấu hình riêng của từng app<a
             class="anchor"
@@ -1848,7 +1850,10 @@ Tạo báo cáo tiếng Việt, lưu lên Gitea để lưu lại báo cáo</code
         </h3>
         <p>Plugin tạo báo cáo tiếng Việt thống nhất:</p>
         <ul>
-          <li>Kết luận đầu báo cáo: có thể push, nên sửa hoặc đừng push.</li>
+          <li>
+            Kết luận đầu báo cáo: có thể push, nên sửa, đừng push hoặc chưa
+            review được.
+          </li>
           <li>Tối đa 5 vấn đề, xếp theo mức ảnh hưởng.</li>
           <li>Phạm vi đã kiểm tra.</li>
           <li>
@@ -1858,6 +1863,13 @@ Tạo báo cáo tiếng Việt, lưu lên Gitea để lưu lại báo cáo</code
           <li>
             Việc Dev cần tự kiểm tra thêm ở những nơi plugin không tự lần theo
             được.
+          </li>
+          <li>
+            <strong>Description cho PR</strong> ở cuối báo cáo khi review đạt
+            mức "có thể push": nội dung PR dựng từ
+            <code>.gitea/PULL_REQUEST_TEMPLATE.md</code> của app, đã điền
+            Description và tick checklist theo kết quả review, đồng thời lưu
+            thành file <code>pr-description.md</code>. Xem cách đọc ở phần 07.
           </li>
         </ul>
         <p>
@@ -2257,6 +2269,53 @@ source ~/.zshrc</code></pre>
           Nên đọc phần <strong>Mức độ kiểm tra</strong> và
           <strong>Bạn nên tự kiểm tra thêm</strong>.
         </p>
+        <h3 id="s07-description-cho-pr">
+          Description cho PR<a class="anchor" href="#s07-description-cho-pr"
+            >#</a
+          >
+        </h3>
+        <p>
+          CI AI review của BSS (<code>aiReviewCode</code>) bỏ qua PR có mục
+          Description trống và đối chiếu code với Description. Vì vậy khi review
+          đạt mức <strong>Có thể push trong phạm vi đã kiểm tra</strong> (kể cả
+          khi còn vấn đề Nhẹ), cuối báo cáo có mục
+          <strong>Description cho PR</strong>:
+        </p>
+        <ul>
+          <li>
+            Nội dung dựng từ <code>.gitea/PULL_REQUEST_TEMPLATE.md</code>
+            <strong>trong nhánh đang review</strong>, giữ nguyên heading và câu
+            chữ của template, đồng thời lưu thành file
+            <code>pr-description.md</code> (báo cáo ghi đường dẫn).
+          </li>
+          <li>
+            Mục Description gồm: một đoạn mở nói hành vi trước và sau thay đổi;
+            <strong>Các thay đổi chính</strong> (tối đa 6 dòng, mỗi dòng một
+            khu vực code); <strong>Ảnh hưởng tới code khác</strong> (symbol bị
+            xoá hoặc đổi, nơi đang dùng code chung, cần test ở đâu). Không có
+            tên nhánh hay mã task.
+          </li>
+          <li>
+            Checklist được tick theo kết quả review. Ô bị để trống khi review
+            thấy vi phạm, khi nhóm kiểm tra liên quan không chạy được, hoặc khi
+            dòng đó trong template đã lỗi thời.
+          </li>
+          <li>
+            <strong>Self Test luôn để trống</strong>: Dev tự tick sau khi tự
+            test.
+          </li>
+          <li>
+            <strong>Template cần cập nhật</strong>: các dòng template mâu thuẫn
+            với code hoặc binding. Hãy sửa template của app.
+          </li>
+          <li>Fixed Issues chỉ giữ tiêu đề; Dev tự thêm mã task nếu cần.</li>
+        </ul>
+        <p>
+          Khi không tạo được, mục này ghi một dòng lý do: review chưa đạt, repo
+          thiếu <code>.gitea/PULL_REQUEST_TEMPLATE.md</code>, template không có
+          mục Description, hoặc phần mô tả do reviewer viết không hợp lệ.
+          Description không được đưa vào recap.
+        </p>
         <hr />
         <h2 id="s08">
           <span class="h-num">08</span>Những điểm cần lưu ý<a
@@ -2406,10 +2465,53 @@ feedback: F3 | skip | edge case không tồn tại trong sản phẩm</code></pr
         <h3 id="s10-claude-code">
           Claude Code<a class="anchor" href="#s10-claude-code">#</a>
         </h3>
-        <pre><code class="language-bash">claude plugin update bs-rn-review@bs-mobile</code></pre>
         <p>
-          Nếu skill mới chưa xuất hiện, đóng session hiện tại và mở session mới.
+          <strong>Khuyến nghị: bật tự cập nhật một lần</strong> bằng cách thêm
+          <code>"autoUpdate": true</code> cho marketplace
+          <code>bs-mobile</code> trong <code>~/.claude/settings.json</code>.
+          Nếu file đã có mục <code>bs-mobile</code> trong
+          <code>extraKnownMarketplaces</code>, chỉ cần thêm dòng
+          <code>autoUpdate</code>; nếu chưa có, thêm cả mục:
         </p>
+        <pre><code class="language-json">"extraKnownMarketplaces": {
+  "bs-mobile": {
+    "source": {
+      "source": "git",
+      "url": "https://git.bssdev.cloud/truongtd/rn-code-review.git"
+    },
+    "autoUpdate": true
+  }
+}</code></pre>
+        <p>
+          Từ đó mỗi lần mở Claude, marketplace và plugin tự lên version mới (có
+          hiệu lực từ session tiếp theo). Giữ JSON hợp lệ: các mục trong cùng
+          object cách nhau bằng dấu phẩy.
+        </p>
+        <p>Cập nhật bằng tay:</p>
+        <pre><code class="language-bash">claude plugin marketplace update bs-mobile
+claude plugin update bs-rn-review@bs-mobile --scope user
+claude plugin list</code></pre>
+        <ul>
+          <li>
+            Phải chạy <code>marketplace update</code> trước; nếu không,
+            <code>plugin update</code> không thấy bản mới.
+          </li>
+          <li>
+            <code>plugin update</code> chỉ cập nhật <strong>một scope</strong>.
+            Không có <code>--scope user</code>, lệnh chỉ cập nhật bản cài của
+            thư mục đang đứng.
+          </li>
+          <li>
+            Repo nào bật plugin trong <code>.claude/settings.json</code> (như
+            <code>v567app</code>) sẽ có thêm bản cài theo project cho từng thư
+            mục hoặc worktree, và bản này được ưu tiên hơn bản user. Nếu
+            <code>claude plugin list</code> trong thư mục đó vẫn báo version
+            cũ, chạy
+            <code>claude plugin update bs-rn-review@bs-mobile --scope project</code>
+            ngay trong thư mục đó.
+          </li>
+        </ul>
+        <p>Sau khi cập nhật, đóng session hiện tại và mở session mới.</p>
         <h3 id="s10-codex">Codex<a class="anchor" href="#s10-codex">#</a></h3>
         <pre><code class="language-bash">codex plugin marketplace upgrade bs-mobile</code></pre>
         <p>Sau đó mở Codex session mới.</p>
@@ -2460,6 +2562,9 @@ codex plugin add bs-rn-review@bs-mobile</code></pre>
             Không blind merge chỉ vì report nói “có thể push”.
           </li>
           <li data-checked="false">
+            Đọc lại Description cho PR, tự tick Self Test rồi dán vào PR.
+          </li>
+          <li data-checked="false">
             Phản hồi từng vấn đề trên recap để cải thiện quy tắc review.
           </li>
         </ul>
@@ -2486,7 +2591,12 @@ codex plugin add bs-rn-review@bs-mobile</code></pre>
             >#</a
           >
         </h3>
-        <p>Không. Đây là review local trước commit/push.</p>
+        <p>
+          Không. Đây là review local trước commit/push. CI AI review của BSS
+          (<code>aiReviewCode</code>) là một hệ thống khác chạy trên Pull
+          Request; plugin hỗ trợ nó bằng <strong>Description cho PR</strong> để
+          PR không bị CI bỏ qua vì thiếu mô tả.
+        </p>
         <h3 id="s12-co-can-chay-setup-moi-lan-review-khong">
           Có cần chạy setup mỗi lần review không?<a
             class="anchor"
@@ -2549,7 +2659,7 @@ codex plugin add bs-rn-review@bs-mobile</code></pre>
         </p>
         <footer class="footer">
           <div class="footer-meta">
-            <span class="footer-version">v0.2.10</span><span>BS RN Review</span>
+            <span class="footer-version">v0.2.14</span><span>BS RN Review</span>
           </div>
           <div class="footer-meta"><span>Mobile App Team</span></div>
         </footer>
@@ -2571,6 +2681,7 @@ codex plugin add bs-rn-review@bs-mobile</code></pre>
     </button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
     <script>
       const menuBtn = document.getElementById("menuBtn");
       const sidebar = document.getElementById("sidebar");
